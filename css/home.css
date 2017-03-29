@@ -4,7 +4,10 @@
 @font-face {
   font-family: rounded;
   src: url(../fonts/Rounded_Elegance.ttf); }
-@media screen and (min-width: 1200px) {
+body {
+  margin: 0; }
+
+@media screen and (min-width: 1024px) {
   .content nav {
     width: 100%;
     height: 80px;
@@ -36,7 +39,11 @@
     text-align: center;
     font-family: rounded;
     padding-top: 17em;
-    color: #3E698B; }
+    color: #3E698B; } }
+  @media only screen and (min-width: 1024px) and (min-width: 1024px) and (max-width: 1280px) {
+    .content .hero {
+      padding-top: 14em; } }
+@media screen and (min-width: 1024px) {
   .content .conocemos {
     width: 100%;
     height: 300px; }
@@ -53,11 +60,11 @@
     .parallax .static-iphone {
       margin-top: -73%;
       min-height: 2500px;
-      background-image: url("../assets/home/screen-1.jpg");
       background-position: center;
       background-repeat: no-repeat;
       background-size: 13.8%;
-      position: relative; }
+      position: relative;
+      transition: opacity ease-in-out 0.6s; }
       .parallax .static-iphone .acuerdo {
         position: relative;
         overflow: hidden; }
@@ -69,7 +76,11 @@
           font-size: 28px;
           width: 320px;
           color: #3e698b;
-          padding: 1em; }
+          padding: 1em; } }
+    @media only screen and (min-width: 1024px) and (min-width: 1024px) and (max-width: 1280px) {
+      .parallax .static-iphone {
+        margin-top: -109%; } }
+@media screen and (min-width: 1024px) {
     .parallax figure {
       background: transparent; }
     .parallax .post-it {
@@ -78,7 +89,11 @@
       background-size: 100%;
       width: 20%;
       height: 330px;
-      margin-top: 90%; }
+      margin-top: 90%; } }
+    @media only screen and (min-width: 1024px) and (min-width: 1024px) and (max-width: 1281px) {
+      .parallax .post-it {
+        height: 257px; } }
+@media screen and (min-width: 1024px) {
     .parallax .receta {
       background: url("../assets/home/prescription.png") no-repeat;
       transform: rotate(-80deg);
@@ -89,15 +104,15 @@
       margin-right: -10%;
       margin-top: -5%; }
 
-  .pantallas {
-    /*.screen-1{
-    	margin-top: -151%;
-    	min-height: 2500px;
-    	background-image: url('../assets/home/screen-1.jpg');
-    	background-position: 50.3% 50%;
-    	background-repeat: no-repeat;
-    	background-size: 13.7%;
-    	position: relative;
-    }*/ } }
+  .screen-0 {
+    background: url("../assets/home/screen-1.jpg"); }
+
+  .screen-1 {
+    background: url("../assets/home/screen-2.jpg");
+    background-attachment: fixed; }
+
+  .screen-2 {
+    background: url("../assets/home/screen-3.jpg");
+    background-attachment: fixed; } }
 
 /*# sourceMappingURL=home.css.map */

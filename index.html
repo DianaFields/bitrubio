@@ -3,9 +3,10 @@
 <head>
 	<title>Bitrubio | Tu consultorio digital</title>
 	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
 
 </head>
-<body>
+<body id="demo">
 	<div class="content">
 		<header>
 			<nav>
@@ -22,28 +23,26 @@
 		</div>
 	</div>
 	<div class="parallax">
-		<div class="static-iphone" id="scrollParallax">
 
+		<div class="scrollParallax stop static-iphone screen-0"></div>
+		<div class="scrollParallax static-iphone screen-1"></div>
+		<div class="scrollParallax static-iphone screen-2"></div>
 
-			<section class="conocemos">
-				<p>En un latido nos conocemos</p>
-				<figure class="post-it"></figure>
-			</section>
-			<section class="acuerdo">
-				<p>En un latido nos ponemos de acuerdo</p>
-				<figure class="receta"></figure>
-			</section>
-		</div>
-
-		
+		<section class="conocemos">
+			<p>En un latido nos conocemos</p>
+			<figure class="post-it" data-enllax-ratio=".4" data-enllax-type="foreground" ></figure>
+		</section>
+		<section class="acuerdo">
+			<p>En un latido nos ponemos de acuerdo</p>
+			<figure class="receta"></figure>
+		</section>
 	</div>
-
 	<script src="js/jquery-3.2.0.min.js"></script>
 	<script src="js/jquery.enllax.min.js"></script>
 	<script src="js/home.js"></script>
 	<script type="text/javascript">
 		homeInit();
+		pantallitas();
 	</script>
-
 </body>
 </html>

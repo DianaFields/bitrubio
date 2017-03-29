@@ -7,7 +7,10 @@
 	src:url(../fonts/Rounded_Elegance.ttf);
 }
 $blue-bitrubio: #3E698B;
-@media screen and (min-width:1200px){
+body{
+	margin: 0;
+}
+@media screen and (min-width:1024px){
 	.content{
 		nav{
 			width: 100%;
@@ -48,8 +51,8 @@ $blue-bitrubio: #3E698B;
 			font-family: rounded;
 			padding-top: 17em;
 			color:$blue-bitrubio;
-			h1{
-
+			@media only screen and (min-width: 1024px) and (max-width: 1280px){
+				padding-top: 14em;
 			}
 		}
 		.conocemos{
@@ -65,18 +68,18 @@ $blue-bitrubio: #3E698B;
 
 	}
 	.parallax{
-			background-image: url('../assets/home/iphone.png');
-			background-position: 49.7% 49.5%;
-			background-repeat: no-repeat;
-			background-size: 18%;
+		background-image: url('../assets/home/iphone.png');
+		background-position: 49.7% 49.5%;
+		background-repeat: no-repeat;
+		background-size: 18%;
 		.static-iphone{
 			margin-top: -73%;
 			min-height: 2500px;
-			background-image: url('../assets/home/screen-1.jpg');
 			background-position: center;
 			background-repeat: no-repeat;
 			background-size: 13.8%;
 			position: relative;
+			transition: opacity ease-in-out 0.6s;
 			.acuerdo{
 				position: relative;
 				overflow: hidden;
@@ -91,18 +94,24 @@ $blue-bitrubio: #3E698B;
 					padding: 1em;
 				}
 			}
-		
+			@media only screen and (min-width: 1024px) and (max-width: 1280px){
+				margin-top:-109%;
+			}
 		}
 		figure{
 			background: transparent;
 		}
-		.post-it{
+		
+.post-it{
 			background: url('../assets/home/post-it.png');
 			transform: rotate(30deg);
 			background-size: 100%;
 			width: 20%;
 			height: 330px;
 			margin-top: 90%;
+			@media only screen and (min-width:1024px) and (max-width: 1281px){
+				height: 257px;
+			}
 		}
 		.receta{
 			background: url('../assets/home/prescription.png')no-repeat;
@@ -115,18 +124,17 @@ $blue-bitrubio: #3E698B;
 			margin-top: -5%;
 		}
 	}	
-	.pantallas{
-		/*.screen-1{
-			margin-top: -151%;
-			min-height: 2500px;
-			background-image: url('../assets/home/screen-1.jpg');
-			background-position: 50.3% 50%;
-			background-repeat: no-repeat;
-			background-size: 13.7%;
-			position: relative;
-		}*/
+	.screen-0{
+		background: url('../assets/home/screen-1.jpg');
 	}
-
+	.screen-1{
+		background: url('../assets/home/screen-2.jpg');
+		background-attachment: fixed;
+	}
+	.screen-2{
+		background: url('../assets/home/screen-3.jpg');
+		background-attachment: fixed;
+	}
 }
 
 
