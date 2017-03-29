@@ -1,0 +1,95 @@
+@font-face {
+  font-family: avenir;
+  src: url(../fonts/avenir.ttf); }
+@font-face {
+  font-family: rounded;
+  src: url(../fonts/Rounded_Elegance.ttf); }
+@media screen and (min-width: 1200px) {
+  .content nav {
+    width: 100%;
+    height: 80px;
+    line-height: 80px; }
+    .content nav .logo {
+      display: inline-block;
+      float: left;
+      width: 100px;
+      margin-left: 2em; }
+      .content nav .logo img {
+        width: 60%; }
+    .content nav ul {
+      text-align: right;
+      margin-right: 6em; }
+      .content nav ul li {
+        padding: 0 1em;
+        display: inline-block;
+        text-decoration: none;
+        font-family: avenir;
+        font-size: 20px; }
+        .content nav ul li a {
+          color: #3E698B;
+          text-decoration: none; }
+  .content .hero {
+    width: 100%;
+    height: 500px;
+    background: url("../assets/home/hero.jpg") no-repeat;
+    background-size: 100%;
+    text-align: center;
+    font-family: rounded;
+    padding-top: 17em;
+    color: #3E698B; }
+  .content .conocemos {
+    width: 100%;
+    height: 300px; }
+    .content .conocemos p {
+      font-family: rounded;
+      text-align: center;
+      font-size: 1.5em; }
+
+  .parallax .static-iphone {
+    margin-top: -73%;
+    min-height: 2500px;
+    background-image: url("../assets/home/iphone.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18%;
+    position: relative; }
+    .parallax .static-iphone .acuerdo {
+      position: relative; }
+      .parallax .static-iphone .acuerdo p {
+        position: absolute;
+        top: -250px;
+        right: 18%;
+        font-family: rounded;
+        font-size: 28px;
+        width: 320px;
+        color: #3e698b;
+        padding: 1em; }
+  .parallax figure {
+    background: transparent; }
+  .parallax .post-it {
+    background: url("../assets/home/post-it.png");
+    transform: rotate(30deg);
+    background-size: 100%;
+    width: 20%;
+    height: 330px;
+    margin-top: 90%; }
+  .parallax .receta {
+    background: url("../assets/home/prescription.png") no-repeat;
+    transform: rotate(-80deg);
+    background-size: 110%;
+    width: 35%;
+    height: 330px;
+    float: right;
+    margin-right: -10%;
+    margin-top: -5%; }
+
+  .pantallas .screen-1 {
+    margin-top: -151%;
+    min-height: 2500px;
+    background-image: url("../assets/home/screen-1.jpg");
+    background-position: 50.3% 50%;
+    background-repeat: no-repeat;
+    background-size: 13.7%;
+    position: relative; } }
+
+/*# sourceMappingURL=home.css.map */
