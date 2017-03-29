@@ -65,16 +65,21 @@ $blue-bitrubio: #3E698B;
 
 	}
 	.parallax{
+			background-image: url('../assets/home/iphone.png');
+			background-position: 49.7% 49.5%;
+			background-repeat: no-repeat;
+			background-size: 18%;
 		.static-iphone{
 			margin-top: -73%;
 			min-height: 2500px;
-			background-image: url('../assets/home/iphone.png');
+			background-image: url('../assets/home/screen-1.jpg');
 			background-position: center;
 			background-repeat: no-repeat;
-			background-size: 18%;
+			background-size: 13.8%;
 			position: relative;
 			.acuerdo{
 				position: relative;
+				overflow: hidden;
 				p{
 					position: absolute;
 					top: -250px;
@@ -111,7 +116,7 @@ $blue-bitrubio: #3E698B;
 		}
 	}	
 	.pantallas{
-		.screen-1{
+		/*.screen-1{
 			margin-top: -151%;
 			min-height: 2500px;
 			background-image: url('../assets/home/screen-1.jpg');
@@ -119,7 +124,7 @@ $blue-bitrubio: #3E698B;
 			background-repeat: no-repeat;
 			background-size: 13.7%;
 			position: relative;
-		}
+		}*/
 	}
 
 }
