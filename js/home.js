@@ -7,7 +7,6 @@ function homeInit() {
     $('.screen-1').css('opacity','0');
     $('.screen-2').css('opacity','0');
   }
-
   // else if(height  > 450) {
   //   $('.stop').css('background-attachment', 'fixed');
   // }
