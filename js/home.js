@@ -4,14 +4,11 @@ function homeInit() {
   var height = $(window).scrollTop();
   if (height  < 450){
     $('.stop').css('background-attachment', 'inherit');
-     $('.screen-1').css('opacity', '0');
   }
   else if(height  > 450) {
     $('.stop').css('background-attachment', 'fixed');
   }
 });
-
-
 
 // parallax
 (function($){
@@ -22,24 +19,36 @@ function homeInit() {
           })(jQuery);
 }
 
-function homeInit2() {
+function changeScreen() {
 
- $(window).scroll(function() {
-  var heightNew = $(window).scrollTop();
-  if (heightNew  > 450){
-    $('.screen-0').css('opacity', '0');
-    $('.screen-1').css('opacity', '1');
+    var currentPosY = windowMidY + window.pageYOffset,
+      position,
+      position_top,
+      position_left = windowMidX,
+      margin_left = - phoneWidth / 2,
+      margin_top = - phoneHeight / 2,
+      mode;
+
+
+    transformPhone(position, position_top, position_left, margin_left, margin_top, mode);
+
+
+  function transformPhone(position, position_top, position_left, margin_left, margin_top, mode) {
+    for ( i = 0; i < 4; i++ ) {
+      if ( i == mode ) {
+        $( '#screen-' + i ).css({"opacity" : "1" });
+      }
+      else if (i != mode) {
+        $( '#screen-' + i ).css({ "opacity" : "0" });
+      }
+    }
+    $( '#floating-phone' ).css({ "display" : "block", "position" : position, "top" : position_top,
+      "left" : position_left, "margin-left" : margin_left, "margin-top" : margin_top });
+    $( '#floating-phone-scale-image' ).css({ "height" : phoneHeight, "width" : phoneWidth });
+    $('.phone-screen').css({"height": phoneHeight, "width": phoneWidth});
   }
-  else(height  < 450) {
-     $('.screen-0').css('opacity', '1');
-    $('.screen-1').css('opacity', '0');
-  }
-});
-
-
 
 }
-
 
 
 

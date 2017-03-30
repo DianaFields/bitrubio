@@ -75,9 +75,7 @@ body{
 		.static-iphone{
 			margin-top: -87%;
 			min-height: 2500px;
-			background-position: center;
-			background-repeat: no-repeat;
-			background-size: 13.8%;
+		
 			position: relative;
 			transition: opacity ease-in-out 0.6s;
 			.acuerdo{
@@ -124,15 +122,24 @@ body{
 			margin-top: -5%;
 		}
 	}	
-	.screen-0{
+	#screen-0{
 		background: url('../assets/home/screen-1.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 13.8%;
 	}
-	.screen-1{
+	#screen-1{
 		background: url('../assets/home/screen-2.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 13.8%;
 		background-attachment: fixed;
 	}
-	.screen-2{
+	#screen-2{
 		background: url('../assets/home/screen-3.jpg');
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: 13.8%;
 		background-attachment: fixed;
 	}
 }
