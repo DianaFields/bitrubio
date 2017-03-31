@@ -1,16 +1,6 @@
 function homeInit() {
 
-//  $(window).scroll(function() {
-//   var height = $(window).scrollTop();
-//   if (height  < 450){
-//     $('.stop').css('background-attachment', 'inherit');
-//     $('.parallax').css('background-attachment', 'inherit');
-//   }
-//   else if(height  > 450) {
-//     $('.stop').css('background-attachment', 'fixed');
-//     $('.parallax').css('background-attachment', 'fixed');
-//   }
-// });
+
 
 // parallax
 (function($){
@@ -24,6 +14,19 @@ function homeInit() {
 
         function changeScreen(){
           $(window).scroll(function(){
+            // fixed
+             var height = $(window).scrollTop();
+            if (height  < 430){
+              $('.stop').css('background-attachment', 'inherit');
+              $('.parallax').css('background-attachment', 'inherit');
+            }
+            else if(height  > 430) {
+              $('.stop').css('background-attachment', 'fixed');
+              $('.parallax').css('background-attachment', 'fixed');
+            }
+            // fixed
+
+
             var showMessageInterval = window.setInterval(showMessageIfNeeded, 500);
             function showMessageIfNeeded() {
               var scrollTop = $(window).scrollTop();
@@ -32,7 +35,7 @@ function homeInit() {
               if (scrollTop > firstScreen) {
                 if (change) {
                  $('#screen-1').css('opacity','1')
-                 $('#screen-0').css('opacity','0')
+                 // $('#screen-0').css('opacity','0')
                  window.clearInterval(showMessageInterval);
                  change = false;
                }

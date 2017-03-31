@@ -9,250 +9,381 @@
 $blue-bitrubio: #3E698B;
 body{
 	margin: 0;
+	.footer{
+		width: 100%;
+		height: 150px;
+		background: #f2f2f2;
+		margin-bottom: 0;
+		text-align: center;
+		font-family: rounded;
+		color: $blue-bitrubio;
+		p{
+			padding:2% 0 0 0;
+			font-size: 1.5em;
+		}
+		ul{
+			width: 30%;
+			margin: 0 auto;
+			padding: 0;
+			li{
+				display: inline-block;
+				list-style: none;
+				width: 35%;
+				margin: 0 20px;
+				img{
+					width: 80%;
+				}
+			}
+		}
+		.map{
+			width: 100%;
+			height: 60px;
+			display: block;
+			background: $blue-bitrubio;
+			div{
+				width: 33%;
+				display: inline-block;
+			}
+			span{
+				display: inline-block;
+				width: 45px;
+				height: 45px;
+				background: url('../assets/home/redes.png');
+			}
+			.facebook{
+				background-position: -12px 4px;
+				background-size: 240px;
+
+			}
+			.twitter{
+				background-position: -89px 3px;
+				background-size: 240px;
+			}
+			.youtube{
+				background-position: -180px 4px;
+				background-size: 240px;x;
+			}
+		}
+	}
+}
+.content{
+	nav{
+		width: 100%;
+		height: 80px;
+		line-height: 80px;
+		.logo{
+			display: inline-block;
+			float: left;
+			width: 80px;
+			margin-left: 3em;
+			padding-top: 8px;
+			img{
+				width: 70%;
+			}
+		}
+		ul{
+			text-align: right;
+			margin:0;
+			padding:0;
+			li{
+				padding: 0 1em;
+				display: inline-block;
+				text-decoration: none;
+				font-family: avenir;
+				font-size: 20px;
+				a{
+					color:$blue-bitrubio;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+
 
 }
-	.content{
-		nav{
-			width: 100%;
-			height: 80px;
-			line-height: 80px;
-			.logo{
-				display: inline-block;
-				float: left;
-				width: 100px;
-				margin-left: 2em;
-				img{
-					width: 60%;
-				}
-			}
-			ul{
-				text-align: right;
-				margin-right: 6em;
-				li{
-					padding: 0 1em;
-					display: inline-block;
-					text-decoration: none;
-					font-family: avenir;
-					font-size: 20px;
-					a{
-						color:$blue-bitrubio;
-						text-decoration: none;
-					}
-				}
-			}
-		}
+.hero{
+	width: 100%;
+	height: 300px;
+	background: url('../assets/home/hero.jpg')no-repeat;
+	background-size: 100%;
+	text-align: center;
+	font-family: rounded;
+	padding-top: 17em;
+	position: absolute;
+	@media only screen and (min-width: 1024px) and (max-width: 1280px){
+		padding-top: 12em;
+	}
+	h1{
+		font-size: 2em;
+		color:$blue-bitrubio;
+	}
+	h2{
+		font-size: 1.5em;
+		color: #666;
+	}
+}
+.parallax{
 
+	height: 3500px;
+	background: url('../assets/home/iphone.png')no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 280px;
+	#bloque-1{
+		position: absolute;
+		top: 900px;
+		height: 1px;
+		width: 100%;
+	}
+
+	#bloque-2{
+		position: absolute;
+		top: 2000px;
+		height: 1px;
+		width: 100%;
 
 	}
-	.parallax{
-		.hero{
-			width: 100%;
-			height: 500px;
-			background: url('../assets/home/hero.jpg')no-repeat;
-			background-size: 100%;
-			text-align: center;
+	.static-iphone{
+		position: relative;
+		transition: opacity ease-in-out 0.6s;
+		overflow: hidden;
+		@media only screen and (min-width: 1280px) and (max-width: 1280px){
+			margin-top:-136%;
+		}
+	}
+	figure{
+		background: transparent;
+	}
+
+}
+
+.beat{
+	position: absolute;
+	
+	.heart {
+		position: absolute;
+		width: 100px;
+		height: 90px;
+	}
+	.heart:before,
+	.heart:after {
+		position: absolute;
+		content: "";
+		left: 11px;
+		top: 0;
+		width: 12px;
+		height: 21px;
+		background:#e14c4b;
+		-moz-border-radius: 50px 50px 0 0;
+		border-radius: 50px 50px 0 0;
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		-webkit-transform-origin: 0 100%;
+		-moz-transform-origin: 0 100%;
+		-ms-transform-origin: 0 100%;
+		-o-transform-origin: 0 100%;
+		transform-origin: 0 100%;
+	}
+	.heart:after {
+		left: 0;
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		transform: rotate(45deg);
+		-webkit-transform-origin: 100% 100%;
+		-moz-transform-origin: 100% 100%;
+		-ms-transform-origin: 100% 100%;
+		-o-transform-origin: 100% 100%;
+		transform-origin :100% 100%;
+	}
+}	
+
+#screen-0{ 
+	width: 100%;
+	height: 1300px;
+	background: url('../assets/home/screen-1.png')no-repeat;
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size: 280px;
+	.beat{
+		top: 45%;
+		left: 27%;
+	}
+}
+.conocemos{
+	width: 100%;
+	height: 300px;	
+	p{
+		position: absolute;
+		top: 20%;
+		left: 18%;
+		text-align: right;
+		font-family: rounded;
+		padding: 1em;
+		border-right: 2px solid #3e698b;
+		width: 350px;
+		color: #3e698b;
+		padding: 1em;
+		font-size: 1.5em;
+		@media only screen and (min-width:700px) and (max-width: 1281px){
+			left: 8%;	
+			top: 45%;
+		}
+	}
+	.search{
+		background: url('../assets/home/glasses.png');
+		background-repeat: no-repeat;
+		transform: rotate(30deg);
+		background-size: 50%;
+		width: 60%;
+		height: 450px;
+		float: left;
+		@media screen and (min-width:1282px){
+			margin-top: 15%;
+			margin-left: -10%;	
+		}
+		@media only screen and (min-width:700px) and (max-width: 1281px){
+			margin-top: 50%;
+			margin-left:-9%;	
+		}
+	}
+	.certificate{
+		background: url('../assets/home/certificate.png');
+		background-repeat: no-repeat;
+		transform: rotate(30deg);
+		background-size: 100%;
+		width: 35%;
+		height: 550px;
+		margin-top: 5%;
+		margin-right: -5%;
+		float: right;
+		@media only screen and (min-width:700px) and (max-width: 1281px){
+			margin-top: 40%;	
+		}
+	}
+}
+
+#screen-1{
+	width: 100%;
+	height: 2000px;
+	background: url('../assets/home/screen-2.png')no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 280px;
+	background-attachment: fixed;
+	margin-top: -900px;
+	opacity: 0;
+	.acuerdo{
+		width: 100%;
+		height: 300px;
+		p{
+			position: absolute;
+			top: 40%;
+			right: 18%;
 			font-family: rounded;
-			padding-top: 17em;
-			color:$blue-bitrubio;
-			@media only screen and (min-width: 1024px) and (max-width: 1280px){
-				padding-top: 14em;
+			font-size: 28px;
+			width: 320px;
+			color: #3e698b;
+			padding: 1em;
+			@media only screen and (min-width:700px) and (max-width: 1281px){
+				right: 10%;	
 			}
 		}
-		height: 2500px;
-		background-image: url('../assets/home/iphone.png');
-		background-position: center;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: 280px;
-		#bloque-1{
+		.post-it{
+			background: url('../assets/home/post-it.png');
+			background-repeat: no-repeat;
+			transform: rotate(30deg);
+			background-size: 100%;
+			width: 20%;
+			height: 450px;
+			margin-top: 40%;
+			margin-left: -22%;
+			float: left;
+			@media only screen and (min-width:800px) and (max-width: 1281px){
+				margin-left: 0;
+				margin-top: 65%;
+			}
+		}
+		.agenda{
+			background: url('../assets/home/agenda.png');
+			background-repeat: no-repeat;
+			transform: rotate(5deg);
+			background-size: 100%;
+			width: 35%;
+			height: 500px;
+			margin-top: 45%;
+			margin-right: -40%;
+			float: right;
+			@media only screen and (min-width:700px) and (max-width: 1281px){
+				width: 40%;
+				margin-right: -12%;	
+				margin-top: 80%;
+			}
+		}
+	}
+}
+#screen-2{
+	width: 100%;
+	height: 1200px;
+	background: url('../assets/home/screen-3.png')no-repeat;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 280px;
+	margin-top: -450px;
+	opacity: 0;
+	.tratamiento{
+		width: 100%;
+		height: 300px;	
+		p{
 			position: absolute;
-			top: 300px;
-			height: 1px;
-			width: 100%;
-
-
-
-
-		}
-		#bloque-2{
-			position: absolute;
-			top: 1000px;
-			height: 1px;
-			width: 100%;
-
-		}
-		.static-iphone{
-			position: relative;
-			transition: opacity ease-in-out 0.6s;
-			overflow: hidden;
-			@media only screen and (min-width: 800px) and (max-width: 1280px){
-				margin-top:-136%;
+			top: 20%;
+			left: 18%;
+			text-align: right;
+			font-family: rounded;
+			font-size: 28px;
+			width: 320px;
+			color: #3e698b;
+			padding: 1em;
+			@media only screen and (min-width:700px) and (max-width: 1281px){
+				left: 10%;
 			}
 		}
-		figure{
-			background: transparent;
+		.radio{
+			background: url('../assets/home/radio.png');
+			background-repeat: no-repeat;
+			transform: rotate(10deg);
+			background-size: 100%;
+			width: 30%;
+			height: 550px;
+			margin-top: 30%;
+			margin-left: -27%;
+			float: left;
+			@media only screen and (min-width:800px) and (max-width: 1281px){
+				margin-left: -5%;
+			}
 		}
-		
-	}	
-	#screen-0{ 
-		width: 100%;
-		height: 1200px;
-		background: url('../assets/home/screen-1.png')no-repeat;
-		background-position:center;
-		background-repeat: no-repeat;
-		background-attachment: fixed;
-		background-size: 280px;
-		.conocemos{
-			width: 100%;
-			height: 300px;	
-			p{
-				position: absolute;
-				top: 20%;
-				left: 18%;
-				text-align: right;
-				font-family: rounded;
-				font-size: 28px;
-				width: 320px;
-				color: #3e698b;
-				padding: 1em;
-			}
-			.search{
-				background: url('../assets/home/search.png');
-				background-repeat: no-repeat;
-				transform: rotate(30deg);
-				background-size: 100%;
-				width: 20%;
-				height: 450px;
-				margin-top: 15%;
-				margin-left: -10%;
-				float: left;
-				@media only screen and (min-width:800px) and (max-width: 1281px){
-					height: 257px;
-				}
-			}
-			.certificate{
-				background: url('../assets/home/certificate.png');
-				background-repeat: no-repeat;
-				transform: rotate(30deg);
-				background-size: 100%;
-				width: 35%;
-				height: 550px;
-				margin-top: 5%;
-				margin-right: -5%;
-				float: right;
-				@media only screen and (min-width:800px) and (max-width: 1281px){
-					height: 257px;
-				}
+		.receta{
+			background: url('../assets/home/prescription.png');
+			background-repeat: no-repeat;
+			transform: rotate(-80deg);
+			background-size: 100%;
+			width: 35%;
+			height: 550px;
+			margin-top: 5%;
+			margin-right: -45%;
+			float: right;
+			@media only screen and (min-width:800px) and (max-width: 1281px){
+				margin-right: -18%;
 			}
 		}
 	}
-	#screen-1{
-		width: 100%;
-		height: 1200px;
-		background: url('../assets/home/screen-2.png')no-repeat;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: 280px;
-		background-attachment: fixed;
-		margin-top: -700px;
-		opacity: 0;
-		.acuerdo{
-			width: 100%;
-			height: 300px;
-			p{
-				position: absolute;
-				top: 40%;
-				right: 18%;
-				font-family: rounded;
-				font-size: 28px;
-				width: 320px;
-				color: #3e698b;
-				padding: 1em;
-			}
-			.post-it{
-				background: url('../assets/home/post-it.png');
-				background-repeat: no-repeat;
-				transform: rotate(30deg);
-				background-size: 100%;
-				width: 20%;
-				height: 450px;
-				margin-top: 40%;
-				margin-left: -22%;
-				float: left;
-				@media only screen and (min-width:800px) and (max-width: 1281px){
-					height: 257px;
-				}
-			}
-			.agenda{
-				background: url('../assets/home/agenda.png');
-				background-repeat: no-repeat;
-				transform: rotate(5deg);
-				background-size: 100%;
-				width: 35%;
-				height: 500px;
-				margin-top: 45%;
-				margin-right: -40%;
-				float: right;
-				@media only screen and (min-width:800px) and (max-width: 1281px){
-					height: 257px;
-				}
-			}
-		}
-	}
-	#screen-2{
-		width: 100%;
-		height: 1200px;
-		background: url('../assets/home/screen-3.png')no-repeat;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: 280px;
-		background-attachment: fixed;
-		margin-top: -450px;
-		opacity: 0;
-			.tratamiento{
-			width: 100%;
-			height: 300px;	
-			p{
-				position: absolute;
-				top: 20%;
-				left: 18%;
-				text-align: right;
-				font-family: rounded;
-				font-size: 28px;
-				width: 320px;
-				color: #3e698b;
-				padding: 1em;
-			}
-			.radio{
-				background: url('../assets/home/radio.png');
-				background-repeat: no-repeat;
-				transform: rotate(10deg);
-				background-size: 100%;
-				width: 30%;
-				height: 550px;
-				margin-top: 30%;
-				margin-left: -27%;
-				float: left;
-				@media only screen and (min-width:800px) and (max-width: 1281px){
-					height: 257px;
-				}
-			}
-			.receta{
-				background: url('../assets/home/prescription.png');
-				background-repeat: no-repeat;
-				transform: rotate(-80deg);
-				background-size: 100%;
-				width: 35%;
-				height: 550px;
-				margin-top: 5%;
-				margin-right: -45%;
-				float: right;
-				@media only screen and (min-width:800px) and (max-width: 1281px){
-					height: 257px;
-				}
-			}
-		}
-	}
+
+}
 
 /*ok*/
 
