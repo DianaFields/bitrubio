@@ -1,63 +1,345 @@
-/*
-Error: Invalid CSS after "...d-size: 240px;x": expected "{", was ";"
-        on line 64 of styles/scss/home.scss
+@font-face {
+  font-family: avenir;
+  src: url(../fonts/avenir.ttf); }
+@font-face {
+  font-family: rounded;
+  src: url(../fonts/Rounded_Elegance.ttf); }
+body {
+  margin: 0; }
+  body .footer {
+    width: 100%;
+    height: 150px;
+    background: #f2f2f2;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: rounded;
+    color: #3E698B; }
+    body .footer p {
+      padding: 2% 0 0 0;
+      font-size: 1.5em; }
+    body .footer ul {
+      width: 30%;
+      margin: 0 auto;
+      padding: 0; }
+      body .footer ul li {
+        display: inline-block;
+        list-style: none;
+        width: 35%;
+        margin: 0 20px; }
+        body .footer ul li img {
+          width: 70%; }
+    body .footer .map {
+      width: 100%;
+      height: 200px;
+      display: block;
+      background: #3E698B; }
+      body .footer .map .top {
+        width: 100%;
+        line-height: 40px; }
+        body .footer .map .top div {
+          display: inline-block;
+          width: 33%; }
+        body .footer .map .top .contact a {
+          color: #fff;
+          text-decoration: none; }
+      body .footer .map span {
+        display: inline-block;
+        width: 35px;
+        height: 35px;
+        background: url("../assets/home/redes.png");
+        margin: 0 3%; }
+      body .footer .map .facebook {
+        background-position: -8px 3px;
+        background-size: 170px; }
+      body .footer .map .twitter {
+        background-position: -65px 3px;
+        background-size: 170px; }
+      body .footer .map .youtube {
+        background-position: -296px 2px;
+        background-size: 170px; }
+      body .footer .map .sitemap {
+        width: 100%;
+        border-top: 1px solid #fff; }
 
-59: 				background-position: -89px 3px;
-60: 				background-size: 240px;
-61: 			}
-62: 			.youtube{
-63: 				background-position: -180px 4px;
-64: 				background-size: 240px;x;
-65: 			}
-66: 		}
-67: 	}
-68: }
-69: .content{
+.content nav {
+  width: 100%;
+  height: 80px;
+  line-height: 80px; }
+  .content nav .logo {
+    display: inline-block;
+    float: left;
+    width: 80px;
+    margin-left: 3em;
+    padding-top: 8px; }
+    .content nav .logo img {
+      width: 70%; }
+  .content nav ul {
+    text-align: right;
+    margin: 0;
+    padding: 0; }
+    .content nav ul li {
+      padding: 0 1em;
+      display: inline-block;
+      text-decoration: none;
+      font-family: avenir;
+      font-size: 20px; }
+      .content nav ul li a {
+        color: #3E698B;
+        text-decoration: none; }
 
-Backtrace:
-styles/scss/home.scss:64
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:735:in `declaration_or_ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:685:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:666:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"...d-size: 240px;x\": expected \"{\", was \";\"\A         on line 64 of styles/scss/home.scss\A \A 59: 				background-position: -89px 3px;\A 60: 				background-size: 240px;\A 61: 			}\A 62: 			.youtube{\A 63: 				background-position: -180px 4px;\A 64: 				background-size: 240px;x;\A 65: 			}\A 66: 		}\A 67: 	}\A 68: }\A 69: .content{"; }
+.hero {
+  width: 100%;
+  height: 300px;
+  background: url("../assets/home/hero.jpg") no-repeat;
+  background-size: 100%;
+  text-align: center;
+  font-family: rounded;
+  padding-top: 17em;
+  position: absolute; }
+  @media only screen and (min-width: 1024px) and (max-width: 1280px) {
+    .hero {
+      padding-top: 12em; } }
+  .hero h1 {
+    font-size: 2em;
+    color: #3E698B; }
+  .hero h2 {
+    font-size: 1.5em;
+    color: #666; }
+
+.parallax {
+  height: 3500px;
+  background: url("../assets/home/iphone.png") no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 280px; }
+  .parallax #bloque-1 {
+    position: absolute;
+    top: 900px;
+    height: 1px;
+    width: 100%; }
+  .parallax #bloque-2 {
+    position: absolute;
+    top: 2000px;
+    height: 1px;
+    width: 100%; }
+  .parallax .static-iphone {
+    position: relative;
+    transition: opacity ease-in-out 0.6s;
+    overflow: hidden; }
+    @media only screen and (min-width: 1280px) and (max-width: 1280px) {
+      .parallax .static-iphone {
+        margin-top: -136%; } }
+  .parallax figure {
+    background: transparent; }
+
+.beat {
+  position: absolute; }
+  .beat .heart {
+    position: absolute;
+    width: 100px;
+    height: 90px; }
+  .beat .heart:before,
+  .beat .heart:after {
+    position: absolute;
+    content: "";
+    left: 11px;
+    top: 0;
+    width: 12px;
+    height: 21px;
+    background: #e14c4b;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+    -moz-transform-origin: 0 100%;
+    -ms-transform-origin: 0 100%;
+    -o-transform-origin: 0 100%;
+    transform-origin: 0 100%; }
+  .beat .heart:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+    -moz-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    -o-transform-origin: 100% 100%;
+    transform-origin: 100% 100%; }
+
+#screen-0 {
+  width: 100%;
+  height: 1300px;
+  background: url("../assets/home/screen-1.png") no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 280px; }
+  #screen-0 .beat {
+    top: 45%;
+    left: 27%; }
+
+.conocemos {
+  width: 100%;
+  height: 300px; }
+  .conocemos p {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    text-align: right;
+    font-family: rounded;
+    padding: 1em;
+    border-right: 2px solid #3e698b;
+    width: 350px;
+    color: #3e698b;
+    padding: 1em;
+    font-size: 1.5em; }
+    @media only screen and (min-width: 700px) and (max-width: 1281px) {
+      .conocemos p {
+        left: 8%;
+        top: 45%; } }
+  .conocemos .search {
+    background: url("../assets/home/glasses.png");
+    background-repeat: no-repeat;
+    transform: rotate(30deg);
+    background-size: 50%;
+    width: 60%;
+    height: 450px;
+    float: left; }
+    @media screen and (min-width: 1282px) {
+      .conocemos .search {
+        margin-top: 15%;
+        margin-left: -10%; } }
+    @media only screen and (min-width: 700px) and (max-width: 1281px) {
+      .conocemos .search {
+        margin-top: 50%;
+        margin-left: -9%; } }
+  .conocemos .certificate {
+    background: url("../assets/home/certificate.png");
+    background-repeat: no-repeat;
+    transform: rotate(30deg);
+    background-size: 100%;
+    width: 35%;
+    height: 550px;
+    margin-top: 5%;
+    margin-right: -5%;
+    float: right; }
+    @media only screen and (min-width: 700px) and (max-width: 1281px) {
+      .conocemos .certificate {
+        margin-top: 40%; } }
+
+#screen-1 {
+  width: 100%;
+  height: 2000px;
+  background: url("../assets/home/screen-2.png") no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 280px;
+  background-attachment: fixed;
+  margin-top: -900px;
+  opacity: 0; }
+  #screen-1 .acuerdo {
+    width: 100%;
+    height: 300px; }
+    #screen-1 .acuerdo p {
+      position: absolute;
+      top: 40%;
+      right: 18%;
+      font-family: rounded;
+      font-size: 28px;
+      width: 320px;
+      color: #3e698b;
+      padding: 1em; }
+      @media only screen and (min-width: 700px) and (max-width: 1281px) {
+        #screen-1 .acuerdo p {
+          right: 10%; } }
+    #screen-1 .acuerdo .post-it {
+      background: url("../assets/home/post-it.png");
+      background-repeat: no-repeat;
+      transform: rotate(30deg);
+      background-size: 100%;
+      width: 20%;
+      height: 450px;
+      margin-top: 40%;
+      margin-left: -22%;
+      float: left; }
+      @media only screen and (min-width: 800px) and (max-width: 1281px) {
+        #screen-1 .acuerdo .post-it {
+          margin-left: 0;
+          margin-top: 65%; } }
+    #screen-1 .acuerdo .agenda {
+      background: url("../assets/home/agenda.png");
+      background-repeat: no-repeat;
+      transform: rotate(5deg);
+      background-size: 100%;
+      width: 35%;
+      height: 500px;
+      margin-top: 45%;
+      margin-right: -40%;
+      float: right; }
+      @media only screen and (min-width: 700px) and (max-width: 1281px) {
+        #screen-1 .acuerdo .agenda {
+          width: 40%;
+          margin-right: -12%;
+          margin-top: 80%; } }
+
+#screen-2 {
+  width: 100%;
+  height: 1200px;
+  background: url("../assets/home/screen-3.png") no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 280px;
+  margin-top: -450px;
+  opacity: 0; }
+  #screen-2 .tratamiento {
+    width: 100%;
+    height: 300px; }
+    #screen-2 .tratamiento p {
+      position: absolute;
+      top: 20%;
+      left: 18%;
+      text-align: right;
+      font-family: rounded;
+      font-size: 28px;
+      width: 320px;
+      color: #3e698b;
+      padding: 1em; }
+      @media only screen and (min-width: 700px) and (max-width: 1281px) {
+        #screen-2 .tratamiento p {
+          left: 10%; } }
+    #screen-2 .tratamiento .radio {
+      background: url("../assets/home/radio.png");
+      background-repeat: no-repeat;
+      transform: rotate(10deg);
+      background-size: 100%;
+      width: 30%;
+      height: 550px;
+      margin-top: 30%;
+      margin-left: -27%;
+      float: left; }
+      @media only screen and (min-width: 800px) and (max-width: 1281px) {
+        #screen-2 .tratamiento .radio {
+          margin-left: -5%; } }
+    #screen-2 .tratamiento .receta {
+      background: url("../assets/home/prescription.png");
+      background-repeat: no-repeat;
+      transform: rotate(-80deg);
+      background-size: 100%;
+      width: 35%;
+      height: 550px;
+      margin-top: 5%;
+      margin-right: -45%;
+      float: right; }
+      @media only screen and (min-width: 800px) and (max-width: 1281px) {
+        #screen-2 .tratamiento .receta {
+          margin-right: -18%; } }
+
+/*ok*/
+
+/*# sourceMappingURL=home.css.map */

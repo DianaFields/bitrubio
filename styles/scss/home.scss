@@ -31,37 +31,53 @@ body{
 				width: 35%;
 				margin: 0 20px;
 				img{
-					width: 80%;
+					width: 70%;
 				}
 			}
 		}
 		.map{
 			width: 100%;
-			height: 60px;
+			height: 200px;
 			display: block;
 			background: $blue-bitrubio;
-			div{
-				width: 33%;
-				display: inline-block;
+			.top{
+				width: 100%;
+				line-height: 40px;
+
+				div{
+					display: inline-block;
+					width: 33%;
+				}
+				.contact{
+					a{
+						color: #fff;
+						text-decoration: none;
+					}
+				}
 			}
 			span{
 				display: inline-block;
-				width: 45px;
-				height: 45px;
+				width: 35px;
+				height: 35px;
 				background: url('../assets/home/redes.png');
+				    margin: 0 3%;
 			}
 			.facebook{
-				background-position: -12px 4px;
-				background-size: 240px;
+				background-position:-8px 3px;
+				background-size: 170px;
 
 			}
 			.twitter{
-				background-position: -89px 3px;
-				background-size: 240px;
+				background-position: -65px 3px;
+				background-size: 170px;
 			}
 			.youtube{
-				background-position: -180px 4px;
-				background-size: 240px;x;
+				background-position: -296px 2px;
+				background-size: 170px;
+			}
+			.sitemap{
+				width: 100%;
+				border-top: 1px solid #fff;
 			}
 		}
 	}
