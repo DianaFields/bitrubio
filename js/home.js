@@ -20,14 +20,15 @@ function homeInit() {
           })(jQuery);
         }
         var change = true;
-        var changea = true;
+        var changeAgain = true;
+
         function changeScreen(){
           $(window).scroll(function(){
             var showMessageInterval = window.setInterval(showMessageIfNeeded, 500);
             function showMessageIfNeeded() {
               var scrollTop = $(window).scrollTop();
               var firstScreen = $("#bloque-1").offset().top;
-              var secondScreen = $("#bloque-2").offset().top;
+               var secondScreen = $("#bloque-2").offset().top;
               if (scrollTop > firstScreen) {
                 if (change) {
                  $('#screen-1').css('opacity','1')
@@ -46,19 +47,19 @@ function homeInit() {
            }
     // 
     if (scrollTop > secondScreen) {
-      if (changea) {
+      if (changeAgain) {
        $('#screen-1').css('opacity','0')
        $('#screen-2').css('opacity','1')
        window.clearInterval(showMessageInterval);
-       changea = false;
+       changeAgain = false;
       }
     }
     if (scrollTop < secondScreen) {
-      if (changea == false) {
+      if (changeAgain == false) {
      $('#screen-2').css('opacity','0')
      $('#screen-1').css('opacity','1')
      window.clearInterval(showMessageInterval);
-     changea = true;
+     changeAgain = true;
     }
   }
 
