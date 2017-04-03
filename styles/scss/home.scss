@@ -296,7 +296,6 @@ body{
 	background-attachment: fixed;
 	background-size: 280px;
 	#bloque-1{
-		position: absolute;
 		top: 800px;
 		height: 1px;
 		width: 100%;
@@ -390,7 +389,7 @@ body{
 		font-family: rounded;
 		padding: 1em;
 		width: 250px;
-		color: #fff;
+		color: #086a8f;
 		padding: 1em;
 		font-size: 1.2em;
 		@media only screen and (min-width:700px) and (max-width: 1281px){
@@ -398,7 +397,7 @@ body{
 			top: 45%;
 		}
 		@media screen and (min-width: 1282px){
-			left: 27%;	
+			left: 26%;	
 			top: 55%;
 		}
 
@@ -410,21 +409,28 @@ body{
 			.talkbubble {
 			   width: 250px;
 			   height: 80px;
-			   background: #79b637;
+			   border: 1px solid #086a8f;
 			   position: relative;
-			   border-radius: 5px;
 
 			}
 			.talkbubble:before {
 			   content:"";
 			   position: absolute;
-			   left: 100%;
-			   top: 30px;
-			   width: 0;
-			   height: 0;
-			   border-top: 9px solid transparent;
-			   border-left: 18px solid #79b637;
-			   border-bottom: 9px solid transparent;
+			    left: 100%;
+			    top: 36px;
+			    width: 0;
+			    height: 0;
+			    border-top: 5px solid transparent;
+			    border-left: 7px solid #086a8f;
+			    border-bottom: 6px solid transparent;
+			}
+			.talkbubble:after{
+				content:'\00a0';
+				width: 3px;
+			    height: 100%;
+			    position: absolute;
+			    right: 0;
+			    background-color: #086a8f;
 			}
 	}
 		

@@ -239,7 +239,6 @@ body {
   background-attachment: fixed;
   background-size: 280px; }
   .parallax #bloque-1 {
-    position: absolute;
     top: 800px;
     height: 1px;
     width: 100%; }
@@ -319,7 +318,7 @@ body {
     font-family: rounded;
     padding: 1em;
     width: 250px;
-    color: #fff;
+    color: #086a8f;
     padding: 1em;
     font-size: 1.2em; }
     @media only screen and (min-width: 700px) and (max-width: 1281px) {
@@ -328,7 +327,7 @@ body {
         top: 45%; } }
     @media screen and (min-width: 1282px) {
       .conocemos p {
-        left: 27%;
+        left: 26%;
         top: 55%; } }
   .conocemos .tooltip {
     position: absolute;
@@ -337,19 +336,25 @@ body {
     .conocemos .tooltip .talkbubble {
       width: 250px;
       height: 80px;
-      background: #79b637;
-      position: relative;
-      border-radius: 5px; }
+      border: 1px solid #086a8f;
+      position: relative; }
     .conocemos .tooltip .talkbubble:before {
       content: "";
       position: absolute;
       left: 100%;
-      top: 30px;
+      top: 36px;
       width: 0;
       height: 0;
-      border-top: 9px solid transparent;
-      border-left: 18px solid #79b637;
-      border-bottom: 9px solid transparent; }
+      border-top: 5px solid transparent;
+      border-left: 7px solid #086a8f;
+      border-bottom: 6px solid transparent; }
+    .conocemos .tooltip .talkbubble:after {
+      content: '\00a0';
+      width: 3px;
+      height: 100%;
+      position: absolute;
+      right: 0;
+      background-color: #086a8f; }
   .conocemos .search {
     background: url("../assets/home/glasses.png");
     background-repeat: no-repeat;
