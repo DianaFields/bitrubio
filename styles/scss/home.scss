@@ -11,7 +11,6 @@ body{
 	margin: 0;
 	.footer{
 		width: 100%;
-		height: 150px;
 		background: #f2f2f2;
 		margin-bottom: 0;
 		text-align: center;
@@ -25,6 +24,7 @@ body{
 			width: 30%;
 			margin: 0 auto;
 			padding: 0;
+			margin-bottom: 2em;
 			li{
 				display: inline-block;
 				list-style: none;
@@ -54,13 +54,34 @@ body{
 						text-decoration: none;
 					}
 				}
+				.payment{
+					width: 33%;
+					height: 40px;
+					.microsoft, .visa{
+						display: inline-block;
+						width: 20%;
+						box-sizing: border-box;
+						height: 40px;
+						background:url('../assets/home/payment.png');
+						background-repeat: no-repeat;
+						background-size: 155%;
+						vertical-align: top;
+					}
+					.microsoft{
+						background-position: -70px 9px;
+					}
+					.visa{
+						background-position:34px 9px;
+					}
+				}
 			}
 			span{
 				display: inline-block;
 				width: 35px;
 				height: 35px;
 				background: url('../assets/home/redes.png');
-				    margin: 0 3%;
+				margin: 0 3%;
+				vertical-align: middle;
 			}
 			.facebook{
 				background-position:-8px 3px;
@@ -81,6 +102,126 @@ body{
 			}
 		}
 	}
+	@-webkit-keyframes fade {
+  			0% { opacity: 0; }
+  			30% { opacity: .5; }
+  			50% { opacity: .8; }
+			85% { opacity: 1; }
+	  		100% {opacity: 0; } 
+	}
+
+    @-webkit-keyframes pulse-face {
+  		0% {
+  			transform: scale(0);
+		    -webkit-transform: scale(0);
+		    opacity: 0; 
+		}
+		  50% {
+		  	transform: scale(.5);
+		    -webkit-transform: scale(.5);
+		    opacity: .7; }
+		  85% {
+		  	transform: scale(1.5); 
+		    -webkit-transform: scale(1.5);
+		     opacity: 1; }
+
+		  100% {
+		  	transform: scale(.5);
+		    opacity: 0; 
+		} 
+	}
+
+	.mapa{
+		position: relative;
+		width: 100%;
+		height: 500px;
+		background-image: url('../assets/home/map.png');
+		background-size: 40%;
+		background-repeat: no-repeat;
+		background-position: center;
+		.face{
+			width: 50px;
+			height:50px;
+		}
+		.face-small{
+			width: 40px;
+			height:40px;
+		}
+		.face, .face-small{
+			position: absolute;
+			background-size: 100%;
+			border:1px solid #086a8f;
+			border-radius: 70%;
+			
+			.animate{
+				content:'\00a0';
+				border-radius: 50%;
+   			 	position: absolute;
+   			 	width: 100%; 
+					height: 100%;
+					-webkit-animation-duration:5s;
+					-moz-animation-duration: 5s;
+					-ms-animation-duration: 5s;
+					-o-animation-duration: 5s;
+					animation-duration: 5s;
+					-webkit-animation-timing-function: ease;
+					-moz-animation-timing-function: ease;
+					-ms-animation-timing-function: ease;
+					-o-animation-timing-function: ease;
+					animation-timing-function: ease;
+					animation: fade 5s infinite;
+					-webkit-animation: fade 5s infinite;
+
+				span{
+					display: block;
+					width: 100%;
+					height: 100%;
+					border:1px solid #44c1a5;
+				    border-radius: 50%;
+				    margin-left: -1px;
+    				margin-top: -1px;
+					animation: pulse-face 5s infinite;
+					-webkit-animation: pulse-face 5s infinite;	
+				}
+			}
+		}
+		.face-1{
+			background-image: url('../assets/home/doctors/face-1.jpg');
+			top: 40%;
+    		left: 35%;
+		}
+		.face-2{
+			background-image: url('../assets/home/doctors/face-2.jpg');
+			top: 50%;
+    		left: 45%;
+		}
+		.face-3{
+			background-image: url('../assets/home/doctors/face-3.jpg');
+			top: 50%;
+    		left: 57%;
+		}
+		.pin-small, .pin{
+			position: absolute;
+			background-image: url('../assets/home/pin-hospital.png');
+			background-size: 100%;
+		}
+		.pin{
+			width: 50px;
+			height: 50px;
+		}
+		.pin-small{
+			width: 30px;
+			height: 30px;
+		}
+		.pin-hospital{
+			top: 60%;
+    		left: 40%;
+		}
+		.pin-hospital2{
+			top: 40%;
+    		left: 60%;
+		}
+	}
 }
 .content{
 	nav{
@@ -92,15 +233,18 @@ body{
 			float: left;
 			width: 80px;
 			margin-left: 3em;
-			padding-top: 8px;
+			padding-top: 6px;
+			height: 100%;
+    		box-sizing: border-box;
 			img{
-				width: 70%;
+				width: 80%;
 			}
 		}
 		ul{
 			text-align: right;
 			margin:0;
 			padding:0;
+			margin-right: 50px;
 			li{
 				padding: 0 1em;
 				display: inline-block;
@@ -119,7 +263,7 @@ body{
 }
 .hero{
 	width: 100%;
-	height: 300px;
+	height: 450px;
 	background: url('../assets/home/hero.jpg')no-repeat;
 	background-size: 100%;
 	text-align: center;
@@ -129,6 +273,11 @@ body{
 	@media only screen and (min-width: 1024px) and (max-width: 1280px){
 		padding-top: 12em;
 	}
+	
+	@media screen and (min-width: 1282px){
+		padding-top: 16em;
+	}
+
 	h1{
 		font-size: 2em;
 		color:$blue-bitrubio;
@@ -148,14 +297,14 @@ body{
 	background-size: 280px;
 	#bloque-1{
 		position: absolute;
-		top: 900px;
+		top: 800px;
 		height: 1px;
 		width: 100%;
 	}
 
 	#bloque-2{
 		position: absolute;
-		top: 2000px;
+		top: 1700px;
 		height: 1px;
 		width: 100%;
 
@@ -221,7 +370,6 @@ body{
 
 #screen-0{ 
 	width: 100%;
-	height: 1300px;
 	background: url('../assets/home/screen-1.png')no-repeat;
 	background-position:center;
 	background-repeat: no-repeat;
@@ -237,20 +385,49 @@ body{
 	p{
 		position: absolute;
 		top: 20%;
-		left: 18%;
-		text-align: right;
+		left: 5%;
+		text-align: left;
 		font-family: rounded;
 		padding: 1em;
-		border-right: 2px solid #3e698b;
-		width: 350px;
-		color: #3e698b;
+		width: 250px;
+		color: #fff;
 		padding: 1em;
-		font-size: 1.5em;
+		font-size: 1.2em;
 		@media only screen and (min-width:700px) and (max-width: 1281px){
 			left: 8%;	
 			top: 45%;
 		}
+		@media screen and (min-width: 1282px){
+			left: 27%;	
+			top: 55%;
+		}
+
 	}
+	.tooltip{
+		position: absolute;
+		top: 56.2%;
+		left:25%;
+			.talkbubble {
+			   width: 250px;
+			   height: 80px;
+			   background: #79b637;
+			   position: relative;
+			   border-radius: 5px;
+
+			}
+			.talkbubble:before {
+			   content:"";
+			   position: absolute;
+			   left: 100%;
+			   top: 30px;
+			   width: 0;
+			   height: 0;
+			   border-top: 9px solid transparent;
+			   border-left: 18px solid #79b637;
+			   border-bottom: 9px solid transparent;
+			}
+	}
+		
 	.search{
 		background: url('../assets/home/glasses.png');
 		background-repeat: no-repeat;
@@ -260,7 +437,7 @@ body{
 		height: 450px;
 		float: left;
 		@media screen and (min-width:1282px){
-			margin-top: 15%;
+			margin-top:63%;
 			margin-left: -10%;	
 		}
 		@media only screen and (min-width:700px) and (max-width: 1281px){
@@ -281,6 +458,26 @@ body{
 		@media only screen and (min-width:700px) and (max-width: 1281px){
 			margin-top: 40%;	
 		}
+		@media screen and (min-width:1282px){
+			margin-top:30%;
+		}
+	}
+	.card{
+		background: url('../assets/home/card.png');
+		background-repeat: no-repeat;
+		transform: rotate(30deg);
+		background-size: 20%;
+		width: 80%;
+		height: 550px;
+		margin-right: 5%;
+		float: right;
+		@media only screen and (min-width:700px) and (max-width: 1281px){
+			margin-top: 40%;	
+		}
+		@media screen and (min-width:1282px){
+			margin-top: -5%;
+			margin-right: -60%;
+		}
 	}
 }
 
@@ -292,7 +489,7 @@ body{
 	background-repeat: no-repeat;
 	background-size: 280px;
 	background-attachment: fixed;
-	margin-top: -900px;
+	margin-top: -950px;
 	opacity: 0;
 	.acuerdo{
 		width: 100%;
@@ -309,6 +506,9 @@ body{
 			@media only screen and (min-width:700px) and (max-width: 1281px){
 				right: 10%;	
 			}
+			@media screen and (min-width:1282px){
+				top:46%;
+			}
 		}
 		.post-it{
 			background: url('../assets/home/post-it.png');
@@ -323,6 +523,10 @@ body{
 			@media only screen and (min-width:800px) and (max-width: 1281px){
 				margin-left: 0;
 				margin-top: 65%;
+			}
+			@media screen and (min-width:1282px){
+				margin-top: 60%;
+				margin-left: 3%;
 			}
 		}
 		.agenda{
@@ -340,17 +544,21 @@ body{
 				margin-right: -12%;	
 				margin-top: 80%;
 			}
+			@media screen and (min-width:1282px){
+				margin-top: 65%;
+				margin-right: -10%;
+			}
 		}
 	}
 }
 #screen-2{
 	width: 100%;
-	height: 1200px;
+	height: 1700px;
 	background: url('../assets/home/screen-3.png')no-repeat;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 280px;
-	margin-top: -450px;
+	margin-top: -820px;
 	opacity: 0;
 	.tratamiento{
 		width: 100%;
@@ -382,6 +590,9 @@ body{
 			@media only screen and (min-width:800px) and (max-width: 1281px){
 				margin-left: -5%;
 			}
+			@media screen and (min-width:1282px){
+				margin-left: -5%;
+			}
 		}
 		.receta{
 			background: url('../assets/home/prescription.png');
@@ -396,6 +607,36 @@ body{
 			@media only screen and (min-width:800px) and (max-width: 1281px){
 				margin-right: -18%;
 			}
+			@media screen and (min-width:1282px){
+				margin-right: -15%;
+			}
+		}
+		.pills{
+			background: url('../assets/home/pills.jpg');
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 35%;
+			height: 550px;
+			margin-top: 30%;
+			margin-right: -45%;
+			float: right;
+			@media only screen and (min-width:800px) and (max-width: 1281px){
+				margin-right: -18%;
+			}
+			@media screen and (min-width:1282px){
+				margin-right: -25%;
+			}
+		}
+		.pill{
+			background: url('../assets/home/pill.png');
+			background-repeat: no-repeat;
+			background-size: 100%;
+			width: 125px;
+			height: 125px;
+			margin-top: 50%;
+			margin-right: -20%;
+			float: right;
+			
 		}
 	}
 

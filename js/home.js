@@ -16,11 +16,11 @@ function homeInit() {
           $(window).scroll(function(){
             // fixed
              var height = $(window).scrollTop();
-            if (height  < 430){
+            if (height  < 330){
               $('.stop').css('background-attachment', 'inherit');
               $('.parallax').css('background-attachment', 'inherit');
             }
-            else if(height  > 430) {
+            else if(height  > 330) {
               $('.stop').css('background-attachment', 'fixed');
               $('.parallax').css('background-attachment', 'fixed');
             }
