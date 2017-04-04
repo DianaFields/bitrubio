@@ -22,7 +22,7 @@ function homeInit() {
               $('.stop').css('background-attachment', 'fixed');
               $('.parallax').css('background-attachment', 'fixed');
             }
-            if (height  > 4500){
+            if (height  > 4000){
               $('.stop').css('background-attachment', 'inherit');
               $('.parallax').css('background-attachment', 'inherit');
             }
@@ -73,14 +73,16 @@ function homeInit() {
       if (changeTwice) {
        $('#screen-2').css('opacity','0')
        $('#screen-3').css('opacity','1')
+       // $('video')[0].play();
        window.clearInterval(showMessageInterval);
        changeTwice = false;
       }
     }
-    if (scrollTop < videoScreen) {
+    if (scrollTop < videoScreen & scrollTop > secondScreen)  {
       if (changeTwice == false) {
      $('#screen-3').css('opacity','0')
      $('#screen-2').css('opacity','1')
+
      window.clearInterval(showMessageInterval);
      changeTwice = true;
     }

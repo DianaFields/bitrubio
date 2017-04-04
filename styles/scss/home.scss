@@ -324,21 +324,24 @@ body{
 	background-attachment: fixed;
 	background-size: 280px;
 	#bloque-1{
+		top: 700px;
 		height: 1px;
 		width: 100%;
+		background: green;
 	}
 	#bloque-2{
 		position: absolute;
 		top: 1700px;
 		height: 1px;
 		width: 100%;
+		background: red;
 	}
 	#bloque-3{
 		position: absolute;
-		top: 3200px;
+		top: 2500px;
 		height: 1px;
 		width: 100%;
-		background:red;
+		background: blue;
 	}
 	.static-iphone{
 		position: relative;
@@ -356,7 +359,7 @@ body{
 			height: 3800px;
 	}
 	@media only screen and (min-width:1170px) and (max-width:1281px){
-		height: 3200px;
+		height: 3300px;
 	}
 
 }
@@ -618,7 +621,7 @@ body{
 			padding: 1em;
 			@media only screen and (min-width:1170px) and (max-width: 1281px){
 				right: -3%;	
-				top: -25%;
+				top: -45%;
 			}
 			@media screen and (min-width:1282px){
 				margin-top:10%;
@@ -664,7 +667,7 @@ body{
 		}
 			@media only screen and (min-width:1170px) and (max-width: 1281px){
 			right: 16%;
-			top: 55%;
+			top: 45%;
 		}
 			@media screen and (min-width: 1282px){
 			top: 35%;
@@ -729,7 +732,7 @@ body{
 }
 #screen-2{
 	width: 100%;
-	height: 3500px;
+	height: 1500px;
 	background: url('../assets/home/screen-3.png')no-repeat;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -819,7 +822,7 @@ body{
 			}
 			@media only screen and (min-width:1170px) and (max-width: 1281px){
 			right: 16%;
-			top: 50%;
+			top: 20%;
 			}
 			@media screen and (min-width:1282px){
 			left: 25%;
@@ -850,7 +853,7 @@ body{
 			}
 			@media only screen and (min-width:1170px) and (max-width: 1281px){
 				    margin-left: -9%;
-    				margin-top: 160%;
+    				margin-top: 80%;
 			}
 			@media screen and (min-width:1282px){
 				margin-left: -5%;
@@ -875,7 +878,7 @@ body{
 			}
 			@media only screen and (min-width:1170px) and (max-width: 1281px){
 				margin-right: -18%;
-				margin-top:105%;
+				margin-top:60%;
 			}
 			@media screen and (min-width:1282px){
 				margin-right: -15%;
@@ -900,7 +903,7 @@ body{
 			}
 			@media only screen and (min-width:1170px) and (max-width: 1281px){
 				margin-right: -20%;
-				margin-top:137%;
+				margin-top:90%;
 			}
 			@media screen and (min-width:1282px){
 				margin-right: -25%;
@@ -921,7 +924,7 @@ body{
 			}
 			@media only screen and (min-width:1025px) and (max-width: 1169px){
 				margin-right: -21%;
-				margin-top:145%;
+				top:70%;
 			}
 			@media only screen and (min-width:1170px) and (max-width:1282px){
 				margin-top: 150%;
@@ -932,13 +935,93 @@ body{
 }
 #screen-3{
 	width: 100%;
-	height: 2500px;
-	/*background: url('../assets/iphone.gif');*/
+	height: 600px;
+	// background: red;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 280px;
 	margin-top: -500px;
 	opacity: 0;
+	text-align: center;
+		video{
+			width: 290px;
+		}
+	p{
+			position: absolute;
+			top: 20%;
+			left: 18%;
+			text-align: left;
+			font-family: rounded;
+			font-size: 1.2em;
+			width: 300px;
+			color: #3e698b;
+			padding: 1em;
+			@media only screen and (min-width: 768px) and (max-width: 1024px){
+			    top: -21%;
+			    left: 3%;
+			}
+			@media only screen and (min-width:1025px) and (max-width: 1169px){
+			left: 0;
+			top: -13%;
+			}
+			@media only screen and (min-width:1170px) and (max-width: 1281px){
+				left: 0%;
+			    width: 200px;
+			    top: -19%;
+			}
+			@media screen and (min-width:1282px) {
+				left: 10%;
+			    width: 200px;
+			    top: -23%;
+			}
+		}
+	.tooltip{
+		position: absolute;
+		top: 56.2%;
+		left:16%;
+			.talkbubble {
+			   width: 270px;
+			   height: 80px;
+			   border: 1px solid #086a8f;
+			   position: relative;
+
+			}
+			.talkbubble:before {
+			   content:"";
+			   position: absolute;
+			    left: 100%;
+			    top: 36px;
+			    width: 0;
+			    height: 0;
+			    border-top: 5px solid transparent;
+			    border-left: 7px solid #086a8f;
+			    border-bottom: 6px solid transparent;
+			}
+			.talkbubble:after{
+				content:'\00a0';
+				width: 3px;
+			    height: 100%;
+			    position: absolute;
+			    right: 0;
+			    background-color: #086a8f;
+			}
+			@media only screen and (min-width: 768px) and (max-width: 1024px){
+				top: 54.2%;
+    			left: 6%;
+			}
+			@media only screen and (min-width:1025px) and (max-width: 1169px){
+			    margin-left: -3%;
+    			margin-top: 81%;
+			}
+			@media only screen and (min-width:1170px) and (max-width: 1281px){
+			right: 16%;
+			top: 10%;
+			}
+			@media screen and (min-width:1282px){
+			left: 25%;
+			top: 10%;
+			}
+	}
 }
 /*ok*/
 
