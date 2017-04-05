@@ -11,7 +11,7 @@ function homeInit() {
         var changeTwice = true;
 
         function changeScreen(){
-          $('#screen-0').css('padding-top', '200px');
+          $('#screen-0').css('padding-top', '250px');
           $('.conocer').css('margin-top', '2.5em');
           $(window).scroll(function(){
             // fixed
@@ -29,11 +29,13 @@ function homeInit() {
               $('.tools').css('background-attachment', 'fixed');
               $('#screen-0').css('padding-top', '0');
                $('.conocer').css('margin-top', '0');
+                $('#screen-3').css('top', 'inherit');
               
             }
-            if (height  > 3600){
+            if (height  > 3300){
               $('.stop').css('position', 'inherit');
               $('.parallax').css('background-attachment', 'inherit');
+              $('#screen-3').css('top', '-35%');
             }
             // fixed
 
