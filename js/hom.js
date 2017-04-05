@@ -11,21 +11,28 @@ function homeInit() {
         var changeTwice = true;
 
         function changeScreen(){
+          $('#screen-0').css('padding-top', '200px');
+          $('.conocer').css('margin-top', '2.5em');
           $(window).scroll(function(){
             // fixed
              var height = $(window).scrollTop();
-            if (height  < 330){
-              $('.stop').css('background-attachment', 'inherit');
+         
+            if (height  < 250){
+              $('.stop').css('position', 'inherit');
               $('.parallax').css('background-attachment', 'inherit');
-              $('.tools').css('background-attachment', 'inherit');
+              $('#screen-0').css('padding-top', '250px');
+               $('.conocer').css('margin-top', '3em');
             }
-            else if(height  > 330) {
-              $('.stop').css('background-attachment', 'fixed');
+            else if(height  > 250) {
+              $('.stop').css('position', 'fixed');
               $('.parallax').css('background-attachment', 'fixed');
               $('.tools').css('background-attachment', 'fixed');
+              $('#screen-0').css('padding-top', '0');
+               $('.conocer').css('margin-top', '0');
+              
             }
             if (height  > 3600){
-              $('.stop').css('background-attachment', 'inherit');
+              $('.stop').css('position', 'inherit');
               $('.parallax').css('background-attachment', 'inherit');
             }
             // fixed
@@ -39,7 +46,7 @@ function homeInit() {
               var videoScreen = $("#bloque-3").offset().top;
               if (scrollTop > 700) {
                 if (change) {
-                  // $('#screen-0').css('opacity','0');
+                  $('#screen-0').css('opacity','0');
                   $('#screen-1').css('opacity','1');
                   $('.talkbubble-1').css('opacity','1');
                  window.clearInterval(showMessageInterval);

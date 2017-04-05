@@ -259,26 +259,46 @@ body {
 .parallax {
   position: relative;
   background-position: center;
-  background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 280px; }
   .parallax #bloque-1 {
     top: 700px;
     height: 1px;
     width: 100%;
-    background: green; }
+    background-color: red; }
+    @media screen and (max-width: 767px) {
+      .parallax #bloque-1 {
+        top: 200px; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .parallax #bloque-1 {
+        top: 400px; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1285px) {
+      .parallax #bloque-1 {
+        top: 500px; } }
   .parallax #bloque-2 {
     position: absolute;
     top: 1700px;
     height: 1px;
     width: 100%;
-    background: red; }
+    background-color: blue; }
+    @media screen and (max-width: 767px) {
+      .parallax #bloque-2 {
+        top: 900px; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .parallax #bloque-2 {
+        top: 600px; } }
   .parallax #bloque-3 {
     position: absolute;
     top: 2500px;
     height: 1px;
     width: 100%;
-    background: blue; }
+    background-color: red; }
+    @media screen and (max-width: 767px) {
+      .parallax #bloque-3 {
+        top: 1000px; } }
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+      .parallax #bloque-3 {
+        top: 1000px; } }
   .parallax .static-iphone {
     position: relative;
     transition: opacity ease-in 0.3s;
@@ -286,10 +306,10 @@ body {
     overflow: hidden; }
   .parallax figure {
     background: transparent; }
-  @media screen and (min-width: 1282px) {
+  @media only screen and (min-width: 1170px) and (max-width: 1286px) {
     .parallax {
-      height: 3800px; } }
-  @media only screen and (min-width: 1170px) and (max-width: 1281px) {
+      height: 3500px; } }
+  @media screen and (min-width: 1287px) {
     .parallax {
       height: 3300px; } }
 
@@ -337,17 +357,19 @@ body {
   width: 100%;
   background: url("../assets/home/screen-1.png") no-repeat;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: 280px; }
-  #screen-0 .beat {
-    top: 45%;
-    left: 27%; }
   @media screen and (max-width: 767px) {
     #screen-0 {
-      background-size: 230px; } }
+      background-size: 230px;
+      background-position-x: 50%;
+      background-position-y: 25%;
+      min-height: 568px; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {
     #screen-0 {
-      height: 1300px; } }
+      height: 1000px; } }
+  @media only screen and (min-width: 1024px) and (max-width: 1169px) {
+    #screen-0 {
+      height: 1400px; } }
   @media only screen and (min-width: 1170px) and (max-width: 1280px) {
     #screen-0 {
       margin-top: -5%; } }
@@ -504,14 +526,21 @@ body {
   height: 3000px;
   background: url("../assets/home/screen-2.png") no-repeat;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: 280px;
   background-attachment: fixed;
   margin-top: -1000px;
   opacity: 0; }
   @media screen and (max-width: 767px) {
     #screen-1 {
-      background-size: 230px; } }
+      background-size: 230px;
+      min-height: 568px;
+      height: inherit;
+      background-position-x: 50%;
+      background-position-y: 25%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    #screen-1 {
+      height: 2500px;
+      margin-top: -1000px; } }
   @media only screen and (min-width: 1140px) and (max-width: 1169px) {
     #screen-1 {
       height: 2800px; } }
@@ -566,12 +595,13 @@ body {
           right: 8%; } }
       @media only screen and (min-width: 1025px) and (max-width: 1169px) {
         #screen-1 .acuerdo .tooltip {
-          right: 14%; } }
-      @media only screen and (min-width: 1170px) and (max-width: 1281px) {
+          right: 10%;
+          top: 25%; } }
+      @media only screen and (min-width: 1170px) and (max-width: 1285px) {
         #screen-1 .acuerdo .tooltip {
           right: 16%;
-          top: 45%; } }
-      @media screen and (min-width: 1282px) {
+          top: 30%; } }
+      @media screen and (min-width: 1286px) {
         #screen-1 .acuerdo .tooltip {
           top: 35%; } }
     #screen-1 .acuerdo .post-it {
@@ -590,13 +620,13 @@ body {
           margin-left: 8%; } }
       @media only screen and (min-width: 1025px) and (max-width: 1169px) {
         #screen-1 .acuerdo .post-it {
-          margin-top: 110%;
+          margin-top: 90%;
           margin-left: 15%; } }
-      @media only screen and (min-width: 1170px) and (max-width: 1281px) {
+      @media only screen and (min-width: 1170px) and (max-width: 1285px) {
         #screen-1 .acuerdo .post-it {
           margin-left: 0;
           margin-top: 100%; } }
-      @media screen and (min-width: 1282px) {
+      @media screen and (min-width: 1286px) {
         #screen-1 .acuerdo .post-it {
           margin-top: 60%;
           margin-left: 3%; } }
@@ -617,7 +647,7 @@ body {
       @media only screen and (min-width: 1025px) and (max-width: 1169px) {
         #screen-1 .acuerdo .agenda {
           margin-right: -5%;
-          margin-top: 155%; } }
+          margin-top: 90%; } }
       @media only screen and (min-width: 1170px) and (max-width: 1281px) {
         #screen-1 .acuerdo .agenda {
           width: 40%;
@@ -639,18 +669,25 @@ body {
   opacity: 0; }
   @media screen and (max-width: 767px) {
     #screen-2 {
-      background-size: 230px; } }
-  @media only screen and (min-width: 760px) and (max-width: 1024px) {
+      min-height: 568px;
+      background-size: 230px;
+      background-position-x: 50%;
+      background-position-y: 25%; } }
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     #screen-2 {
-      height: 3000px;
-      margin-top: -3500px; } }
+      height: 1300px;
+      margin-top: -500px; } }
   @media only screen and (min-width: 1140px) and (max-width: 1169px) {
     #screen-2 {
       height: 2800px;
       margin-top: -2500px; } }
-  @media screen and (min-width: 1282px) {
+  @media only screen and (min-width: 1170px) and (max-width: 1285px) {
     #screen-2 {
-      height: 2000px; } }
+      height: 1700px; } }
+  @media screen and (min-width: 1286px) {
+    #screen-2 {
+      height: 1500px;
+      margin-top: -1620px; } }
   #screen-2 p {
     position: absolute;
     top: 20%;
@@ -711,13 +748,13 @@ body {
         left: 6%; } }
     @media only screen and (min-width: 1025px) and (max-width: 1169px) {
       #screen-2 .tooltip {
-        margin-left: -3%;
-        margin-top: 81%; } }
+        margin-left: -8%;
+        margin-top: -10%; } }
     @media only screen and (min-width: 1170px) and (max-width: 1281px) {
       #screen-2 .tooltip {
         right: 16%;
         top: 20%; } }
-    @media screen and (min-width: 1282px) {
+    @media screen and (min-width: 1286px) {
       #screen-2 .tooltip {
         left: 25%;
         top: 10%; } }
@@ -741,7 +778,7 @@ body {
       @media only screen and (min-width: 1025px) and (max-width: 1169px) {
         #screen-2 .tratamiento .radio {
           margin-left: -7%;
-          margin-top: 164%; } }
+          margin-top: 90%; } }
       @media only screen and (min-width: 1170px) and (max-width: 1281px) {
         #screen-2 .tratamiento .radio {
           margin-left: -9%;
@@ -762,12 +799,12 @@ body {
       @media only screen and (min-width: 1025px) and (max-width: 1169px) {
         #screen-2 .tratamiento .receta {
           margin-right: -21%;
-          margin-top: 155%; } }
-      @media only screen and (min-width: 1170px) and (max-width: 1281px) {
+          margin-top: 45%; } }
+      @media only screen and (min-width: 1170px) and (max-width: 1285px) {
         #screen-2 .tratamiento .receta {
           margin-right: -18%;
           margin-top: 60%; } }
-      @media screen and (min-width: 1282px) {
+      @media screen and (min-width: 1286px) {
         #screen-2 .tratamiento .receta {
           margin-right: -15%; } }
     #screen-2 .tratamiento .pills {
@@ -786,7 +823,7 @@ body {
       @media only screen and (min-width: 1025px) and (max-width: 1169px) {
         #screen-2 .tratamiento .pills {
           margin-right: -20%;
-          margin-top: 185%; } }
+          margin-top: 90%; } }
       @media only screen and (min-width: 1170px) and (max-width: 1281px) {
         #screen-2 .tratamiento .pills {
           margin-right: -20%;
@@ -818,12 +855,21 @@ body {
 #screen-3 {
   width: 100%;
   height: 600px;
+  /*background: url('../assets/home/iphone.png');*/
   background-position: center;
   background-repeat: no-repeat;
   background-size: 280px;
   margin-top: -500px;
   opacity: 0;
   text-align: center; }
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    #screen-3 {
+      height: 1000px;
+      margin-top: -10%; } }
+  @media screen and (min-width: 1286px) {
+    #screen-3 {
+      height: 1000px;
+      margin-top: -40%; } }
   #screen-3 video {
     width: 290px; }
   #screen-3 p {
@@ -844,12 +890,12 @@ body {
       #screen-3 p {
         left: 0;
         top: -13%; } }
-    @media only screen and (min-width: 1170px) and (max-width: 1281px) {
+    @media only screen and (min-width: 1170px) and (max-width: 1285px) {
       #screen-3 p {
         left: 0%;
         width: 200px;
         top: -19%; } }
-    @media screen and (min-width: 1282px) {
+    @media screen and (min-width: 1286px) {
       #screen-3 p {
         left: 10%;
         width: 200px;

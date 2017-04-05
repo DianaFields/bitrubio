@@ -317,31 +317,49 @@ body{
 }
 .parallax{
 	position: relative;
-	
-	// background: url('../assets/home/iphone.png')no-repeat;
 	background-position: center;
-	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: 280px;
 	#bloque-1{
 		top: 700px;
 		height: 1px;
 		width: 100%;
-		background: green;
+		background-color: red;
+		@media screen and (max-width:767px){
+		    	top:200px;
+			}
+			@media only screen and (min-width:768px) and (max-width:1024px){
+		    	top:400px;
+			}
+			@media only screen and (min-width:1025px) and (max-width:1285px){
+		    	top:500px;
+			}
 	}
 	#bloque-2{
 		position: absolute;
 		top: 1700px;
 		height: 1px;
 		width: 100%;
-		background: red;
+		background-color: blue;
+		@media  screen and (max-width:767px){
+		    	top:900px;
+			}
+		@media only screen and (min-width:768px) and (max-width:1024px){
+		    	top:600px;
+			}
 	}
 	#bloque-3{
 		position: absolute;
 		top: 2500px;
 		height: 1px;
 		width: 100%;
-		background: blue;
+		background-color: red;
+			@media  screen and (max-width:767px){
+		    	top:1000px;
+			}
+		@media only screen and (min-width:768px) and (max-width:1024px){
+		   	top:1000px;
+			}
 	}
 	.static-iphone{
 		position: relative;
@@ -355,10 +373,10 @@ body{
 	figure{
 		background: transparent;
 	}
-	@media screen and (min-width:1282px){
-			height: 3800px;
+	@media only screen and (min-width:1170px) and (max-width:1286px){
+		height: 3500px;
 	}
-	@media only screen and (min-width:1170px) and (max-width:1281px){
+	@media screen and (min-width:1287px) {
 		height: 3300px;
 	}
 
@@ -413,20 +431,26 @@ body{
 	width: 100%;
 	background: url('../assets/home/screen-1.png')no-repeat;
 	background-position:center;
-	background-repeat: no-repeat;
 	background-size: 280px;
-		.beat{
-		top: 45%;
-		left: 27%;
-	}
+
 	@media screen and (max-width: 767px){
 		background-size: 230px;
+		background-position-x: 50%;
+		background-position-y: 25%;
+		min-height: 568px;
 	}
+
 	@media only screen and (min-width:768px) and (max-width:1024px){
-	    height: 1300px;
+	    height: 1000px;
+	}
+	@media only screen and (min-width:1024px) and (max-width:1169px){
+	    height: 1400px;
 	}
 	@media only screen and (min-width:1170px) and (max-width:1280px){
 		    margin-top: -5%;
+	}
+	@media only screen and (min-width:1281px) and (max-width:1285px){
+
 	}
 }
 .conocemos{
@@ -596,14 +620,23 @@ body{
 	height: 3000px;
 	background: url('../assets/home/screen-2.png')no-repeat;
 	background-position: center;
-	background-repeat: no-repeat;
 	background-size: 280px;
 	background-attachment: fixed;
 	margin-top: -1000px;
 	opacity: 0;
 	@media screen and (max-width: 767px){
 		background-size: 230px;
+	min-height: 568px;
+	height: inherit;
+		background-position-x: 50%;
+		background-position-y: 25%;
 	}
+	@media only screen 
+	and (min-device-width : 768px) 
+	and (max-device-width : 1024px) {
+			height: 2500px;
+		margin-top: -1000px;
+		}
 	@media only screen and (min-width:1140px) and (max-width: 1169px){
 		height: 2800px;
 		}
@@ -662,14 +695,14 @@ body{
 				    right: 8%;
 			}
 			@media only screen and (min-width:1025px) and (max-width: 1169px){
-			right: 14%;
-		
+			right: 10%;
+			top:25%;
 		}
-			@media only screen and (min-width:1170px) and (max-width: 1281px){
+			@media only screen and (min-width:1170px) and (max-width: 1285px){
 			right: 16%;
-			top: 45%;
+			top: 30%;
 		}
-			@media screen and (min-width: 1282px){
+			@media screen and (min-width: 1286px){
 			top: 35%;
 		}
 	}
@@ -688,14 +721,15 @@ body{
     			margin-left: 8%;
 			}
 			@media only screen and (min-width:1025px) and (max-width: 1169px){
-				  margin-top: 110%;
+				  margin-top: 90%;
     			margin-left: 15%;
 			}
-			@media only screen and (min-width:1170px) and (max-width: 1281px){
+
+			@media only screen and (min-width:1170px) and (max-width: 1285px){
 				margin-left: 0;
 				margin-top: 100%;
 			}
-			@media screen and (min-width:1282px){
+			@media screen and (min-width:1286px){
 				margin-top: 60%;
 				margin-left: 3%;
 			}
@@ -714,9 +748,10 @@ body{
 				margin-top: 75%;
     			margin-right: -9%;
 			}
+
 			@media only screen and (min-width:1025px) and (max-width: 1169px){
 			    margin-right: -5%;
-    			margin-top: 155%;
+    			margin-top: 90%;
 		}
 			@media only screen and (min-width:1170px) and (max-width: 1281px){
 				width: 40%;
@@ -740,18 +775,27 @@ body{
 	margin-top: -1500px;
 	opacity: 0;
 		@media screen and (max-width: 767px){
+			min-height: 568px;
 				background-size: 230px;
+				background-position-x: 50%;
+background-position-y: 25%;
 			}
-		@media only screen and (min-width:760px) and (max-width: 1024px){
-			height: 3000px;
-			margin-top: -3500px;
+		@media only screen 
+		and (min-device-width : 768px) 
+		and (max-device-width : 1024px) {
+			height: 1300px;
+			margin-top: -500px;
 		}
 		@media only screen and (min-width:1140px) and (max-width: 1169px){
 			height: 2800px;
 			margin-top: -2500px;
 		}
-		@media screen and (min-width:1282px) {
-			height: 2000px;
+		@media only screen and (min-width:1170px) and (max-width: 1285px) {
+			height: 1700px;
+		}
+		@media screen and (min-width:1286px) {
+			height: 1500px;
+			margin-top:-1620px;
 		}
 	p{
 			position: absolute;
@@ -817,14 +861,15 @@ body{
     			left: 6%;
 			}
 			@media only screen and (min-width:1025px) and (max-width: 1169px){
-			    margin-left: -3%;
-    			margin-top: 81%;
+			    margin-left: -8%;
+    			margin-top: -10%;
 			}
 			@media only screen and (min-width:1170px) and (max-width: 1281px){
 			right: 16%;
 			top: 20%;
 			}
-			@media screen and (min-width:1282px){
+			
+			@media screen and (min-width:1286px){
 			left: 25%;
 			top: 10%;
 			}
@@ -849,7 +894,7 @@ body{
 			}
 			@media only screen and (min-width:1025px) and (max-width: 1169px){
 			margin-left: -7%;
-			margin-top:164%;
+			margin-top:90%;
 			}
 			@media only screen and (min-width:1170px) and (max-width: 1281px){
 				    margin-left: -9%;
@@ -872,15 +917,16 @@ body{
 			@media only screen and (min-width: 768px) and (max-width: 1024px){
 
 			}
+
 			@media only screen and (min-width:1025px) and (max-width: 1169px){
 				margin-right: -21%;
-				margin-top:155%;
+				margin-top:45%;
 			}
-			@media only screen and (min-width:1170px) and (max-width: 1281px){
+			@media only screen and (min-width:1170px) and (max-width: 1285px){
 				margin-right: -18%;
 				margin-top:60%;
 			}
-			@media screen and (min-width:1282px){
+			@media screen and (min-width:1286px){
 				margin-right: -15%;
 			}
 		}
@@ -899,7 +945,7 @@ body{
 			}
 			@media only screen and (min-width:1025px) and (max-width: 1169px){
 				margin-right: -20%;
-				margin-top:185%;
+				margin-top:90%;
 			}
 			@media only screen and (min-width:1170px) and (max-width: 1281px){
 				margin-right: -20%;
@@ -936,13 +982,24 @@ body{
 #screen-3{
 	width: 100%;
 	height: 600px;
-	// background: red;
+	/*background: url('../assets/home/iphone.png');*/
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 280px;
 	margin-top: -500px;
 	opacity: 0;
 	text-align: center;
+	@media only screen and (min-width:768px) and (max-width: 1024px){
+				
+			height: 1000px;
+			margin-top: -10%;
+			}
+				
+	@media screen and (min-width:1286px){
+				
+			height: 1000px;
+			margin-top: -40%;
+			}
 		video{
 			width: 290px;
 		}
@@ -964,12 +1021,12 @@ body{
 			left: 0;
 			top: -13%;
 			}
-			@media only screen and (min-width:1170px) and (max-width: 1281px){
+			@media only screen and (min-width:1170px) and (max-width: 1285px){
 				left: 0%;
 			    width: 200px;
 			    top: -19%;
 			}
-			@media screen and (min-width:1282px) {
+			@media screen and (min-width:1286px) {
 				left: 10%;
 			    width: 200px;
 			    top: -23%;
