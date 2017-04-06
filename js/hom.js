@@ -25,8 +25,7 @@ function homeInit() {
               $('.stop').css('position', 'fixed');
               $('.parallax').css('background-attachment', 'fixed');
               $('.tools').css('background-attachment', 'fixed');
-               $('.conocer').css('margin-top', '0');
-                $('#screen-3').css('top', 'inherit');
+               $('.conocer').css('margin-top', '2em');
                  $('#screen-0').removeClass('initial');
               
             }

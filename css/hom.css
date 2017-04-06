@@ -75,6 +75,9 @@ body {
         body .footer .map .top .payment {
           width: 33%;
           height: 40px; }
+          @media screen and (max-width: 730px) {
+            body .footer .map .top .payment {
+              width: 60%; } }
           body .footer .map .top .payment .microsoft, body .footer .map .top .payment .visa {
             display: inline-block;
             width: 20%;
@@ -84,6 +87,13 @@ body {
             background-repeat: no-repeat;
             background-size: 155%;
             vertical-align: top; }
+            @media screen and (max-width: 730px) {
+              body .footer .map .top .payment .microsoft, body .footer .map .top .payment .visa {
+                width: 45%;
+                background-size: 190%; } }
+            @media screen and (min-width: 731px) and (max-width: 768px) {
+              body .footer .map .top .payment .microsoft, body .footer .map .top .payment .visa {
+                width: 35%; } }
           body .footer .map .top .payment .microsoft {
             background-position: -70px 9px; }
           body .footer .map .top .payment .visa {
@@ -206,14 +216,43 @@ body {
       background-image: url("../assets/home/doctors/face-1.jpg");
       top: 40%;
       left: 35%; }
+      @media screen and (max-width: 600px) {
+        body .mapa .face-1 {
+          top: 65%;
+          left: 15%; } }
     body .mapa .face-2 {
       background-image: url("../assets/home/doctors/face-2.jpg");
       top: 74%;
       left: 37%; }
+      @media screen and (max-width: 600px) {
+        body .mapa .face-2 {
+          top: 80%;
+          left: 25%; } }
     body .mapa .face-3 {
       background-image: url("../assets/home/doctors/face-3.jpg");
       top: 50%;
       left: 57%; }
+      @media screen and (max-width: 600px) {
+        body .mapa .face-3 {
+          top: 65%; } }
+    body .mapa .face-4 {
+      background-image: url("../assets/home/faces/face-1.jpg");
+      top: 75%;
+      left: 68%; }
+      body .mapa .face-4:after {
+        content: '\00a0';
+        width: 20px;
+        height: 20px;
+        background-image: url("../assets/home/thumbs.png"); }
+    body .mapa .face-5 {
+      background-image: url("../assets/home/faces/face-2.jpg");
+      top: 40%;
+      left: 68%; }
+      body .mapa .face-5:after {
+        content: '\00a0';
+        width: 20px;
+        height: 20px;
+        background-image: url("../assets/home/thumbs.png"); }
     body .mapa .pin-small, body .mapa .pin {
       position: absolute;
       background-image: url("../assets/home/pin-hospital.png");
@@ -227,9 +266,17 @@ body {
     body .mapa .pin-hospital {
       top: 60%;
       left: 34%; }
+      @media screen and (max-width: 600px) {
+        body .mapa .pin-hospital {
+          top: 65%;
+          left: 40%; } }
     body .mapa .pin-hospital2 {
       top: 40%;
       left: 60%; }
+      @media screen and (max-width: 600px) {
+        body .mapa .pin-hospital2 {
+          top: 65%;
+          left: 80%; } }
 
 .content nav {
   width: 100%;
@@ -259,6 +306,25 @@ body {
       .content nav ul li a {
         color: #3E698B;
         text-decoration: none; }
+@media screen and (max-width: 600px) {
+  .content nav {
+    height: 110px; }
+    .content nav .logo {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin: 0;
+      height: 60px; }
+      .content nav .logo img {
+        width: 18%; }
+    .content nav ul {
+      width: 100%;
+      margin: 0; }
+      .content nav ul li {
+        width: 49%;
+        text-align: center;
+        font-size: 15px;
+        padding: 0; } }
 
 .hero {
   width: 100%;
@@ -309,7 +375,7 @@ body {
       height: 4000px; } }
   @media only screen and (min-width: 767px) and (max-width: 1024px) {
     .parallax {
-      height: 3870px; } }
+      height: 4300px; } }
   @media only screen and (min-width: 1025px) and (max-width: 1100px) {
     .parallax {
       height: 4500px; } }
@@ -321,31 +387,34 @@ body {
       height: 4500px; } }
   .parallax #bloque-1 {
     position: absolute;
-    top: 20%;
+    top: 30%;
     height: 1px;
-    width: 100%; }
+    width: 100%;
+    background-color: red; }
   .parallax #bloque-2 {
     position: absolute;
-    top: 1700px;
+    top: 2000px;
     height: 1px;
-    width: 100%; }
+    width: 100%;
+    background-color: blue; }
     @media screen and (min-width: 1300px) {
       .parallax #bloque-2 {
         top: 1800px; } }
   .parallax #bloque-3 {
     position: absolute;
-    top: 2500px;
+    top: 2900px;
     height: 1px;
-    width: 100%; }
+    width: 100%;
+    background-color: green; }
     @media screen and (min-width: 1300px) {
       .parallax #bloque-3 {
         top: 2800px; } }
   .parallax #bloque-4 {
     position: absolute;
-    top: 3500px;
+    top: 3700px;
     height: 1px;
     width: 100%;
-    background-color: red; }
+    background-color: gray; }
   .parallax .static-iphone {
     position: relative;
     transition: opacity ease-in 0.3s;
@@ -451,160 +520,187 @@ body {
     .static-iphone section .tooltip .talkbubble {
       height: 110px; } }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  #screen-0 {
-    height: 650px; } }
-@media screen and (min-width: 1200px) {
-  #screen-0 {
-    height: 700px; } }
-@media screen and (min-width: 1400px) {
-  #screen-0 {
-    height: 800px; } }
-@media screen and (max-width: 768px) {
-  #screen-0 .glasses {
-    background: url("../assets/home/glasses.png") no-repeat;
-    background-size: 100%;
-    width: 60%;
-    height: 200px;
-    position: absolute;
-    left: -25%;
-    top: 45%;
-    transform: rotate(30deg);
-    z-index: -1; } }
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  #screen-0 .glasses {
-    background: url("../assets/home/glasses.png") no-repeat;
-    background-size: 50%;
-    width: 60%;
-    height: 300px;
-    position: absolute;
-    left: -15%;
-    top: 35%;
-    transform: rotate(30deg); } }
-@media only screen and (min-width: 1025px) and (max-width: 1199px) {
-  #screen-0 .glasses {
-    background: url("../assets/home/glasses.png") no-repeat;
-    background-size: 50%;
-    width: 60%;
-    height: 300px;
-    position: absolute;
-    left: -15%;
-    top: 35%;
-    transform: rotate(30deg); } }
-@media screen and (min-width: 1200px) {
-  #screen-0 .glasses {
-    background: url("../assets/home/glasses.png") no-repeat;
-    background-size: 50%;
-    width: 60%;
-    height: 600px;
-    position: absolute;
-    left: -20%;
-    top: 10%;
-    transform: rotate(30deg);
-    z-index: -1; } }
-@media screen and (min-width: 1400px) {
-  #screen-0 .glasses {
-    left: -20%;
-    top: 15%;
-    z-index: -1; } }
-@media screen and (max-width: 768px) {
-  #screen-0 .certificate {
-    background: url("../assets/home/certificate.png") no-repeat;
-    background-size: 100%;
-    width: 60%;
-    height: 200px;
-    position: absolute;
-    right: -25%;
-    top: 45%;
-    transform: rotate(30deg);
-    z-index: -1; } }
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  #screen-0 .certificate {
-    background: url("../assets/home/certificate.png") no-repeat;
-    background-size: 80%;
-    width: 57%;
-    height: 630px;
-    position: absolute;
-    right: -25%;
-    top: 15%;
-    transform: rotate(30deg); } }
-@media only screen and (min-width: 1025px) and (max-width: 1199px) {
-  #screen-0 .certificate {
-    background: url("../assets/home/certificate.png") no-repeat;
-    background-size: 80%;
-    width: 57%;
-    height: 630px;
-    position: absolute;
-    right: -25%;
-    top: 15%;
-    transform: rotate(30deg); } }
-@media screen and (min-width: 1200px) {
-  #screen-0 .certificate {
-    background: url("../assets/home/certificate.png") no-repeat;
-    background-size: 70%;
-    width: 60%;
-    height: 600px;
-    position: absolute;
-    right: -25%;
-    top: 15%;
-    transform: rotate(30deg); } }
-@media screen and (min-width: 1400px) {
-  #screen-0 .certificate {
-    background-size: 60%;
-    height: 650px;
-    right: -30%;
-    top: 33%; } }
-@media screen and (max-width: 768px) {
-  #screen-0 .card {
-    background: url("../assets/home/card.png") no-repeat;
-    background-size: 100%;
-    width: 30%;
-    height: 200px;
-    position: absolute;
-    right: -3%;
-    top: 70%;
-    transform: rotate(30deg);
-    z-index: -1; } }
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  #screen-0 .card {
-    background: url("../assets/home/card.png") no-repeat;
-    background-size: 80%;
-    width: 30%;
-    height: 200px;
-    position: absolute;
-    right: -10%;
-    top: 70%;
-    transform: rotate(30deg); } }
-@media only screen and (min-width: 1025px) and (max-width: 1199px) {
-  #screen-0 .card {
-    background: url("../assets/home/card.png") no-repeat;
-    background-size: 80%;
-    width: 30%;
-    height: 200px;
-    position: absolute;
-    right: -10%;
-    top: 70%;
-    transform: rotate(30deg); } }
-@media screen and (min-width: 1200px) {
-  #screen-0 .card {
-    background: url("../assets/home/card.png") no-repeat;
-    background-size: 80%;
-    width: 30%;
-    height: 200px;
-    position: absolute;
-    right: -3%;
-    top: 70%;
-    transform: rotate(30deg); } }
-@media screen and (min-width: 1400px) {
-  #screen-0 .card {
-    height: 600px;
-    background-size: 60%;
-    top: 50%; } }
+#screen-0 {
+  top: 0; }
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #screen-0 {
+      height: 650px; } }
+  @media screen and (min-width: 1200px) {
+    #screen-0 {
+      height: 700px; } }
+  @media screen and (min-width: 1400px) {
+    #screen-0 {
+      height: 800px; } }
+  @media screen and (max-width: 499px) {
+    #screen-0 .glasses {
+      background: url("../assets/home/glasses.png") no-repeat;
+      background-size: 90%;
+      width: 60%;
+      height: 200px;
+      position: absolute;
+      left: -15%;
+      top: 45%;
+      transform: rotate(30deg);
+      z-index: -1; } }
+  @media only screen and (min-width: 500px) and (max-width: 768px) {
+    #screen-0 .glasses {
+      background: url("../assets/home/glasses.png") no-repeat;
+      background-size: 80%;
+      width: 50%;
+      height: 200px;
+      position: absolute;
+      left: -15%;
+      top: 45%;
+      transform: rotate(30deg);
+      z-index: -1; } }
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #screen-0 .glasses {
+      background: url("../assets/home/glasses.png") no-repeat;
+      background-size: 50%;
+      width: 60%;
+      height: 300px;
+      position: absolute;
+      left: -15%;
+      top: 35%;
+      transform: rotate(30deg); } }
+  @media only screen and (min-width: 1025px) and (max-width: 1199px) {
+    #screen-0 .glasses {
+      background: url("../assets/home/glasses.png") no-repeat;
+      background-size: 50%;
+      width: 60%;
+      height: 300px;
+      position: absolute;
+      left: -15%;
+      top: 35%;
+      transform: rotate(30deg); } }
+  @media screen and (min-width: 1200px) {
+    #screen-0 .glasses {
+      background: url("../assets/home/glasses.png") no-repeat;
+      background-size: 40%;
+      width: 80%;
+      height: 600px;
+      position: absolute;
+      left: -22%;
+      top: 10%;
+      transform: rotate(30deg);
+      z-index: -1; } }
+  @media screen and (min-width: 1400px) {
+    #screen-0 .glasses {
+      left: -20%;
+      top: 15%;
+      z-index: -1; } }
+  @media screen and (max-width: 599px) {
+    #screen-0 .certificate {
+      background: url("../assets/home/certificate.png") no-repeat;
+      background-size: 100%;
+      width: 60%;
+      height: 200px;
+      position: absolute;
+      right: -25%;
+      top: 45%;
+      transform: rotate(30deg);
+      z-index: -1; } }
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    #screen-0 .certificate {
+      background: url("../assets/home/certificate.png") no-repeat;
+      background-size: 100%;
+      width: 60%;
+      height: 400px;
+      position: absolute;
+      right: -25%;
+      top: 45%;
+      transform: rotate(30deg);
+      z-index: -1; } }
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #screen-0 .certificate {
+      background: url("../assets/home/certificate.png") no-repeat;
+      background-size: 80%;
+      width: 57%;
+      height: 630px;
+      position: absolute;
+      right: -25%;
+      top: 15%;
+      transform: rotate(30deg); } }
+  @media only screen and (min-width: 1025px) and (max-width: 1199px) {
+    #screen-0 .certificate {
+      background: url("../assets/home/certificate.png") no-repeat;
+      background-size: 80%;
+      width: 57%;
+      height: 630px;
+      position: absolute;
+      right: -25%;
+      top: 15%;
+      transform: rotate(30deg); } }
+  @media screen and (min-width: 1200px) {
+    #screen-0 .certificate {
+      background: url("../assets/home/certificate.png") no-repeat;
+      background-size: 70%;
+      width: 60%;
+      height: 600px;
+      position: absolute;
+      right: -25%;
+      top: 15%;
+      transform: rotate(30deg); } }
+  @media screen and (min-width: 1400px) {
+    #screen-0 .certificate {
+      background-size: 60%;
+      height: 650px;
+      right: -30%;
+      top: 33%; } }
+  @media screen and (max-width: 768px) {
+    #screen-0 .card {
+      background: url("../assets/home/card.png") no-repeat;
+      background-size: 100%;
+      width: 30%;
+      height: 200px;
+      position: absolute;
+      right: -3%;
+      top: 70%;
+      transform: rotate(30deg);
+      z-index: -1; } }
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #screen-0 .card {
+      background: url("../assets/home/card.png") no-repeat;
+      background-size: 80%;
+      width: 30%;
+      height: 200px;
+      position: absolute;
+      right: -10%;
+      top: 70%;
+      transform: rotate(30deg); } }
+  @media only screen and (min-width: 1025px) and (max-width: 1199px) {
+    #screen-0 .card {
+      background: url("../assets/home/card.png") no-repeat;
+      background-size: 80%;
+      width: 30%;
+      height: 200px;
+      position: absolute;
+      right: -10%;
+      top: 70%;
+      transform: rotate(30deg); } }
+  @media screen and (min-width: 1200px) {
+    #screen-0 .card {
+      background: url("../assets/home/card.png") no-repeat;
+      background-size: 80%;
+      width: 30%;
+      height: 200px;
+      position: absolute;
+      right: -3%;
+      top: 70%;
+      transform: rotate(30deg); } }
+  @media screen and (min-width: 1400px) {
+    #screen-0 .card {
+      height: 600px;
+      background-size: 60%;
+      top: 50%; } }
 
 #screen-1 {
   height: 3000px;
-  opacity: 0; }
-  @media screen and (max-width: 768px) {
+  opacity: 0;
+  top: 0; }
+  #screen-1 .acuerdo {
+    margin-top: 2em; }
+  @media screen and (max-width: 599px) {
     #screen-1 .post-it {
       background: url("../assets/home/post-it.png") no-repeat;
       background-size: 100%;
@@ -614,6 +710,16 @@ body {
       left: -3%;
       top: 12%;
       z-index: -1; } }
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    #screen-1 .post-it {
+      background: url("../assets/home/post-it.png") no-repeat;
+      background-size: 100%;
+      width: 30%;
+      height: 350px;
+      position: absolute;
+      left: -3%;
+      top: 20%;
+      z-index: -1; } }
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
     #screen-1 .post-it {
       background: url("../assets/home/post-it.png") no-repeat;
@@ -622,7 +728,7 @@ body {
       height: 320px;
       position: absolute;
       left: -3%;
-      top: 5%;
+      top: 9%;
       z-index: -1; } }
   @media only screen and (min-width: 1025px) and (max-width: 1199px) {
     #screen-1 .post-it {
@@ -647,12 +753,22 @@ body {
   @media screen and (min-width: 1200px) {
     #screen-1 .post-it {
       top: 15%; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 599px) {
     #screen-1 .agenda {
       background: url("../assets/home/agenda.png") no-repeat;
       background-size: 100%;
       width: 60%;
       height: 200px;
+      position: absolute;
+      right: -22%;
+      top: 13%;
+      z-index: -1; } }
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    #screen-1 .agenda {
+      background: url("../assets/home/agenda.png") no-repeat;
+      background-size: 100%;
+      width: 60%;
+      height: 400px;
       position: absolute;
       right: -22%;
       top: 13%;
@@ -694,7 +810,10 @@ body {
 
 #screen-2 {
   height: 1500px;
-  opacity: 0; }
+  opacity: 0;
+  top: 0; }
+  #screen-2 .tratamiento {
+    margin-top: 2em; }
   @media screen and (max-width: 768px) {
     #screen-2 {
       height: 600px; } }
@@ -722,10 +841,10 @@ body {
       background: url("../assets/home/radio.png") no-repeat;
       background-size: 70%;
       width: 60%;
-      height: 440px;
+      height: 480px;
       position: absolute;
       left: -14%;
-      top: 6%; } }
+      top: 0; } }
   @media only screen and (min-width: 1025px) and (max-width: 1199px) {
     #screen-2 .radio {
       background: url("../assets/home/radio.png") no-repeat;
@@ -763,7 +882,7 @@ body {
     #screen-2 .receta {
       transform: rotate(-80deg);
       background: url("../assets/home/prescription.png") no-repeat;
-      background-size: 50%;
+      background-size: 60%;
       width: 70%;
       height: 200px;
       position: absolute;
@@ -793,7 +912,17 @@ body {
     #screen-2 .receta {
       right: -33%;
       top: -35%; } }
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 600px) {
+    #screen-2 .pills {
+      background: url("../assets/home/pills.jpg") no-repeat;
+      background-size: 100%;
+      width: 80%;
+      height: 400px;
+      position: absolute;
+      right: -2%;
+      top: 18%;
+      z-index: -2; } }
+  @media only screen and (min-width: 601px) and (max-width: 768px) {
     #screen-2 .pills {
       background: url("../assets/home/pills.jpg") no-repeat;
       background-size: 100%;
@@ -803,15 +932,25 @@ body {
       right: -2%;
       top: 7%;
       z-index: -2; } }
+  @media only screen and (min-width: 600px) and (max-width: 768px) {
+    #screen-2 .pills {
+      background: url("../assets/home/pills.jpg") no-repeat;
+      background-size: 100%;
+      width: 60%;
+      height: 400px;
+      position: absolute;
+      right: -2%;
+      top: 10%;
+      z-index: -2; } }
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
     #screen-2 .pills {
       background: url("../assets/home/pills.jpg") no-repeat;
-      background-size: 50%;
+      background-size: 60%;
       width: 60%;
       height: 340px;
       position: absolute;
-      right: -32%;
-      top: 17%;
+      right: -27%;
+      top: 56%;
       z-index: -2; } }
   @media only screen and (min-width: 1025px) and (max-width: 1199px) {
     #screen-2 .pills {
@@ -851,7 +990,7 @@ body {
     #screen-2 .pill {
       transform: rotate(-80deg);
       background: url("../assets/home/pill.png") no-repeat;
-      background-size: 100%;
+      background-size: 80%;
       width: 20%;
       height: 200px;
       position: absolute;
@@ -885,7 +1024,10 @@ body {
   background-repeat: no-repeat;
   background-size: 280px;
   opacity: 0;
-  text-align: center; }
+  text-align: center;
+  top: 0; }
+  #screen-3 .conectar {
+    margin-top: 2em; }
   #screen-3 video {
     width: 250px; }
     @media screen and (max-width: 1024px) {
@@ -906,52 +1048,68 @@ body {
   @media screen and (min-width: 1200px) {
     #screen-3 {
       height: 1000px; } }
-  @media screen and (max-width: 768px) {
-    #screen-3 .pillow {
-      background: url("../assets/home/pillow.png") no-repeat;
-      background-size: 100%;
-      width: 60%;
-      height: 200px;
-      position: absolute;
-      left: -2%;
-      top: 22%;
-      z-index: -2; } }
-  @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    #screen-3 .pillow {
-      background: url("../assets/home/pillow.png") no-repeat;
-      background-size: 50%;
-      width: 60%;
+  #screen-3 .pillow {
+    z-index: -2; }
+    @media screen and (max-width: 599px) {
+      #screen-3 .pillow {
+        background: url("../assets/home/pillow.png") no-repeat;
+        background-size: 100%;
+        width: 60%;
+        height: 200px;
+        position: absolute;
+        left: -2%;
+        top: 22%; } }
+    @media only screen and (min-width: 600px) and (max-width: 768px) {
+      #screen-3 .pillow {
+        background: url("../assets/home/pillow.png") no-repeat;
+        background-size: 80%;
+        width: 60%;
+        height: 300px;
+        position: absolute;
+        left: -2%;
+        top: 22%; } }
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      #screen-3 .pillow {
+        background: url("../assets/home/pillow.png") no-repeat;
+        background-size: 50%;
+        width: 60%;
+        height: 340px;
+        position: absolute;
+        left: -2%;
+        top: 5%; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1199px) {
+      #screen-3 .pillow {
+        background: url("../assets/home/pillow.png") no-repeat;
+        background-size: 50%;
+        width: 60%;
+        height: 340px;
+        position: absolute;
+        left: -32%;
+        top: 17%; } }
+    @media screen and (min-width: 1200px) {
+      #screen-3 .pillow {
+        transform: rotate(10deg);
+        background: url("../assets/home/pillow.png") no-repeat;
+        background-size: 50%;
+        width: 70%;
+        height: 570px;
+        position: absolute;
+        left: -5%;
+        top: -7%; } }
+    @media screen and (min-width: 1400px) {
+      #screen-3 .pillow {
+        left: -5%;
+        top: 5%; } }
+  @media screen and (max-width: 600px) {
+    #screen-3 .plant {
+      background: url("../assets/home/plant.png") no-repeat;
+      background-size: 29%;
+      width: 130%;
       height: 340px;
       position: absolute;
-      left: -2%;
-      top: -10%;
-      z-index: -2; } }
-  @media only screen and (min-width: 1025px) and (max-width: 1199px) {
-    #screen-3 .pillow {
-      background: url("../assets/home/pillow.png") no-repeat;
-      background-size: 50%;
-      width: 60%;
-      height: 340px;
-      position: absolute;
-      left: -32%;
-      top: 17%;
-      z-index: -2; } }
-  @media screen and (min-width: 1200px) {
-    #screen-3 .pillow {
-      transform: rotate(10deg);
-      background: url("../assets/home/pillow.png") no-repeat;
-      background-size: 50%;
-      width: 70%;
-      height: 570px;
-      position: absolute;
-      left: -5%;
-      top: -7%; } }
-  @media screen and (min-width: 1400px) {
-    #screen-3 .pillow {
-      left: -5%;
-      top: 5%;
-      z-index: -1; } }
-  @media screen and (max-width: 768px) {
+      right: -103%;
+      top: -23%; } }
+  @media only screen and (min-width: 601px) and (max-width: 768px) {
     #screen-3 .plant {
       background: url("../assets/home/plant.png") no-repeat;
       background-size: 29%;
@@ -993,10 +1151,18 @@ body {
   #screen-3 .estetos {
     background: url("../assets/home/estetos.jpg") no-repeat;
     z-index: -4; }
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 600px) {
+      #screen-3 .estetos {
+        background-size: 50%;
+        width: 80%;
+        height: 340px;
+        position: absolute;
+        right: -50%;
+        top: 0%; } }
+    @media only screen and (min-width: 601px) and (max-width: 768px) {
       #screen-3 .estetos {
         background-size: 39%;
-        width: 80%;
+        width: 100%;
         height: 340px;
         position: absolute;
         right: -50%;
@@ -1008,7 +1174,7 @@ body {
         height: 340px;
         position: absolute;
         right: -32%;
-        top: -5%; } }
+        top: 10%; } }
     @media only screen and (min-width: 1025px) and (max-width: 1199px) {
       #screen-3 .estetos {
         background-size: 50%;
@@ -1030,6 +1196,7 @@ body {
   overflow: hidden;
   opacity: 0;
   height: 600px;
+  top: 0;
   /* PROGRESS */
   /* PROGRESS */
   /* ANIMATIONS */

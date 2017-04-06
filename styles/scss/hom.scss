@@ -94,6 +94,9 @@ body{
 				.payment{
 					width: 33%;
 					height: 40px;
+					@media screen and (max-width: 730px){
+							width: 60%;
+						}
 					.microsoft, .visa{
 						display: inline-block;
 						width: 20%;
@@ -103,6 +106,13 @@ body{
 						background-repeat: no-repeat;
 						background-size: 155%;
 						vertical-align: top;
+						@media screen and (max-width: 730px){
+							width: 45%;
+							background-size: 190%;
+						}
+						@media screen and (min-width: 731px) and (max-width: 768px){
+							width: 35%;
+						}
 					}
 					.microsoft{
 						background-position: -70px 9px;
@@ -259,16 +269,51 @@ body{
 			background-image: url('../assets/home/doctors/face-1.jpg');
 			top: 40%;
     		left: 35%;
+    		@media screen and (max-width:600px){
+    			top: 65%;
+    			left: 15%;
+    		}
 		}
 		.face-2{
 			background-image: url('../assets/home/doctors/face-2.jpg');
 			top: 74%;
     		left: 37%;
+    		@media screen and (max-width:600px){
+    			top: 80%;
+    			left: 25%;
+    		}
 		}
 		.face-3{
 			background-image: url('../assets/home/doctors/face-3.jpg');
 			top: 50%;
     		left: 57%;
+    		@media screen and (max-width:600px){
+    			top: 65%;
+    		}
+		}
+		.face-4{
+			background-image: url('../assets/home/faces/face-1.jpg');
+			top: 75%;
+    		left: 68%;
+    		&:after{
+    			content:'\00a0';
+    			width: 20px;
+    			height: 20px;
+    			background-image: url('../assets/home/thumbs.png');
+    		}
+    	
+		}
+		.face-5{
+			background-image: url('../assets/home/faces/face-2.jpg');
+			top: 40%;
+    		left: 68%;
+    		&:after{
+    			content:'\00a0';
+    			width: 20px;
+    			height: 20px;
+    			background-image: url('../assets/home/thumbs.png');
+    		}
+    	
 		}
 		.pin-small, .pin{
 			position: absolute;
@@ -286,10 +331,18 @@ body{
 		.pin-hospital{
 			top: 60%;
     		left: 34%;
+    		@media screen and (max-width:600px){
+    			top: 65%;
+    			left: 40%;
+    		}
 		}
 		.pin-hospital2{
 			top: 40%;
     		left: 60%;
+    		@media screen and (max-width:600px){
+    			top: 65%;
+    			left: 80%;
+    		}
 		}
 	}
 }
@@ -298,6 +351,7 @@ body{
 		width: 100%;
 		height: 80px;
 		line-height: 80px;
+
 		.logo{
 			display: inline-block;
 			float: left;
@@ -329,7 +383,32 @@ body{
 		}
 	}
 
-
+@media screen and (max-width: 600px){
+	nav{
+		height: 110px;
+		.logo{
+			display: block;
+		    width: 100%;
+		    text-align: center;
+		    margin: 0;
+		    height: 60px;
+		    img{
+		    	width: 18%;
+		    }
+		}
+		ul{
+			width: 100%;
+    		margin: 0;
+    		li{
+    			width: 49%;
+    			text-align: center;
+    			font-size: 15px;
+    			padding: 0;
+    		}
+		}
+	}
+	}		
+		
 }
 .hero{
 	width: 100%;
@@ -384,7 +463,7 @@ body{
 		height: 4000px;
 	}
 	@media only screen and (min-width: 767px) and (max-width: 1024px){
-		height: 3870px;
+		height:4300px;
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1100px){
 		height: 4500px;
@@ -397,34 +476,37 @@ body{
 	}
 	#bloque-1{
 		position: absolute;
-		top: 20%;
+		top: 30%;
 		height: 1px;
 		width: 100%;
+		background-color: red;
 	}
 	#bloque-2{
 		position: absolute;
-		top: 1700px;
+		top: 2000px;
 		height: 1px;
 		width: 100%;
+		background-color: blue;
 		@media screen and (min-width: 1300px){
 			top: 1800px;
 		}
 	}
 	#bloque-3{
 		position: absolute;
-		top: 2500px;
+		top: 2900px;
 		height: 1px;
 		width: 100%;
+		background-color: green;
 		@media screen and (min-width: 1300px){
 			top: 2800px;
 		}
 	}
 	#bloque-4{
 		position: absolute;
-		top: 3500px;
+		top: 3700px;
 		height: 1px;
 		width: 100%;
-		background-color: red;
+		background-color: gray;
 	}
 	.static-iphone{
 		position: relative;
@@ -592,6 +674,7 @@ body{
 		}
 }
 #screen-0{
+	top:0;
 	@media only screen and (min-width: 769px) and (max-width: 1024px){
 		height: 650px;
 	}
@@ -602,13 +685,24 @@ body{
 		height: 800px;
 	}
 	.glasses{
-	    @media screen and (max-width: 768px){
+	    @media screen and (max-width: 499px){
 	    		background: url('../assets/home/glasses.png')no-repeat;
-	    		background-size: 100%;
+	    		background-size: 90%;
 	    		width: 60%;
 	    		height: 200px;
 		    	position: absolute;
-			    left: -25%;
+			    left: -15%;
+			    top: 45%;
+			    transform: rotate(30deg);
+			    z-index: -1;
+	    }
+	    @media only screen and (min-width: 500px) and (max-width: 768px){
+	    		background: url('../assets/home/glasses.png')no-repeat;
+	    		background-size: 80%;
+	    		width: 50%;
+	    		height: 200px;
+		    	position: absolute;
+			    left: -15%;
 			    top: 45%;
 			    transform: rotate(30deg);
 			    z-index: -1;
@@ -635,11 +729,11 @@ body{
 	    }
 	    @media screen and (min-width: 1200px){
 	    		background: url('../assets/home/glasses.png')no-repeat;
-	    		background-size: 50%;
-	    		width: 60%;
+	    		background-size: 40%;
+	    		width: 80%;
 	    		height: 600px;
 		    	position: absolute;
-			    left: -20%;
+			    left: -22%;
 			    top: 10%;
 			    transform: rotate(30deg);
 			    z-index: -1;
@@ -651,11 +745,22 @@ body{
 	    }
 	}
 	.certificate{
-	    @media screen and (max-width: 768px){
+	    @media screen and (max-width: 599px){
 	    		background: url('../assets/home/certificate.png')no-repeat;
 	    		background-size: 100%;
 	    		width: 60%;
 	    		height: 200px;
+		    	position: absolute;
+			    right: -25%;
+			    top: 45%;
+			    transform: rotate(30deg);
+			    z-index: -1;
+	    }
+	    @media only screen and (min-width: 600px) and (max-width: 768px){
+	    		background: url('../assets/home/certificate.png')no-repeat;
+	    		background-size: 100%;
+	    		width: 60%;
+	    		height: 400px;
 		    	position: absolute;
 			    right: -25%;
 			    top: 45%;
@@ -755,8 +860,12 @@ body{
 #screen-1{
 	height: 3000px;
 	opacity: 0;
+	top:0;
+	.acuerdo{
+		margin-top: 2em;
+	}
 	.post-it{
-	    @media screen and (max-width: 768px){
+	    @media screen and (max-width: 599px){
 	    		background: url('../assets/home/post-it.png')no-repeat;
 	    		background-size: 100%;
 	    		width: 30%;
@@ -766,6 +875,16 @@ body{
     			top: 12%;
 			    z-index: -1;
 	    }
+	    @media only screen and (min-width: 600px) and (max-width: 768px){
+	    		background: url('../assets/home/post-it.png')no-repeat;
+	    		background-size: 100%;
+	    		width: 30%;
+	    		height: 350px;
+		    	position: absolute;
+			   	left: -3%;
+    			top: 20%;
+			    z-index: -1;
+	    }
 	   	@media only screen and (min-width: 769px) and (max-width: 1024px){
 	    		background: url('../assets/home/post-it.png')no-repeat;
 	    		background-size: 100%;
@@ -773,7 +892,7 @@ body{
 	    		height: 320px;
 		    	position: absolute;
 			   	left: -3%;
-    			top: 5%;
+    			top: 9%;
 			    z-index: -1;
 	    }
 	   	 @media only screen and (min-width: 1025px) and (max-width: 1199px){
@@ -802,11 +921,21 @@ body{
 	    }
 	}
 	.agenda{
-	    @media screen and (max-width: 768px){
+	    @media screen and (max-width: 599px){
 	    		background: url('../assets/home/agenda.png')no-repeat;
 	    		background-size: 100%;
 	    		width: 60%;
 	    		height: 200px;
+		    	position: absolute;
+			    right: -22%;
+    			top: 13%;
+			    z-index: -1;
+	    }
+	    @media only screen and (min-width: 600px) and (max-width: 768px){
+	    		background: url('../assets/home/agenda.png')no-repeat;
+	    		background-size: 100%;
+	    		width: 60%;
+	    		height: 400px;
 		    	position: absolute;
 			    right: -22%;
     			top: 13%;
@@ -852,6 +981,10 @@ body{
 #screen-2{
 	height: 1500px;
 	opacity: 0;
+	top:0;
+	.tratamiento{
+		margin-top: 2em;
+	}
 	@media screen and (max-width: 768px){
 		height:600px;
 	}
@@ -879,10 +1012,10 @@ body{
 	    		background: url('../assets/home/radio.png')no-repeat;
 	    		background-size: 70%;
 			    width: 60%;
-			    height: 440px;
+			    height: 480px;
 			    position: absolute;
 			    left: -14%;
-			    top: 6%;
+			    top: 0;
 	    }
 	     @media only screen and (min-width: 1025px) and (max-width: 1199px){
 	    		background: url('../assets/home/radio.png')no-repeat;
@@ -923,7 +1056,7 @@ body{
 	    @media only screen and (min-width: 769px) and (max-width: 1024px){
 	    		transform: rotate(-80deg);
 	    		background: url('../assets/home/prescription.png')no-repeat;
-	    		background-size: 50%;
+	    		background-size: 60%;
 			    width: 70%;
 			    height: 200px;
 			    position: absolute;
@@ -956,7 +1089,17 @@ body{
 	    }
 	}
 	.pills{
-	    @media screen and (max-width: 768px){
+	    @media screen and (max-width: 600px){
+	    		background: url('../assets/home/pills.jpg')no-repeat;
+	    		background-size: 100%;
+	    		width: 80%;
+	    		height: 400px;
+		    	position: absolute;
+			    right: -2%;
+    			top: 18%;
+			    z-index: -2;
+	    }
+	    @media only screen and (min-width: 601px) and (max-width: 768px){
 	    		background: url('../assets/home/pills.jpg')no-repeat;
 	    		background-size: 100%;
 	    		width: 60%;
@@ -966,14 +1109,24 @@ body{
     			top: 7%;
 			    z-index: -2;
 	    }
+	    @media only screen and (min-width: 600px) and (max-width: 768px){
+	    		background: url('../assets/home/pills.jpg')no-repeat;
+	    		background-size: 100%;
+	    		width: 60%;
+	    		height: 400px;
+		    	position: absolute;
+			    right: -2%;
+    			top: 10%;
+			    z-index: -2;
+	    }
 	    @media only screen and (min-width: 769px) and (max-width: 1024px){
 	    		background: url('../assets/home/pills.jpg')no-repeat;
-	    		background-size: 50%;
+	    		background-size: 60%;
 			    width: 60%;
 			    height: 340px;
 			    position: absolute;
-			    right: -32%;
-			    top: 17%;
+			    right: -27%;
+			    top: 56%;
 			    z-index: -2;
 	    }
 	     @media only screen and (min-width: 1025px) and (max-width: 1199px){
@@ -1015,7 +1168,7 @@ body{
 	     @media only screen and (min-width: 769px) and (max-width: 1024px){
 	    		transform: rotate(-80deg);
 	    		background: url('../assets/home/pill.png')no-repeat;
-	    		background-size: 100%;
+	    		background-size: 80%;
 	    		width: 20%;
 			    height: 200px;
 			    position: absolute;
@@ -1057,6 +1210,10 @@ body{
 	background-size: 280px;
 	opacity: 0;
 	text-align: center;
+	top:0;
+	.conectar{
+		margin-top: 2em;
+	}
 	video{
 		width: 250px;
 		@media screen and (max-width: 1024px){
@@ -1084,7 +1241,9 @@ body{
 		height:1000px;
 	}
 	.pillow{
-	    @media screen and (max-width: 768px){
+
+			    z-index: -2;
+	    @media screen and (max-width: 599px){
 	    		background: url('../assets/home/pillow.png')no-repeat;
 	    		background-size: 100%;
 	    		width: 60%;
@@ -1092,7 +1251,15 @@ body{
 		    	position: absolute;
 			    left: -2%;
     			top: 22%;
-			    z-index: -2;
+	    }
+	    @media only screen and (min-width: 600px) and (max-width: 768px){
+	    		background: url('../assets/home/pillow.png')no-repeat;
+	    		background-size: 80%;
+	    		width: 60%;
+	    		height: 300px;
+		    	position: absolute;
+			    left: -2%;
+    			top: 22%;
 	    }
 	    @media only screen and (min-width: 769px) and (max-width: 1024px){
 	    		background: url('../assets/home/pillow.png')no-repeat;
@@ -1101,8 +1268,7 @@ body{
 			    height: 340px;
 			    position: absolute;
 			    left: -2%;
-			    top: -10%;
-			    z-index: -2;
+			    top: 5%;
 	    }
 	     @media only screen and (min-width: 1025px) and (max-width: 1199px){
 	    		background: url('../assets/home/pillow.png')no-repeat;
@@ -1112,7 +1278,6 @@ body{
 			    position: absolute;
 			    left: -32%;
 			    top: 17%;
-			    z-index: -2;
 	    }
 	    @media screen and (min-width: 1200px){
 	    		transform:rotate(10deg);
@@ -1127,11 +1292,19 @@ body{
 	    @media screen and (min-width: 1400px){
 			    left: -5%;
 			    top: 5%;
-			    z-index:-1;
 	    }
 	}
 	.plant{
-	    @media screen and (max-width: 768px){
+	    @media screen and (max-width: 600px){
+	    		background: url('../assets/home/plant.png')no-repeat;
+	    		background-size: 29%;
+			    width: 130%;
+			    height: 340px;
+			    position: absolute;
+			    right: -103%;
+			    top: -23%;
+	    }
+	    @media only screen and (min-width: 601px) and (max-width: 768px){
 	    		background: url('../assets/home/plant.png')no-repeat;
 	    		background-size: 29%;
 			    width: 60%;
@@ -1174,9 +1347,18 @@ body{
 	.estetos{
 		background: url('../assets/home/estetos.jpg')no-repeat;
 		z-index: -4;
-	    @media screen and (max-width: 768px){
-	    		background-size: 39%;
+	    @media screen and (max-width: 600px){
+	    		background-size: 50%;
 			    width: 80%;
+			    height: 340px;
+			    position: absolute;
+			    right: -50%;
+			    top: 0%;
+			    
+	    }
+	    @media only screen and (min-width: 601px) and (max-width: 768px){
+	    		background-size: 39%;
+			    width: 100%;
 			    height: 340px;
 			    position: absolute;
 			    right: -50%;
@@ -1189,7 +1371,7 @@ body{
 			    height: 340px;
 			    position: absolute;
 			    right: -32%;
-			    top: -5%;
+			    top: 10%;
 	    }
 	     @media only screen and (min-width: 1025px) and (max-width: 1199px){
 	    		background-size: 50%;
@@ -1213,6 +1395,7 @@ body{
 	overflow: hidden;
 	opacity: 0;
 	height: 600px;
+	top:0;
 	svg{width:30%;}
 	/* PROGRESS */
 	/* PROGRESS */
