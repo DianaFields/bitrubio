@@ -10,7 +10,7 @@ function homeInit() {
         var changeTwice = true;
         var changeLast = true;
         function changeScreen(){
-          $('#screen-0').css('padding-top', '250px');
+          $('#screen-0').addClass('initial');
           $('.conocer').css('margin-top', '2.5em');
           $(window).scroll(function(){
             // fixed
@@ -18,16 +18,16 @@ function homeInit() {
             if (height  < 250){
               $('.stop').css('position', 'inherit');
               $('.parallax').css('background-attachment', 'inherit');
-              $('#screen-0').css('padding-top', '250px');
+              $('#screen-0').addClass('initial');
                $('.conocer').css('margin-top', '3em');
             }
             else if(height  > 250) {
               $('.stop').css('position', 'fixed');
               $('.parallax').css('background-attachment', 'fixed');
               $('.tools').css('background-attachment', 'fixed');
-              $('#screen-0').css('padding-top', '0');
                $('.conocer').css('margin-top', '0');
                 $('#screen-3').css('top', 'inherit');
+                 $('#screen-0').removeClass('initial');
               
             }
             if (height  > 4500){
