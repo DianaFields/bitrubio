@@ -57,8 +57,8 @@ body{
 				ul{
 				width:90%;
 					li{
-						width: 75%;
-						margin: 10px 20px;
+						width: 45%;
+    					margin: 10px 0px;
 					}
 				}
 		}
@@ -109,10 +109,23 @@ body{
 						@media screen and (max-width: 730px){
 							width: 45%;
 							background-size: 190%;
+
 						}
 						@media screen and (min-width: 731px) and (max-width: 768px){
 							width: 35%;
 						}
+					}
+					.visa{
+						@media screen and (max-width: 730px){
+							background-position: 14px 9px!important;
+						}
+						
+					}
+					.microsoft{
+						@media screen and (max-width: 730px){
+							background-position: -106px 9px!important;
+						}
+						
 					}
 					.microsoft{
 						background-position: -70px 9px;
@@ -202,23 +215,54 @@ body{
 		background-size: 55%;
 		background-repeat: no-repeat;
 		background-position: 52% 100%;
+section{
+			p{
+			font-family: rounded;
+			color: $blue-bitrubio;
+			position: absolute;
+			width: 230px;
+    margin-top: 17%;
+    margin-left: 24%;
+    font-size: 1.2em;
+
+		}
+		.tooltip{
+			float: left;
+		    left: 5%;
+		    margin-top: 15%;
+			position: relative;
+			.talkbubble {
+				    width: 300px;
+				    height: 80px;
+				    position: absolute;
+				    margin-left: 14%;
+				    margin-top: 15%;
+				background:rgba(256,256,256,.5);
+				border-bottom: 1px solid $blue-bitrubio;
+			   	position: relative;
+			   	margin: 0 auto;
+			}
+			.talkbubble:before {
+				position: absolute;
+				left: 47%;
+			   content:"";
+			   	bottom: -10px;
+			    width: 0;
+			    height: 0;
+			    border-left: 7px solid transparent;
+			    border-top: 9px solid $blue-bitrubio;
+			    border-right: 7px solid transparent;
+			    margin-top: 30px;
+			}
+		}
+	}
 		@media screen and (max-width:768px){
 			background-size: 105%;
 		}
  			@media screen and (min-width:1282px){
  				 background-position: 52% -100%;
  			}
-		   
-		p{
-			text-align: center;
-		    font-size: 1.5em;
-		    padding: 3em 0 0 0;
-		    font-family: rounded;
-		    color: $blue-bitrubio;
-			    @media screen and (min-width:1282px) {
-					padding: 0;
-				}
-		}
+		
 		.face{
 			width: 50px;
 			height:50px;
@@ -312,6 +356,9 @@ body{
     			width: 20px;
     			height: 20px;
     			background-image: url('../assets/home/thumbs.png');
+    		}
+    		@media screen and (max-width:600px){
+    			display:none;
     		}
     	
 		}
@@ -479,14 +526,18 @@ body{
 		top: 30%;
 		height: 1px;
 		width: 100%;
-		background-color: red;
+@media screen and (max-width: 600px){
+			top:15%;
+		}
 	}
 	#bloque-2{
 		position: absolute;
 		top: 2000px;
 		height: 1px;
 		width: 100%;
-		background-color: blue;
+		@media screen and (max-width: 600px){
+			top:800px;
+		}
 		@media screen and (min-width: 1300px){
 			top: 1800px;
 		}
@@ -496,7 +547,9 @@ body{
 		top: 2900px;
 		height: 1px;
 		width: 100%;
-		background-color: green;
+		@media screen and (max-width: 600px){
+			top:1500px;
+		}
 		@media screen and (min-width: 1300px){
 			top: 2800px;
 		}
@@ -506,7 +559,9 @@ body{
 		top: 3700px;
 		height: 1px;
 		width: 100%;
-		background-color: gray;
+		@media screen and (max-width: 600px){
+			top:2300px;
+		}
 	}
 	.static-iphone{
 		position: relative;
@@ -532,20 +587,27 @@ body{
 	section{
 			p{
 			font-family: rounded;
-			color: #fff;
+			color: $blue-bitrubio;
 			position: absolute;
 
 		}
 		.tooltip{
 			position: relative;
 			.talkbubble {
-			   background-color: #50B720;
-			   position: relative;
-			   margin: 0 auto;
+				background:rgba(256,256,256,.5);
+				border-bottom: 1px solid $blue-bitrubio;
+			   	position: relative;
+			   	margin: 0 auto;
 			}
 			.talkbubble:before {
 			   content:"";
-			   position: absolute;
+			   	bottom: -10px;
+			    width: 0;
+			    height: 0;
+			    border-left: 7px solid transparent;
+			    border-top: 9px solid $blue-bitrubio;
+			    border-right: 7px solid transparent;
+			    margin-top: 30px;
 			}
 		}
 	}
@@ -563,11 +625,12 @@ body{
 			   			height: 50px;
 					}
 					.talkbubble:before{
-						bottom: -7px;
+						bottom: -8px;
+    					position: absolute;
 					    width: 0;
 					    height: 0;
 					    border-right: 5px solid transparent;
-					    border-top: 7px solid #50B720;
+					    border-top: 7px solid $blue-bitrubio;
 					    border-left: 6px solid transparent;
 					}
 				}
@@ -579,7 +642,7 @@ body{
 				p{
 					top: 0;
 					width: 60%;
-		    		margin-left: calc(50% - 25%);
+		    		margin-left: calc(40% - 20%);
 		    		font-size: 1.3em;
 				}
 				.tooltip{
@@ -588,12 +651,10 @@ body{
 			   			height: 60px;
 					}
 					.talkbubble:before{
-						bottom: -7px;
+						top: 31px;
+    					position: absolute;
 					    width: 0;
 					    height: 0;
-					    border-right: 5px solid transparent;
-					    border-top: 7px solid #50B720;
-					    border-left: 6px solid transparent;
 					}
 				}
 			}
@@ -616,9 +677,6 @@ body{
 						bottom: -7px;
 					    width: 0;
 					    height: 0;
-					    border-right: 5px solid transparent;
-					    border-top: 7px solid #50B720;
-					    border-left: 6px solid transparent;
 					}
 				}
 			}
@@ -630,7 +688,7 @@ body{
 					width: 250px;
 					margin-top: 17%;
     				margin-left: 16%;
-    				text-align: left;
+    				text-align: center;
 				}
 				.tooltip{
 					.talkbubble{
@@ -641,13 +699,9 @@ body{
 					    margin-top: 15%;
 					}
 					.talkbubble:before{
-						right: -7px;
-					    width: 0;
-					    height: 0;
-					    border-top: 5px solid transparent;
-					    border-left: 7px solid #50B720;
-					    border-bottom: 6px solid transparent;
-					    margin-top: 30px;
+						position: absolute;
+				    width: 0;
+				    height: 0;
 					}
 				}
 			}
@@ -658,13 +712,13 @@ body{
 				p{
 					width: 230px;
 					margin-top: 17%;
-    				margin-left: 20%;
-    				text-align: left;
+    				margin-left: 24%;
     				font-size: 1.2em;
 				}
 				.tooltip{
 					.talkbubble{
 						height: 110px;
+						margin-left: 21%;
 					}
 					.talkbubble:before{
 					}
@@ -1089,68 +1143,63 @@ body{
 	    }
 	}
 	.pills{
-	    @media screen and (max-width: 600px){
-	    		background: url('../assets/home/pills.jpg')no-repeat;
+		background: url('../assets/home/pills.jpg')no-repeat;
+		z-index: -2;
+		position: absolute;
+	    @media screen and (max-width: 374px){
 	    		background-size: 100%;
 	    		width: 80%;
 	    		height: 400px;
-		    	position: absolute;
-			    right: -2%;
-    			top: 18%;
-			    z-index: -2;
+			    right: -32%;
+    			top: 38%;
+			    
+	    }
+	    @media only screen and (min-width: 375px) and (max-width: 600px){
+	    		background-size: 100%;
+	    		width: 80%;
+	    		height: 400px;
+			       right: -32%;
+    top: 48%;
 	    }
 	    @media only screen and (min-width: 601px) and (max-width: 768px){
-	    		background: url('../assets/home/pills.jpg')no-repeat;
 	    		background-size: 100%;
 	    		width: 60%;
 	    		height: 200px;
-		    	position: absolute;
 			    right: -2%;
     			top: 7%;
-			    z-index: -2;
 	    }
 	    @media only screen and (min-width: 600px) and (max-width: 768px){
-	    		background: url('../assets/home/pills.jpg')no-repeat;
 	    		background-size: 100%;
 	    		width: 60%;
 	    		height: 400px;
-		    	position: absolute;
 			    right: -2%;
     			top: 10%;
-			    z-index: -2;
 	    }
 	    @media only screen and (min-width: 769px) and (max-width: 1024px){
-	    		background: url('../assets/home/pills.jpg')no-repeat;
 	    		background-size: 60%;
 			    width: 60%;
 			    height: 340px;
-			    position: absolute;
 			    right: -27%;
 			    top: 56%;
-			    z-index: -2;
 	    }
 	     @media only screen and (min-width: 1025px) and (max-width: 1199px){
-	    		background: url('../assets/home/pills.jpg')no-repeat;
 	    		background-size: 50%;
 			    width: 60%;
 			    height: 340px;
-			    position: absolute;
 			    right: -32%;
 			    top: 17%;
-			    z-index: -2;
 	    }
 	    @media screen and (min-width: 1200px){
-	    		background: url('../assets/home/pills.jpg')no-repeat;
 	    		background-size: 50%;
 			    width: 60%;
-			    height: 340px;
-			    position: absolute;
+			    height: 370px;
 			    right: -32%;
 			    top: 37%;
-			    z-index: -2;
 	    }
 	    @media screen and (min-width: 1400px){
-			    top: 55%;
+	    		background-size:40%;
+			    top: 60%;
+			     right: -38%;
 			    z-index: -2;
 	    }
 	}
@@ -1241,51 +1290,53 @@ body{
 		height:1000px;
 	}
 	.pillow{
+		z-index: -2;
+		background: url('../assets/home/pillow.png')no-repeat;
+		position: absolute;
+	    @media screen and (max-width: 375px){
+	    		    background-size: 129%;
+				    width: 60%;
+				    height: 200px;
+				    left: 0%;
+				    top: 2%;
+				    z-index: 4;
+	    }
+	    @media only screen and (min-width: 376px) and (max-width: 599px){
+	    		    background-size: 80%;
+    width: 120%;
+    height: 380px;
+    position: absolute;
+    left: -9%;
+    top: 35%;
+    z-index: 2;
 
-			    z-index: -2;
-	    @media screen and (max-width: 599px){
-	    		background: url('../assets/home/pillow.png')no-repeat;
-	    		background-size: 100%;
-	    		width: 60%;
-	    		height: 200px;
-		    	position: absolute;
-			    left: -2%;
-    			top: 22%;
 	    }
 	    @media only screen and (min-width: 600px) and (max-width: 768px){
-	    		background: url('../assets/home/pillow.png')no-repeat;
 	    		background-size: 80%;
 	    		width: 60%;
 	    		height: 300px;
-		    	position: absolute;
 			    left: -2%;
     			top: 22%;
 	    }
 	    @media only screen and (min-width: 769px) and (max-width: 1024px){
-	    		background: url('../assets/home/pillow.png')no-repeat;
 	    		background-size: 50%;
 			    width: 60%;
 			    height: 340px;
-			    position: absolute;
 			    left: -2%;
 			    top: 5%;
 	    }
 	     @media only screen and (min-width: 1025px) and (max-width: 1199px){
-	    		background: url('../assets/home/pillow.png')no-repeat;
 	    		background-size: 50%;
 			    width: 60%;
 			    height: 340px;
-			    position: absolute;
 			    left: -32%;
 			    top: 17%;
 	    }
 	    @media screen and (min-width: 1200px){
 	    		transform:rotate(10deg);
-	    		background: url('../assets/home/pillow.png')no-repeat;
 	    		background-size: 50%;
 			    width: 70%;
 			    height: 570px;
-			    position: absolute;
 			    left: -5%;
 			    top: -7%;
 	    }
@@ -1295,30 +1346,34 @@ body{
 	    }
 	}
 	.plant{
-	    @media screen and (max-width: 600px){
 	    		background: url('../assets/home/plant.png')no-repeat;
+
+			    position: absolute;
+	    @media screen and (max-width: 375px){
 	    		background-size: 29%;
 			    width: 130%;
 			    height: 340px;
-			    position: absolute;
+			    right: -103%;
+			    top: -83%;
+	    }
+	    @media only screen and (min-width: 376px) and (max-width: 600px){
+	    		background-size: 29%;
+			    width: 130%;
+			    height: 340px;
 			    right: -103%;
 			    top: -23%;
 	    }
 	    @media only screen and (min-width: 601px) and (max-width: 768px){
-	    		background: url('../assets/home/plant.png')no-repeat;
 	    		background-size: 29%;
 			    width: 60%;
 			    height: 340px;
-			    position: absolute;
 			    right: -47%;
 			    top: -23%;
 	    }
 	    @media only screen and (min-width: 769px) and (max-width: 1024px){
-	    		background: url('../assets/home/plant.png')no-repeat;
 	    		background-size: 50%;
 			    width: 60%;
 			    height: 340px;
-			    position: absolute;
 			    right: -32%;
 			    top: -5%;
 			    z-index: -2;

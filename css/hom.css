@@ -48,8 +48,8 @@ body {
       body .footer ul {
         width: 90%; }
         body .footer ul li {
-          width: 75%;
-          margin: 10px 20px; } }
+          width: 45%;
+          margin: 10px 0px; } }
     @media only screen and (min-width: 601px) and (max-width: 768px) {
       body .footer p {
         padding: 8% 0 0 0; }
@@ -94,6 +94,12 @@ body {
             @media screen and (min-width: 731px) and (max-width: 768px) {
               body .footer .map .top .payment .microsoft, body .footer .map .top .payment .visa {
                 width: 35%; } }
+          @media screen and (max-width: 730px) {
+            body .footer .map .top .payment .visa {
+              background-position: 14px 9px !important; } }
+          @media screen and (max-width: 730px) {
+            body .footer .map .top .payment .microsoft {
+              background-position: -106px 9px !important; } }
           body .footer .map .top .payment .microsoft {
             background-position: -70px 9px; }
           body .footer .map .top .payment .visa {
@@ -158,21 +164,46 @@ body {
     background-size: 55%;
     background-repeat: no-repeat;
     background-position: 52% 100%; }
+    body .mapa section p {
+      font-family: rounded;
+      color: #3E698B;
+      position: absolute;
+      width: 230px;
+      margin-top: 17%;
+      margin-left: 24%;
+      font-size: 1.2em; }
+    body .mapa section .tooltip {
+      float: left;
+      left: 5%;
+      margin-top: 15%;
+      position: relative; }
+      body .mapa section .tooltip .talkbubble {
+        width: 300px;
+        height: 80px;
+        position: absolute;
+        margin-left: 14%;
+        margin-top: 15%;
+        background: rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid #3E698B;
+        position: relative;
+        margin: 0 auto; }
+      body .mapa section .tooltip .talkbubble:before {
+        position: absolute;
+        left: 47%;
+        content: "";
+        bottom: -10px;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-top: 9px solid #3E698B;
+        border-right: 7px solid transparent;
+        margin-top: 30px; }
     @media screen and (max-width: 768px) {
       body .mapa {
         background-size: 105%; } }
     @media screen and (min-width: 1282px) {
       body .mapa {
         background-position: 52% -100%; } }
-    body .mapa p {
-      text-align: center;
-      font-size: 1.5em;
-      padding: 3em 0 0 0;
-      font-family: rounded;
-      color: #3E698B; }
-      @media screen and (min-width: 1282px) {
-        body .mapa p {
-          padding: 0; } }
     body .mapa .face {
       width: 50px;
       height: 50px; }
@@ -253,6 +284,9 @@ body {
         width: 20px;
         height: 20px;
         background-image: url("../assets/home/thumbs.png"); }
+      @media screen and (max-width: 600px) {
+        body .mapa .face-5 {
+          display: none; } }
     body .mapa .pin-small, body .mapa .pin {
       position: absolute;
       background-image: url("../assets/home/pin-hospital.png");
@@ -389,14 +423,18 @@ body {
     position: absolute;
     top: 30%;
     height: 1px;
-    width: 100%;
-    background-color: red; }
+    width: 100%; }
+    @media screen and (max-width: 600px) {
+      .parallax #bloque-1 {
+        top: 15%; } }
   .parallax #bloque-2 {
     position: absolute;
     top: 2000px;
     height: 1px;
-    width: 100%;
-    background-color: blue; }
+    width: 100%; }
+    @media screen and (max-width: 600px) {
+      .parallax #bloque-2 {
+        top: 800px; } }
     @media screen and (min-width: 1300px) {
       .parallax #bloque-2 {
         top: 1800px; } }
@@ -404,8 +442,10 @@ body {
     position: absolute;
     top: 2900px;
     height: 1px;
-    width: 100%;
-    background-color: green; }
+    width: 100%; }
+    @media screen and (max-width: 600px) {
+      .parallax #bloque-3 {
+        top: 1500px; } }
     @media screen and (min-width: 1300px) {
       .parallax #bloque-3 {
         top: 2800px; } }
@@ -413,8 +453,10 @@ body {
     position: absolute;
     top: 3700px;
     height: 1px;
-    width: 100%;
-    background-color: gray; }
+    width: 100%; }
+    @media screen and (max-width: 600px) {
+      .parallax #bloque-4 {
+        top: 2300px; } }
   .parallax .static-iphone {
     position: relative;
     transition: opacity ease-in 0.3s;
@@ -431,17 +473,24 @@ body {
         width: 300px; } }
   .static-iphone section p {
     font-family: rounded;
-    color: #fff;
+    color: #3E698B;
     position: absolute; }
   .static-iphone section .tooltip {
     position: relative; }
     .static-iphone section .tooltip .talkbubble {
-      background-color: #50B720;
+      background: rgba(255, 255, 255, 0.5);
+      border-bottom: 1px solid #3E698B;
       position: relative;
       margin: 0 auto; }
     .static-iphone section .tooltip .talkbubble:before {
       content: "";
-      position: absolute; }
+      bottom: -10px;
+      width: 0;
+      height: 0;
+      border-left: 7px solid transparent;
+      border-top: 9px solid #3E698B;
+      border-right: 7px solid transparent;
+      margin-top: 30px; }
   @media screen and (max-width: 768px) {
     .static-iphone section p {
       top: 0;
@@ -452,28 +501,27 @@ body {
       width: 90%;
       height: 50px; }
     .static-iphone section .tooltip .talkbubble:before {
-      bottom: -7px;
+      bottom: -8px;
+      position: absolute;
       width: 0;
       height: 0;
       border-right: 5px solid transparent;
-      border-top: 7px solid #50B720;
+      border-top: 7px solid #3E698B;
       border-left: 6px solid transparent; } }
   @media only screen and (min-width: 760px) and (max-width: 1024px) {
     .static-iphone section p {
       top: 0;
       width: 60%;
-      margin-left: calc(50% - 25%);
+      margin-left: calc(40% - 20%);
       font-size: 1.3em; }
     .static-iphone section .tooltip .talkbubble {
       width: 60%;
       height: 60px; }
     .static-iphone section .tooltip .talkbubble:before {
-      bottom: -7px;
+      top: 31px;
+      position: absolute;
       width: 0;
-      height: 0;
-      border-right: 5px solid transparent;
-      border-top: 7px solid #50B720;
-      border-left: 6px solid transparent; } }
+      height: 0; } }
   @media only screen and (min-width: 1025px) and (max-width: 1199px) {
     .static-iphone section p {
       top: 0;
@@ -486,16 +534,13 @@ body {
     .static-iphone section .tooltip .talkbubble:before {
       bottom: -7px;
       width: 0;
-      height: 0;
-      border-right: 5px solid transparent;
-      border-top: 7px solid #50B720;
-      border-left: 6px solid transparent; } }
+      height: 0; } }
   @media screen and (min-width: 1200px) {
     .static-iphone section p {
       width: 250px;
       margin-top: 17%;
       margin-left: 16%;
-      text-align: left; }
+      text-align: center; }
     .static-iphone section .tooltip .talkbubble {
       width: 300px;
       height: 80px;
@@ -503,22 +548,18 @@ body {
       margin-left: 14%;
       margin-top: 15%; }
     .static-iphone section .tooltip .talkbubble:before {
-      right: -7px;
+      position: absolute;
       width: 0;
-      height: 0;
-      border-top: 5px solid transparent;
-      border-left: 7px solid #50B720;
-      border-bottom: 6px solid transparent;
-      margin-top: 30px; } }
+      height: 0; } }
   @media screen and (min-width: 1300px) {
     .static-iphone section p {
       width: 230px;
       margin-top: 17%;
-      margin-left: 20%;
-      text-align: left;
+      margin-left: 24%;
       font-size: 1.2em; }
     .static-iphone section .tooltip .talkbubble {
-      height: 110px; } }
+      height: 110px;
+      margin-left: 21%; } }
 
 #screen-0 {
   top: 0; }
@@ -912,70 +953,65 @@ body {
     #screen-2 .receta {
       right: -33%;
       top: -35%; } }
-  @media screen and (max-width: 600px) {
-    #screen-2 .pills {
-      background: url("../assets/home/pills.jpg") no-repeat;
-      background-size: 100%;
-      width: 80%;
-      height: 400px;
-      position: absolute;
-      right: -2%;
-      top: 18%;
-      z-index: -2; } }
-  @media only screen and (min-width: 601px) and (max-width: 768px) {
-    #screen-2 .pills {
-      background: url("../assets/home/pills.jpg") no-repeat;
-      background-size: 100%;
-      width: 60%;
-      height: 200px;
-      position: absolute;
-      right: -2%;
-      top: 7%;
-      z-index: -2; } }
-  @media only screen and (min-width: 600px) and (max-width: 768px) {
-    #screen-2 .pills {
-      background: url("../assets/home/pills.jpg") no-repeat;
-      background-size: 100%;
-      width: 60%;
-      height: 400px;
-      position: absolute;
-      right: -2%;
-      top: 10%;
-      z-index: -2; } }
-  @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    #screen-2 .pills {
-      background: url("../assets/home/pills.jpg") no-repeat;
-      background-size: 60%;
-      width: 60%;
-      height: 340px;
-      position: absolute;
-      right: -27%;
-      top: 56%;
-      z-index: -2; } }
-  @media only screen and (min-width: 1025px) and (max-width: 1199px) {
-    #screen-2 .pills {
-      background: url("../assets/home/pills.jpg") no-repeat;
-      background-size: 50%;
-      width: 60%;
-      height: 340px;
-      position: absolute;
-      right: -32%;
-      top: 17%;
-      z-index: -2; } }
-  @media screen and (min-width: 1200px) {
-    #screen-2 .pills {
-      background: url("../assets/home/pills.jpg") no-repeat;
-      background-size: 50%;
-      width: 60%;
-      height: 340px;
-      position: absolute;
-      right: -32%;
-      top: 37%;
-      z-index: -2; } }
-  @media screen and (min-width: 1400px) {
-    #screen-2 .pills {
-      top: 55%;
-      z-index: -2; } }
+  #screen-2 .pills {
+    background: url("../assets/home/pills.jpg") no-repeat;
+    z-index: -2;
+    position: absolute; }
+    @media screen and (max-width: 374px) {
+      #screen-2 .pills {
+        background-size: 100%;
+        width: 80%;
+        height: 400px;
+        right: -32%;
+        top: 38%; } }
+    @media only screen and (min-width: 375px) and (max-width: 600px) {
+      #screen-2 .pills {
+        background-size: 100%;
+        width: 80%;
+        height: 400px;
+        right: -32%;
+        top: 48%; } }
+    @media only screen and (min-width: 601px) and (max-width: 768px) {
+      #screen-2 .pills {
+        background-size: 100%;
+        width: 60%;
+        height: 200px;
+        right: -2%;
+        top: 7%; } }
+    @media only screen and (min-width: 600px) and (max-width: 768px) {
+      #screen-2 .pills {
+        background-size: 100%;
+        width: 60%;
+        height: 400px;
+        right: -2%;
+        top: 10%; } }
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      #screen-2 .pills {
+        background-size: 60%;
+        width: 60%;
+        height: 340px;
+        right: -27%;
+        top: 56%; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1199px) {
+      #screen-2 .pills {
+        background-size: 50%;
+        width: 60%;
+        height: 340px;
+        right: -32%;
+        top: 17%; } }
+    @media screen and (min-width: 1200px) {
+      #screen-2 .pills {
+        background-size: 50%;
+        width: 60%;
+        height: 370px;
+        right: -32%;
+        top: 37%; } }
+    @media screen and (min-width: 1400px) {
+      #screen-2 .pills {
+        background-size: 40%;
+        top: 60%;
+        right: -38%;
+        z-index: -2; } }
   @media screen and (max-width: 768px) {
     #screen-2 .pill {
       transform: rotate(-80deg);
@@ -1049,105 +1085,111 @@ body {
     #screen-3 {
       height: 1000px; } }
   #screen-3 .pillow {
-    z-index: -2; }
-    @media screen and (max-width: 599px) {
+    z-index: -2;
+    background: url("../assets/home/pillow.png") no-repeat;
+    position: absolute; }
+    @media screen and (max-width: 375px) {
       #screen-3 .pillow {
-        background: url("../assets/home/pillow.png") no-repeat;
-        background-size: 100%;
+        background-size: 129%;
         width: 60%;
         height: 200px;
+        left: 0%;
+        top: 2%;
+        z-index: 4; } }
+    @media only screen and (min-width: 376px) and (max-width: 599px) {
+      #screen-3 .pillow {
+        background-size: 80%;
+        width: 120%;
+        height: 380px;
         position: absolute;
-        left: -2%;
-        top: 22%; } }
+        left: -9%;
+        top: 35%;
+        z-index: 2; } }
     @media only screen and (min-width: 600px) and (max-width: 768px) {
       #screen-3 .pillow {
-        background: url("../assets/home/pillow.png") no-repeat;
         background-size: 80%;
         width: 60%;
         height: 300px;
-        position: absolute;
         left: -2%;
         top: 22%; } }
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
       #screen-3 .pillow {
-        background: url("../assets/home/pillow.png") no-repeat;
         background-size: 50%;
         width: 60%;
         height: 340px;
-        position: absolute;
         left: -2%;
         top: 5%; } }
     @media only screen and (min-width: 1025px) and (max-width: 1199px) {
       #screen-3 .pillow {
-        background: url("../assets/home/pillow.png") no-repeat;
         background-size: 50%;
         width: 60%;
         height: 340px;
-        position: absolute;
         left: -32%;
         top: 17%; } }
     @media screen and (min-width: 1200px) {
       #screen-3 .pillow {
         transform: rotate(10deg);
-        background: url("../assets/home/pillow.png") no-repeat;
         background-size: 50%;
         width: 70%;
         height: 570px;
-        position: absolute;
         left: -5%;
         top: -7%; } }
     @media screen and (min-width: 1400px) {
       #screen-3 .pillow {
         left: -5%;
         top: 5%; } }
-  @media screen and (max-width: 600px) {
-    #screen-3 .plant {
-      background: url("../assets/home/plant.png") no-repeat;
-      background-size: 29%;
-      width: 130%;
-      height: 340px;
-      position: absolute;
-      right: -103%;
-      top: -23%; } }
-  @media only screen and (min-width: 601px) and (max-width: 768px) {
-    #screen-3 .plant {
-      background: url("../assets/home/plant.png") no-repeat;
-      background-size: 29%;
-      width: 60%;
-      height: 340px;
-      position: absolute;
-      right: -47%;
-      top: -23%; } }
-  @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    #screen-3 .plant {
-      background: url("../assets/home/plant.png") no-repeat;
-      background-size: 50%;
-      width: 60%;
-      height: 340px;
-      position: absolute;
-      right: -32%;
-      top: -5%;
-      z-index: -2; } }
-  @media only screen and (min-width: 1025px) and (max-width: 1199px) {
-    #screen-3 .plant {
-      background: url("../assets/home/plant.png") no-repeat;
-      background-size: 50%;
-      width: 60%;
-      height: 340px;
-      position: absolute;
-      right: -32%;
-      top: 17%;
-      z-index: -2; } }
-  @media screen and (min-width: 1200px) {
-    #screen-3 .plant {
-      background: url("../assets/home/plant.png") no-repeat;
-      background-size: 29%;
-      width: 60%;
-      height: 340px;
-      position: absolute;
-      right: -45%;
-      top: -19%;
-      z-index: -2; } }
+  #screen-3 .plant {
+    background: url("../assets/home/plant.png") no-repeat;
+    position: absolute; }
+    @media screen and (max-width: 375px) {
+      #screen-3 .plant {
+        background-size: 29%;
+        width: 130%;
+        height: 340px;
+        right: -103%;
+        top: -83%; } }
+    @media only screen and (min-width: 376px) and (max-width: 600px) {
+      #screen-3 .plant {
+        background-size: 29%;
+        width: 130%;
+        height: 340px;
+        right: -103%;
+        top: -23%; } }
+    @media only screen and (min-width: 601px) and (max-width: 768px) {
+      #screen-3 .plant {
+        background-size: 29%;
+        width: 60%;
+        height: 340px;
+        right: -47%;
+        top: -23%; } }
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+      #screen-3 .plant {
+        background-size: 50%;
+        width: 60%;
+        height: 340px;
+        right: -32%;
+        top: -5%;
+        z-index: -2; } }
+    @media only screen and (min-width: 1025px) and (max-width: 1199px) {
+      #screen-3 .plant {
+        background: url("../assets/home/plant.png") no-repeat;
+        background-size: 50%;
+        width: 60%;
+        height: 340px;
+        position: absolute;
+        right: -32%;
+        top: 17%;
+        z-index: -2; } }
+    @media screen and (min-width: 1200px) {
+      #screen-3 .plant {
+        background: url("../assets/home/plant.png") no-repeat;
+        background-size: 29%;
+        width: 60%;
+        height: 340px;
+        position: absolute;
+        right: -45%;
+        top: -19%;
+        z-index: -2; } }
   #screen-3 .estetos {
     background: url("../assets/home/estetos.jpg") no-repeat;
     z-index: -4; }
