@@ -7,7 +7,9 @@
 body {
   /**/
   /**/
-  margin: 0; }
+  margin: 0;
+  /*envelope*/
+  /*envelope*/ }
   @media screen and (max-width: 600px) {
     body .initial {
       padding-top: 60%; } }
@@ -156,6 +158,31 @@ body {
     -webkit-transform: scale(1.5); }
   100% {
     transform: scale(1.5); } }
+  body .envelope {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    height: 1000px;
+    margin-top: 3em; }
+    body .envelope div {
+      background-repeat: no-repeat;
+      position: absolute; }
+    body .envelope .top {
+      margin-left: calc(70% - 35%);
+      width: 30%;
+      height: 800px;
+      top: 0;
+      background-image: url("../assets/home/envelope-1.png");
+      background-size: 100%;
+      z-index: 99; }
+    body .envelope .bottom {
+      margin-left: calc(70% - 35%);
+      width: 30%;
+      height: 800px;
+      background-image: url("../assets/home/envelope-2.png");
+      background-size: 100%;
+      z-index: -4; }
   body .mapa {
     position: relative;
     width: 100%;
@@ -423,7 +450,8 @@ body {
     position: absolute;
     top: 30%;
     height: 1px;
-    width: 100%; }
+    width: 100%;
+    background-color: blue; }
     @media screen and (max-width: 600px) {
       .parallax #bloque-1 {
         top: 15%; } }
@@ -431,7 +459,8 @@ body {
     position: absolute;
     top: 2000px;
     height: 1px;
-    width: 100%; }
+    width: 100%;
+    background-color: green; }
     @media screen and (max-width: 600px) {
       .parallax #bloque-2 {
         top: 800px; } }
@@ -440,23 +469,25 @@ body {
         top: 1800px; } }
   .parallax #bloque-3 {
     position: absolute;
-    top: 2900px;
+    top: 2000px;
     height: 1px;
-    width: 100%; }
+    width: 100%;
+    background: red; }
     @media screen and (max-width: 600px) {
       .parallax #bloque-3 {
         top: 1500px; } }
     @media screen and (min-width: 1300px) {
       .parallax #bloque-3 {
-        top: 2800px; } }
+        top: 2300px; } }
   .parallax #bloque-4 {
     position: absolute;
     top: 3700px;
     height: 1px;
-    width: 100%; }
+    width: 100%;
+    background: gray; }
     @media screen and (max-width: 600px) {
       .parallax #bloque-4 {
-        top: 2300px; } }
+        top: 2800px; } }
   .parallax .static-iphone {
     position: relative;
     transition: opacity ease-in 0.3s;
@@ -849,26 +880,26 @@ body {
       right: -29%;
       top: 10%; } }
 
-#screen-2 {
+#screen-3 {
   height: 1500px;
   opacity: 0;
   top: 0; }
-  #screen-2 .tratamiento {
+  #screen-3 .tratamiento {
     margin-top: 2em; }
   @media screen and (max-width: 768px) {
-    #screen-2 {
+    #screen-3 {
       height: 600px; } }
   @media screen and (min-width: 769px) and (max-width: 1024px) {
-    #screen-2 {
+    #screen-3 {
       height: 600px; } }
   @media screen and (min-width: 1200px) {
-    #screen-2 {
+    #screen-3 {
       height: 700px; } }
   @media screen and (min-width: 1300px) {
-    #screen-2 {
+    #screen-3 {
       height: 850px; } }
   @media screen and (max-width: 768px) {
-    #screen-2 .radio {
+    #screen-3 .radio {
       background: url("../assets/home/radio.png") no-repeat;
       background-size: 100%;
       width: 60%;
@@ -878,7 +909,7 @@ body {
       top: 4%;
       z-index: -1; } }
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    #screen-2 .radio {
+    #screen-3 .radio {
       background: url("../assets/home/radio.png") no-repeat;
       background-size: 70%;
       width: 60%;
@@ -887,7 +918,7 @@ body {
       left: -14%;
       top: 0; } }
   @media only screen and (min-width: 1025px) and (max-width: 1199px) {
-    #screen-2 .radio {
+    #screen-3 .radio {
       background: url("../assets/home/radio.png") no-repeat;
       background-size: 70%;
       width: 60%;
@@ -896,7 +927,7 @@ body {
       left: -14%;
       top: 6%; } }
   @media screen and (min-width: 1200px) {
-    #screen-2 .radio {
+    #screen-3 .radio {
       background: url("../assets/home/radio.png") no-repeat;
       background-size: 40%;
       width: 70%;
@@ -906,10 +937,10 @@ body {
       top: 3%;
       z-index: -1; } }
   @media screen and (min-width: 1400px) {
-    #screen-2 .radio {
+    #screen-3 .radio {
       height: 450px; } }
   @media screen and (max-width: 768px) {
-    #screen-2 .receta {
+    #screen-3 .receta {
       transform: rotate(-80deg);
       background: url("../assets/home/prescription.png") no-repeat;
       background-size: 100%;
@@ -920,7 +951,7 @@ body {
       top: 3%;
       z-index: -1; } }
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    #screen-2 .receta {
+    #screen-3 .receta {
       transform: rotate(-80deg);
       background: url("../assets/home/prescription.png") no-repeat;
       background-size: 60%;
@@ -930,7 +961,7 @@ body {
       right: -31%;
       top: -5%; } }
   @media only screen and (min-width: 1025px) and (max-width: 1199px) {
-    #screen-2 .receta {
+    #screen-3 .receta {
       transform: rotate(-80deg);
       background: url("../assets/home/prescription.png") no-repeat;
       background-size: 50%;
@@ -940,7 +971,7 @@ body {
       right: -31%;
       top: -5%; } }
   @media screen and (min-width: 1200px) {
-    #screen-2 .receta {
+    #screen-3 .receta {
       transform: rotate(-80deg);
       background: url("../assets/home/prescription.png") no-repeat;
       background-size: 60%;
@@ -950,70 +981,70 @@ body {
       right: -38%;
       top: -40%; } }
   @media screen and (min-width: 1400px) {
-    #screen-2 .receta {
+    #screen-3 .receta {
       right: -33%;
       top: -35%; } }
-  #screen-2 .pills {
+  #screen-3 .pills {
     background: url("../assets/home/pills.jpg") no-repeat;
     z-index: -2;
     position: absolute; }
     @media screen and (max-width: 374px) {
-      #screen-2 .pills {
+      #screen-3 .pills {
         background-size: 100%;
         width: 80%;
         height: 400px;
         right: -32%;
         top: 38%; } }
     @media only screen and (min-width: 375px) and (max-width: 600px) {
-      #screen-2 .pills {
+      #screen-3 .pills {
         background-size: 100%;
         width: 80%;
         height: 400px;
         right: -32%;
         top: 48%; } }
     @media only screen and (min-width: 601px) and (max-width: 768px) {
-      #screen-2 .pills {
+      #screen-3 .pills {
         background-size: 100%;
         width: 60%;
         height: 200px;
         right: -2%;
         top: 7%; } }
     @media only screen and (min-width: 600px) and (max-width: 768px) {
-      #screen-2 .pills {
+      #screen-3 .pills {
         background-size: 100%;
         width: 60%;
         height: 400px;
         right: -2%;
         top: 10%; } }
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
-      #screen-2 .pills {
+      #screen-3 .pills {
         background-size: 60%;
         width: 60%;
         height: 340px;
         right: -27%;
         top: 56%; } }
     @media only screen and (min-width: 1025px) and (max-width: 1199px) {
-      #screen-2 .pills {
+      #screen-3 .pills {
         background-size: 50%;
         width: 60%;
         height: 340px;
         right: -32%;
         top: 17%; } }
     @media screen and (min-width: 1200px) {
-      #screen-2 .pills {
+      #screen-3 .pills {
         background-size: 50%;
         width: 60%;
         height: 370px;
         right: -32%;
         top: 37%; } }
     @media screen and (min-width: 1400px) {
-      #screen-2 .pills {
+      #screen-3 .pills {
         background-size: 40%;
         top: 60%;
         right: -38%;
         z-index: -2; } }
   @media screen and (max-width: 768px) {
-    #screen-2 .pill {
+    #screen-3 .pill {
       transform: rotate(-80deg);
       background: url("../assets/home/pill.png") no-repeat;
       background-size: 100%;
@@ -1023,7 +1054,7 @@ body {
       right: -3%;
       top: 0; } }
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
-    #screen-2 .pill {
+    #screen-3 .pill {
       transform: rotate(-80deg);
       background: url("../assets/home/pill.png") no-repeat;
       background-size: 80%;
@@ -1033,7 +1064,7 @@ body {
       right: -3%;
       top: -14%; } }
   @media only screen and (min-width: 1025px) and (max-width: 1199px) {
-    #screen-2 .pill {
+    #screen-3 .pill {
       transform: rotate(-80deg);
       background: url("../assets/home/pill.png") no-repeat;
       background-size: 100%;
@@ -1043,7 +1074,7 @@ body {
       right: -3%;
       top: -14%; } }
   @media screen and (min-width: 1200px) {
-    #screen-2 .pill {
+    #screen-3 .pill {
       transform: rotate(-80deg);
       background: url("../assets/home/pill.png") no-repeat;
       background-size: 50%;
@@ -1053,7 +1084,7 @@ body {
       right: -3%;
       top: -20%; } }
 
-#screen-3 {
+#screen-2 {
   width: 100%;
   height: 600px;
   background-position: center;
@@ -1062,34 +1093,34 @@ body {
   opacity: 0;
   text-align: center;
   top: 0; }
-  #screen-3 .conectar {
+  #screen-2 .conectar {
     margin-top: 2em; }
-  #screen-3 video {
+  #screen-2 video {
     width: 250px; }
     @media screen and (max-width: 1024px) {
-      #screen-3 video {
+      #screen-2 video {
         display: none; } }
   @media screen and (max-width: 1024px) {
-    #screen-3 {
+    #screen-2 {
       height: 570px; }
-      #screen-3 .video-mobile {
+      #screen-2 .video-mobile {
         background-image: url("../assets/home/call.png");
         width: 230px;
         background-size: 100%;
         height: 600px;
         margin: 0 auto; } }
   @media screen and (min-width: 1025px) {
-    #screen-3 .video-mobile {
+    #screen-2 .video-mobile {
       display: none; } }
   @media screen and (min-width: 1200px) {
-    #screen-3 {
-      height: 1000px; } }
-  #screen-3 .pillow {
+    #screen-2 {
+      height: 100%; } }
+  #screen-2 .pillow {
     z-index: -2;
     background: url("../assets/home/pillow.png") no-repeat;
     position: absolute; }
     @media screen and (max-width: 375px) {
-      #screen-3 .pillow {
+      #screen-2 .pillow {
         background-size: 129%;
         width: 60%;
         height: 200px;
@@ -1097,7 +1128,7 @@ body {
         top: 2%;
         z-index: 4; } }
     @media only screen and (min-width: 376px) and (max-width: 599px) {
-      #screen-3 .pillow {
+      #screen-2 .pillow {
         background-size: 80%;
         width: 120%;
         height: 380px;
@@ -1106,28 +1137,28 @@ body {
         top: 35%;
         z-index: 2; } }
     @media only screen and (min-width: 600px) and (max-width: 768px) {
-      #screen-3 .pillow {
+      #screen-2 .pillow {
         background-size: 80%;
         width: 60%;
         height: 300px;
         left: -2%;
         top: 22%; } }
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
-      #screen-3 .pillow {
+      #screen-2 .pillow {
         background-size: 50%;
         width: 60%;
         height: 340px;
         left: -2%;
         top: 5%; } }
     @media only screen and (min-width: 1025px) and (max-width: 1199px) {
-      #screen-3 .pillow {
+      #screen-2 .pillow {
         background-size: 50%;
         width: 60%;
         height: 340px;
         left: -32%;
         top: 17%; } }
     @media screen and (min-width: 1200px) {
-      #screen-3 .pillow {
+      #screen-2 .pillow {
         transform: rotate(10deg);
         background-size: 50%;
         width: 70%;
@@ -1135,35 +1166,35 @@ body {
         left: -5%;
         top: -7%; } }
     @media screen and (min-width: 1400px) {
-      #screen-3 .pillow {
+      #screen-2 .pillow {
         left: -5%;
         top: 5%; } }
-  #screen-3 .plant {
+  #screen-2 .plant {
     background: url("../assets/home/plant.png") no-repeat;
     position: absolute; }
     @media screen and (max-width: 375px) {
-      #screen-3 .plant {
+      #screen-2 .plant {
         background-size: 29%;
         width: 130%;
         height: 340px;
         right: -103%;
         top: -83%; } }
     @media only screen and (min-width: 376px) and (max-width: 600px) {
-      #screen-3 .plant {
+      #screen-2 .plant {
         background-size: 29%;
         width: 130%;
         height: 340px;
         right: -103%;
         top: -23%; } }
     @media only screen and (min-width: 601px) and (max-width: 768px) {
-      #screen-3 .plant {
+      #screen-2 .plant {
         background-size: 29%;
         width: 60%;
         height: 340px;
         right: -47%;
         top: -23%; } }
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
-      #screen-3 .plant {
+      #screen-2 .plant {
         background-size: 50%;
         width: 60%;
         height: 340px;
@@ -1171,7 +1202,7 @@ body {
         top: -5%;
         z-index: -2; } }
     @media only screen and (min-width: 1025px) and (max-width: 1199px) {
-      #screen-3 .plant {
+      #screen-2 .plant {
         background: url("../assets/home/plant.png") no-repeat;
         background-size: 50%;
         width: 60%;
@@ -1181,7 +1212,7 @@ body {
         top: 17%;
         z-index: -2; } }
     @media screen and (min-width: 1200px) {
-      #screen-3 .plant {
+      #screen-2 .plant {
         background: url("../assets/home/plant.png") no-repeat;
         background-size: 29%;
         width: 60%;
@@ -1190,11 +1221,11 @@ body {
         right: -45%;
         top: -19%;
         z-index: -2; } }
-  #screen-3 .estetos {
+  #screen-2 .estetos {
     background: url("../assets/home/estetos.jpg") no-repeat;
     z-index: -4; }
     @media screen and (max-width: 600px) {
-      #screen-3 .estetos {
+      #screen-2 .estetos {
         background-size: 50%;
         width: 80%;
         height: 340px;
@@ -1202,7 +1233,7 @@ body {
         right: -50%;
         top: 0%; } }
     @media only screen and (min-width: 601px) and (max-width: 768px) {
-      #screen-3 .estetos {
+      #screen-2 .estetos {
         background-size: 39%;
         width: 100%;
         height: 340px;
@@ -1210,7 +1241,7 @@ body {
         right: -50%;
         top: 0%; } }
     @media only screen and (min-width: 769px) and (max-width: 1024px) {
-      #screen-3 .estetos {
+      #screen-2 .estetos {
         background-size: 50%;
         width: 60%;
         height: 340px;
@@ -1218,7 +1249,7 @@ body {
         right: -32%;
         top: 10%; } }
     @media only screen and (min-width: 1025px) and (max-width: 1199px) {
-      #screen-3 .estetos {
+      #screen-2 .estetos {
         background-size: 50%;
         width: 60%;
         height: 340px;
@@ -1226,7 +1257,7 @@ body {
         right: -32%;
         top: 17%; } }
     @media screen and (min-width: 1200px) {
-      #screen-3 .estetos {
+      #screen-2 .estetos {
         background-size: 49%;
         width: 60%;
         height: 380px;

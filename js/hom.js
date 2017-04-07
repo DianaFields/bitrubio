@@ -32,7 +32,7 @@ function homeInit() {
             if (height  > 4500){
               $('.stop').css('position', 'inherit');
               $('.parallax').css('background-attachment', 'inherit');
-              $('#screen-3').css('top', '-35%');
+              // $('#screen-3').css('top', '-35%');
             }
             // fixed
 
@@ -64,16 +64,18 @@ function homeInit() {
     // 
     if (scrollTop > secondScreen) {
       if (changeAgain) {
-       $('#screen-1').css('opacity','0')
-       $('#screen-2').css('opacity','1')
+       $('#screen-1').css('opacity','0');
+       $('#screen-2').css('opacity','1');
+       $('video')[0].play();
        window.clearInterval(showMessageInterval);
        changeAgain = false;
       }
     }
     if (scrollTop < secondScreen) {
       if (changeAgain == false) {
-     $('#screen-2').css('opacity','0')
-     $('#screen-1').css('opacity','1')
+     $('#screen-2').css('opacity','0');
+     $('#screen-1').css('opacity','1');
+    
      window.clearInterval(showMessageInterval);
      changeAgain = true;
     }
@@ -81,33 +83,33 @@ function homeInit() {
   // 
     if (scrollTop > videoScreen) {
       if (changeTwice) {
-       $('#screen-2').css('opacity','0')
-       $('#screen-3').css('opacity','1')
-       $('video')[0].play();
+       $('#screen-2').css('opacity','0');
+       $('#screen-3').css('opacity','1');
+      
        window.clearInterval(showMessageInterval);
        changeTwice = false;
       }
     }
     if (scrollTop < videoScreen & scrollTop > secondScreen)  {
       if (changeTwice == false) {
-     $('#screen-3').css('opacity','0')
-     $('#screen-2').css('opacity','1')
+     $('#screen-3').css('opacity','0');
+     $('#screen-2').css('opacity','1');
 
      window.clearInterval(showMessageInterval);
      changeTwice = true;
     }
   }
   // 
-    if (scrollTop > safeScreen) {
-      if (changeLast) {
-       $('#screen-3').css('opacity','0')
-       $('#screen-4').css('opacity','1')
-       $('.progress-bar').css('animation-name','width')
-       window.clearInterval(showMessageInterval);
-       changeLast = false;
-      }
+    // if (scrollTop > safeScreen) {
+    //   if (changeLast) {
+    //    $('#screen-3').css('opacity','0')
+    //    $('#screen-4').css('opacity','1')
+    //    $('.progress-bar').css('animation-name','width')
+    //    window.clearInterval(showMessageInterval);
+    //    changeLast = false;
+    //   }
 
-    }
+    // }
     if (scrollTop < safeScreen & scrollTop > videoScreen)  {
       if (changeLast == false) {
      $('#screen-3').css('opacity','1')
@@ -122,6 +124,11 @@ function homeInit() {
 });
         }
 
-        function progress(){
-          
+        function envelope(){
+          /* Trigger Animation */
+$('a').on('click', function() {
+    $('.sobre').addClass('is-active');
+    $(this).remove();
+});
+
         }
