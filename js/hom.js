@@ -29,10 +29,15 @@ function homeInit() {
                  $('#screen-0').removeClass('initial');
               
             }
-            if (height  > 4500){
+            if (height  > 4100){
               $('.stop').css('position', 'inherit');
               $('.parallax').css('background-attachment', 'inherit');
-              // $('#screen-3').css('top', '-35%');
+              $('.hide').css('opacity', '0');
+              $('#screen-3').css('margin-top', '-25%');
+            }
+            else if (height  < 4100){
+              $('#screen-3').css('margin-top', 'inherit');
+              $('.hide').css('opacity', '1');
             }
             // fixed
 
@@ -42,8 +47,9 @@ function homeInit() {
               var scrollTop = $(window).scrollTop();
               var firstScreen = $("#bloque-1").offset().top;
               var secondScreen = $("#bloque-2").offset().top;
-              var videoScreen = $("#bloque-3").offset().top;
-              var safeScreen = $("#bloque-4").offset().top;
+              var thirdScreen = $("#bloque-3").offset().top;
+              var fourScreen = $("#bloque-4").offset().top;
+              var tope = $("#tope").offset().top;
               if (scrollTop > 700) {
                 if (change) {
                   $('#screen-0').css('opacity','0');
@@ -81,44 +87,50 @@ function homeInit() {
     }
   }
   // 
-    if (scrollTop > videoScreen) {
+    if (scrollTop > thirdScreen) {
       if (changeTwice) {
-       $('#screen-2').css('opacity','0');
        $('#screen-3').css('opacity','1');
+       $('#screen-2').css('opacity','0');
       
        window.clearInterval(showMessageInterval);
        changeTwice = false;
       }
     }
-    if (scrollTop < videoScreen & scrollTop > secondScreen)  {
+    if (scrollTop < thirdScreen & scrollTop > secondScreen)  {
       if (changeTwice == false) {
-     $('#screen-3').css('opacity','0');
      $('#screen-2').css('opacity','1');
+     $('#screen-3').css('opacity','0');
 
      window.clearInterval(showMessageInterval);
      changeTwice = true;
     }
   }
-  // 
-    // if (scrollTop > safeScreen) {
-    //   if (changeLast) {
-    //    $('#screen-3').css('opacity','0')
-    //    $('#screen-4').css('opacity','1')
-    //    $('.progress-bar').css('animation-name','width')
-    //    window.clearInterval(showMessageInterval);
-    //    changeLast = false;
-    //   }
-
-    // }
-    if (scrollTop < safeScreen & scrollTop > videoScreen)  {
-      if (changeLast == false) {
-     $('#screen-3').css('opacity','1')
-     $('#screen-4').css('opacity','0')
-
-     window.clearInterval(showMessageInterval);
-     changeLast = true;
-    }
+  if (scrollTop  > tope){
   }
+  else if(scrollTop  < tope){
+  }
+
+
+
+  // 
+  //   if (scrollTop > fourScreen) {
+  //     if (changeLast) {
+  //      $('#screen-2').css('opacity','0')
+  //      $('#screen-3').css('opacity','1')
+  //      window.clearInterval(showMessageInterval);
+  //      changeLast = false;
+  //     }
+
+  //   }
+  //   if (scrollTop < fourScreen & scrollTop > thirdScreen)  {
+  //     if (changeLast == false) {
+  //    $('#screen-1').css('opacity','1')
+  //    $('#screen-3').css('opacity','0')
+
+  //    window.clearInterval(showMessageInterval);
+  //    changeLast = true;
+  //   }
+  // }
 
 }
 });

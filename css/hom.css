@@ -22,6 +22,10 @@ body {
   @media only screen and (min-width: 1400px) {
     body .initial {
       padding-top: 25%; } }
+  @media screen and (max-width: 768px) {
+    body #tope {
+      position: absolute;
+      top: 3300px; } }
   body .footer {
     width: 100%;
     background: #f2f2f2;
@@ -165,6 +169,21 @@ body {
     position: relative;
     height: 1000px;
     margin-top: 3em; }
+    @media screen and (max-width: 599px) {
+      body .envelope {
+        margin-top: 43em; } }
+    @media only screen and (min-width: 600px) and (max-width: 768px) {
+      body .envelope {
+        margin-top: -15em; } }
+    @media only screen and (min-width: 769px) and (max-width: 1025px) {
+      body .envelope {
+        height: 470px; } }
+    @media only screen and (min-width: 1200px) and (max-width: 1299px) {
+      body .envelope {
+        margin-top: 5em; } }
+    @media screen and (min-width: 1300px) {
+      body .envelope {
+        margin-top: -20em; } }
     body .envelope div {
       background-repeat: no-repeat;
       position: absolute; }
@@ -176,6 +195,10 @@ body {
       background-image: url("../assets/home/envelope-1.png");
       background-size: 100%;
       z-index: 99; }
+      @media screen and (max-width: 767px) {
+        body .envelope .top {
+          margin-left: calc(30% - 15%);
+          width: 70%; } }
     body .envelope .bottom {
       margin-left: calc(70% - 35%);
       width: 30%;
@@ -183,6 +206,47 @@ body {
       background-image: url("../assets/home/envelope-2.png");
       background-size: 100%;
       z-index: -4; }
+      @media screen and (max-width: 767px) {
+        body .envelope .bottom {
+          margin-left: calc(30% - 15%);
+          width: 70%; } }
+    body .envelope section {
+      margin-top: 4em; }
+      body .envelope section p {
+        font-family: rounded;
+        color: #3E698B;
+        position: absolute;
+        width: 230px;
+        text-align: center;
+        margin-top: -4em;
+        margin-left: 2em;
+        font-size: 1.2em; }
+      body .envelope section .tooltip {
+        float: left;
+        left: 5%;
+        margin-top: 15%;
+        position: relative; }
+        body .envelope section .tooltip .talkbubble {
+          width: 300px;
+          height: 80px;
+          position: absolute;
+          margin-left: 14%;
+          margin-top: 15%;
+          background: rgba(255, 255, 255, 0.5);
+          border-bottom: 1px solid #3E698B;
+          position: relative;
+          margin: 0 auto; }
+        body .envelope section .tooltip .talkbubble:before {
+          position: absolute;
+          left: 47%;
+          content: "";
+          bottom: -10px;
+          width: 0;
+          height: 0;
+          border-left: 7px solid transparent;
+          border-top: 9px solid #3E698B;
+          border-right: 7px solid transparent;
+          margin-top: 30px; }
   body .mapa {
     position: relative;
     width: 100%;
@@ -196,8 +260,9 @@ body {
       color: #3E698B;
       position: absolute;
       width: 230px;
-      margin-top: 17%;
-      margin-left: 24%;
+      text-align: center;
+      margin-top: -4em;
+      margin-left: 2em;
       font-size: 1.2em; }
     body .mapa section .tooltip {
       float: left;
@@ -225,6 +290,11 @@ body {
         border-top: 9px solid #3E698B;
         border-right: 7px solid transparent;
         margin-top: 30px; }
+      @media screen and (max-width: 767px) {
+        body .mapa section .tooltip {
+          width: 70%;
+          left: calc(30% - 15%);
+          margin-top: 15%; } }
     @media screen and (max-width: 768px) {
       body .mapa {
         background-size: 105%; } }
@@ -433,7 +503,7 @@ body {
   background-size: 280px; }
   @media screen and (max-width: 768px) {
     .parallax {
-      height: 4000px; } }
+      height: 3380px; } }
   @media only screen and (min-width: 767px) and (max-width: 1024px) {
     .parallax {
       height: 4300px; } }
@@ -445,49 +515,64 @@ body {
       height: 4000px; } }
   @media screen and (min-width: 1200px) {
     .parallax {
+      height: 4000px; } }
+  @media screen and (min-width: 1300px) {
+    .parallax {
       height: 4500px; } }
   .parallax #bloque-1 {
     position: absolute;
     top: 30%;
     height: 1px;
     width: 100%;
-    background-color: blue; }
+    background: red; }
     @media screen and (max-width: 600px) {
       .parallax #bloque-1 {
         top: 15%; } }
+    @media screen and (min-width: 1300px) {
+      .parallax #bloque-1 {
+        top: 20%; } }
   .parallax #bloque-2 {
     position: absolute;
     top: 2000px;
     height: 1px;
     width: 100%;
-    background-color: green; }
+    background: yellow; }
     @media screen and (max-width: 600px) {
       .parallax #bloque-2 {
         top: 800px; } }
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1200px) {
       .parallax #bloque-2 {
         top: 1800px; } }
+    @media screen and (min-width: 1300px) {
+      .parallax #bloque-2 {
+        top: 1500px; } }
   .parallax #bloque-3 {
     position: absolute;
     top: 2000px;
     height: 1px;
     width: 100%;
-    background: red; }
+    background: green; }
     @media screen and (max-width: 600px) {
       .parallax #bloque-3 {
         top: 1500px; } }
+    @media screen and (min-width: 1200px) {
+      .parallax #bloque-3 {
+        top: 2500px; } }
     @media screen and (min-width: 1300px) {
       .parallax #bloque-3 {
         top: 2300px; } }
   .parallax #bloque-4 {
     position: absolute;
-    top: 3700px;
+    top: 3300px;
     height: 1px;
     width: 100%;
     background: gray; }
     @media screen and (max-width: 600px) {
       .parallax #bloque-4 {
-        top: 2800px; } }
+        top: 3300px; } }
+    @media screen and (min-width: 1300px) {
+      .parallax #bloque-4 {
+        top: 3300px; } }
   .parallax .static-iphone {
     position: relative;
     transition: opacity ease-in 0.3s;
@@ -894,7 +979,8 @@ body {
       height: 600px; } }
   @media screen and (min-width: 1200px) {
     #screen-3 {
-      height: 700px; } }
+      height: 700px;
+      top: 2em; } }
   @media screen and (min-width: 1300px) {
     #screen-3 {
       height: 850px; } }
@@ -934,7 +1020,7 @@ body {
       height: 360px;
       position: absolute;
       left: -3%;
-      top: 3%;
+      top: 4%;
       z-index: -1; } }
   @media screen and (min-width: 1400px) {
     #screen-3 .radio {
@@ -1112,9 +1198,6 @@ body {
   @media screen and (min-width: 1025px) {
     #screen-2 .video-mobile {
       display: none; } }
-  @media screen and (min-width: 1200px) {
-    #screen-2 {
-      height: 100%; } }
   #screen-2 .pillow {
     z-index: -2;
     background: url("../assets/home/pillow.png") no-repeat;
