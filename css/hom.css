@@ -171,7 +171,8 @@ body {
     margin-top: 3em; }
     @media screen and (max-width: 599px) {
       body .envelope {
-        margin-top: 43em; } }
+        margin-top: 50em;
+        height: 630px; } }
     @media only screen and (min-width: 600px) and (max-width: 768px) {
       body .envelope {
         margin-top: -15em; } }
@@ -180,7 +181,8 @@ body {
         height: 470px; } }
     @media only screen and (min-width: 1200px) and (max-width: 1299px) {
       body .envelope {
-        margin-top: 5em; } }
+        margin-top: 5em;
+        height: 700px; } }
     @media screen and (min-width: 1300px) {
       body .envelope {
         margin-top: -20em; } }
@@ -197,8 +199,12 @@ body {
       z-index: 99; }
       @media screen and (max-width: 767px) {
         body .envelope .top {
-          margin-left: calc(30% - 15%);
-          width: 70%; } }
+          margin-left: calc(20% - 10%);
+          width: 90%; } }
+      @media only screen and (min-width: 1200px) and (max-width: 1299px) {
+        body .envelope .top {
+          margin-left: calc(65% - 32%);
+          width: 35%; } }
     body .envelope .bottom {
       margin-left: calc(70% - 35%);
       width: 30%;
@@ -208,8 +214,12 @@ body {
       z-index: -4; }
       @media screen and (max-width: 767px) {
         body .envelope .bottom {
-          margin-left: calc(30% - 15%);
-          width: 70%; } }
+          margin-left: calc(20% - 10%);
+          width: 90%; } }
+      @media only screen and (min-width: 1200px) and (max-width: 1299px) {
+        body .envelope .bottom {
+          margin-left: calc(65% - 32%);
+          width: 35%; } }
     body .envelope section {
       margin-top: 4em; }
       body .envelope section p {
@@ -247,6 +257,13 @@ body {
           border-top: 9px solid #3E698B;
           border-right: 7px solid transparent;
           margin-top: 30px; }
+        @media screen and (max-width: 767px) {
+          body .envelope section .tooltip {
+            margin-top: 130%;
+            left: 12%; } }
+        @media only screen and (min-width: 1200px) and (max-width: 1299px) {
+          body .envelope section .tooltip {
+            margin-top: 35%; } }
   body .mapa {
     position: relative;
     width: 100%;
@@ -293,8 +310,13 @@ body {
       @media screen and (max-width: 767px) {
         body .mapa section .tooltip {
           width: 70%;
-          left: calc(30% - 15%);
           margin-top: 15%; } }
+      @media only screen and (min-width: 1200px) and (max-width: 1299px) {
+        body .mapa section .tooltip {
+          margin-top: 30%; } }
+    @media screen and (max-width: 600px) {
+      body .mapa {
+        height: 400px; } }
     @media screen and (max-width: 768px) {
       body .mapa {
         background-size: 105%; } }
@@ -523,8 +545,7 @@ body {
     position: absolute;
     top: 30%;
     height: 1px;
-    width: 100%;
-    background: red; }
+    width: 100%; }
     @media screen and (max-width: 600px) {
       .parallax #bloque-1 {
         top: 15%; } }
@@ -535,8 +556,7 @@ body {
     position: absolute;
     top: 2000px;
     height: 1px;
-    width: 100%;
-    background: yellow; }
+    width: 100%; }
     @media screen and (max-width: 600px) {
       .parallax #bloque-2 {
         top: 800px; } }
@@ -550,8 +570,7 @@ body {
     position: absolute;
     top: 2000px;
     height: 1px;
-    width: 100%;
-    background: green; }
+    width: 100%; }
     @media screen and (max-width: 600px) {
       .parallax #bloque-3 {
         top: 1500px; } }
@@ -565,8 +584,7 @@ body {
     position: absolute;
     top: 3300px;
     height: 1px;
-    width: 100%;
-    background: gray; }
+    width: 100%; }
     @media screen and (max-width: 600px) {
       .parallax #bloque-4 {
         top: 3300px; } }
@@ -974,9 +992,11 @@ body {
   @media screen and (max-width: 768px) {
     #screen-3 {
       height: 600px; } }
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
     #screen-3 {
-      height: 600px; } }
+      height: 800px; }
+      #screen-3 .iphone {
+        margin-top: 8%; } }
   @media screen and (min-width: 1200px) {
     #screen-3 {
       height: 700px;
