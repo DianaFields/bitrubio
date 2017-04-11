@@ -14,19 +14,19 @@ function homeInit() {
           $('.conocer').css('margin-top', '2.5em');
           $(window).scroll(function(){
             // fixed
-             var height = $(window).scrollTop();
+            var height = $(window).scrollTop();
             if (height  < 250){
               $('.stop').css('position', 'inherit');
               $('.parallax').css('background-attachment', 'inherit');
               $('#screen-0').addClass('initial');
-               $('.conocer').css('margin-top', '3em');
+              $('.conocer').css('margin-top', '3em');
             }
             else if(height  > 250) {
               $('.stop').css('position', 'fixed');
               $('.parallax').css('background-attachment', 'fixed');
               $('.tools').css('background-attachment', 'fixed');
-               $('.conocer').css('margin-top', '2em');
-                 $('#screen-0').removeClass('initial');
+              $('.conocer').css('margin-top', '2em');
+              $('#screen-0').removeClass('initial');
               
             }
             if (height  > 4100){
@@ -55,18 +55,18 @@ function homeInit() {
                   $('#screen-0').css('opacity','0');
                   $('#screen-1').css('opacity','1');
                   $('.talkbubble-1').css('opacity','1');
+                  window.clearInterval(showMessageInterval);
+                  change = false;
+                }
+              }
+              if (scrollTop < firstScreen) {
+                if (change == false) {
+                 $('#screen-1').css('opacity','0')
+                 $('#screen-0').css('opacity','1')
                  window.clearInterval(showMessageInterval);
-                 change = false;
+                 change = true;
                }
              }
-             if (scrollTop < firstScreen) {
-              if (change == false) {
-               $('#screen-1').css('opacity','0')
-               $('#screen-0').css('opacity','1')
-               window.clearInterval(showMessageInterval);
-               change = true;
-             }
-           }
     // 
     if (scrollTop > secondScreen) {
       if (changeAgain) {
@@ -75,72 +75,42 @@ function homeInit() {
        $('video')[0].play();
        window.clearInterval(showMessageInterval);
        changeAgain = false;
-      }
-    }
-    if (scrollTop < secondScreen) {
-      if (changeAgain == false) {
+     }
+   }
+   if (scrollTop < secondScreen) {
+    if (changeAgain == false) {
      $('#screen-2').css('opacity','0');
      $('#screen-1').css('opacity','1');
-    
+
      window.clearInterval(showMessageInterval);
      changeAgain = true;
-    }
-  }
+   }
+ }
   // 
-    if (scrollTop > thirdScreen) {
-      if (changeTwice) {
-       $('#screen-3').css('opacity','1');
-       $('#screen-2').css('opacity','0');
-      
-       window.clearInterval(showMessageInterval);
-       changeTwice = false;
-      }
-    }
-    if (scrollTop < thirdScreen & scrollTop > secondScreen)  {
-      if (changeTwice == false) {
-     $('#screen-2').css('opacity','1');
-     $('#screen-3').css('opacity','0');
+  if (scrollTop > thirdScreen) {
+    if (changeTwice) {
+     $('#screen-3').css('opacity','1');
+     $('#screen-2').css('opacity','0');
 
      window.clearInterval(showMessageInterval);
-     changeTwice = true;
-    }
-  }
-  if (scrollTop  > tope){
-  }
-  else if(scrollTop  < tope){
-  }
+     changeTwice = false;
+   }
+ }
+ if (scrollTop < thirdScreen & scrollTop > secondScreen)  {
+  if (changeTwice == false) {
+   $('#screen-2').css('opacity','1');
+   $('#screen-3').css('opacity','0');
 
-
-
-  // 
-  //   if (scrollTop > fourScreen) {
-  //     if (changeLast) {
-  //      $('#screen-2').css('opacity','0')
-  //      $('#screen-3').css('opacity','1')
-  //      window.clearInterval(showMessageInterval);
-  //      changeLast = false;
-  //     }
-
-  //   }
-  //   if (scrollTop < fourScreen & scrollTop > thirdScreen)  {
-  //     if (changeLast == false) {
-  //    $('#screen-1').css('opacity','1')
-  //    $('#screen-3').css('opacity','0')
-
-  //    window.clearInterval(showMessageInterval);
-  //    changeLast = true;
-  //   }
-  // }
-
+   window.clearInterval(showMessageInterval);
+   changeTwice = true;
+ }
+}
+if (scrollTop  > tope){
+}
+else if(scrollTop  < tope){
+}
 }
 });
         }
 
-        function envelope(){
-          /* Trigger Animation */
-$('a').on('click', function() {
-    $('.sobre').addClass('is-active');
-    $(this).remove();
-});
 
-        }
