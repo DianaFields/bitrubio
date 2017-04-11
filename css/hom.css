@@ -95,21 +95,52 @@ body {
             vertical-align: top; }
             @media screen and (max-width: 730px) {
               body .footer .map .top .payment .microsoft, body .footer .map .top .payment .visa {
-                width: 45%;
-                background-size: 190%; } }
+                width: 48%;
+                background-size: 150%; } }
             @media screen and (min-width: 731px) and (max-width: 768px) {
               body .footer .map .top .payment .microsoft, body .footer .map .top .payment .visa {
                 width: 35%; } }
+            @media screen and (min-width: 769px) and (max-width: 1200px) {
+              body .footer .map .top .payment .microsoft, body .footer .map .top .payment .visa {
+                width: 30%; } }
           @media screen and (max-width: 730px) {
             body .footer .map .top .payment .visa {
-              background-position: 14px 9px !important; } }
+              background-position: 54px 11px !important;
+              background-size: 110%; } }
+          @media only screen and (min-width: 731px) and (max-width: 1024px) {
+            body .footer .map .top .payment .visa {
+              background-position: 30px 12px; } }
+          @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+            body .footer .map .top .payment .visa {
+              background-position: 54px 12px;
+              background-size: 115%; } }
+          @media only screen and (min-width: 1201px) and (max-width: 1399px) {
+            body .footer .map .top .payment .visa {
+              background-position: 39px 13px;
+              background-size: 115%; } }
+          @media screen and (min-width: 1400px) {
+            body .footer .map .top .payment .visa {
+              background-size: 130%;
+              background-position: 45px 11px; } }
           @media screen and (max-width: 730px) {
             body .footer .map .top .payment .microsoft {
-              background-position: -106px 9px !important; } }
-          body .footer .map .top .payment .microsoft {
-            background-position: -70px 9px; }
-          body .footer .map .top .payment .visa {
-            background-position: 34px 9px; }
+              background-position: -69px 9px !important; } }
+          @media only screen and (min-width: 731px) and (max-width: 1024px) {
+            body .footer .map .top .payment .microsoft {
+              background-size: 195%;
+              background-position: -81px 9px; } }
+          @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+            body .footer .map .top .payment .microsoft {
+              background-size: 155%;
+              background-position: -81px 9px; } }
+          @media only screen and (min-width: 1201px) and (max-width: 1399px) {
+            body .footer .map .top .payment .microsoft {
+              background-size: 195%;
+              background-position: -81px 9px; } }
+          @media screen and (min-width: 1400px) {
+            body .footer .map .top .payment .microsoft {
+              background-size: 155%;
+              background-position: -74px 48%; } }
       body .footer .map span {
         display: inline-block;
         width: 35px;
@@ -260,7 +291,9 @@ body {
         @media screen and (max-width: 767px) {
           body .envelope section .tooltip {
             margin-top: 130%;
-            left: 12%; } }
+            margin-left: calc(10% - 5%);
+            width: 90%;
+            left: 0; } }
         @media only screen and (min-width: 1200px) and (max-width: 1299px) {
           body .envelope section .tooltip {
             margin-top: 35%; } }
@@ -991,7 +1024,7 @@ body {
     margin-top: 2em; }
   @media screen and (max-width: 768px) {
     #screen-3 {
-      height: 600px; } }
+      height: 510px; } }
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
     #screen-3 {
       height: 800px; }

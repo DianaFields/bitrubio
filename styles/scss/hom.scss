@@ -113,32 +113,64 @@ body{
 						background-size: 155%;
 						vertical-align: top;
 						@media screen and (max-width: 730px){
-							width: 45%;
-							background-size: 190%;
+							width: 48%;
+							background-size: 150%;
 
 						}
 						@media screen and (min-width: 731px) and (max-width: 768px){
 							width: 35%;
 						}
+						@media screen and (min-width: 769px) and (max-width: 1200px){
+							width: 30%;
+						}
 					}
 					.visa{
 						@media screen and (max-width: 730px){
-							background-position: 14px 9px!important;
+							background-position: 54px 11px!important;
+							background-size: 110%; 
+						}
+
+						@media only screen and (min-width: 731px) and (max-width:1024px){
+							    background-position: 30px 12px;
+						}
+						@media only screen and (min-width: 1024px) and (max-width:1200px){
+							    background-position: 54px 12px;
+							    background-size:115%;
+						}
+						@media only screen and (min-width: 1201px) and (max-width:1399px){
+							    background-position:39px 13px;
+							    background-size:115%;
+						}
+						@media screen and (min-width: 1400px){
+							background-size: 130%;
+    						background-position: 45px 11px;
+
 						}
 						
 					}
 					.microsoft{
 						@media screen and (max-width: 730px){
-							background-position: -106px 9px!important;
+							background-position: -69px 9px!important;
+						}
+						@media only screen and (min-width: 731px) and (max-width: 1024px){
+							background-size:195%;
+							background-position: -81px 9px;
+						}
+						@media only screen and (min-width: 1024px) and (max-width: 1200px){
+							background-size:155%;
+							background-position: -81px 9px;
+						}
+						@media only screen and (min-width: 1201px) and (max-width: 1399px){
+							background-size:195%;
+							background-position: -81px 9px;
+						}
+						@media screen and (min-width: 1400px){
+							background-size:155%;
+							background-position: -74px 48%;
 						}
 						
 					}
-					.microsoft{
-						background-position: -70px 9px;
-					}
-					.visa{
-						background-position:34px 9px;
-					}
+					
 				}
 			}
 			span{
@@ -317,7 +349,11 @@ body{
 				}
 				@media screen and (max-width: 767px){
 					margin-top: 130%;
-    				left: 12%;
+					margin-left:calc(10% - 5%);
+					width:90%;
+					left:0;
+					.talkbubble{
+					}
 				}
 				@media only screen and (min-width: 1200px) and (max-width: 1299px){
 					margin-top:35%;
@@ -1186,7 +1222,7 @@ body{
 		
 	}
 	@media screen and (max-width: 768px){
-		height:600px;
+		height:510px;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px){
 		height: 800px;
