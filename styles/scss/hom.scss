@@ -355,10 +355,11 @@ body{
 				}
 				@media screen and (max-width: 767px){
 					margin-top: 130%;
-					margin-left:calc(10% - 5%);
-					width:90%;
-					left:0;
-					.talkbubble{
+    				left: calc(20% - 10%);
+    				width: 80%;
+					p{
+						width: 100%;
+						margin-left: inherit;
 					}
 				}
 				@media only screen and (min-width: 1200px) and (max-width: 1299px){
@@ -417,8 +418,12 @@ body{
 					margin-top: 30px;
 				}
 				@media screen and (max-width: 767px){
-					width:70%;
 					margin-top: 15%;
+					width:90%;
+					p{
+						width: 100%;
+						margin-left: inherit;
+					}
 				}
 				@media only screen and (min-width: 1200px) and (max-width: 1299px){
 					margin-top: 30%;
@@ -430,6 +435,7 @@ body{
 		}
 		@media screen and (max-width:768px){
 			background-size: 105%;
+			border-top: 5px solid #f2f2f2;
 		}
 		@media screen and (min-width:1282px){
 			background-position: 52% -100%;
@@ -600,17 +606,172 @@ body{
 				}
 			}
 		}
+		/*MENU*/
+		.menu{
+			a{
+				text-decoration: none;
+				font-family: rounded;
+			}
+			position: absolute;
+			width: 650px;
+			height: 150px;
+			box-sizing: border-box;
+			font-size: 20px;
+			text-align: left;
+			z-index: 99;
+			.menu-item, .menu-open-button {
+				left: 28%;
+				width: 30%;
+				height: 40px;
+				position: absolute;
+				top: 20px;
+				color: white;
+				text-align: center;
+				line-height: 40px;
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+				-webkit-transition: -webkit-transform ease-out 200ms;
+				transition: -webkit-transform ease-out 200ms;
+				transition: transform ease-out 200ms;
+				transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+			}
+			.menu-open {
+				display: none;
+			}
+
+			.hamburger {
+				width: 25px;
+				height: 3px;
+				background: #3E698B;
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -12.5px;
+				margin-top: -1.5px;
+				-webkit-transition: -webkit-transform 200ms;
+				transition: -webkit-transform 200ms;
+				transition: transform 200ms;
+				transition: transform 200ms, -webkit-transform 200ms;
+			}
+			.hamburger-1 {
+				-webkit-transform: translate3d(0, -8px, 0);
+				transform: translate3d(0, -8px, 0);
+			}
+
+			.hamburger-2 {
+				-webkit-transform: translate3d(0, 0, 0);
+				transform: translate3d(0, 0, 0);
+			}
+
+			.hamburger-3 {
+				-webkit-transform: translate3d(0, 8px, 0);
+				transform: translate3d(0, 8px, 0);
+			}
+			.menu-open:checked + .menu-open-button .hamburger-1 {
+				-webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+				transform: translate3d(0, 0, 0) rotate(45deg);
+			}
+			.menu-open:checked + .menu-open-button .hamburger-2 {
+				-webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+				transform: translate3d(0, 0, 0) scale(0.1, 1);
+			}
+			.menu-open:checked + .menu-open-button .hamburger-3 {
+				-webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+				transform: translate3d(0, 0, 0) rotate(-45deg);
+			}
+			.menu-item:hover {
+				background: white;
+				color: #00bcd4;
+			}
+			.menu-item:nth-child(3) {
+				background:#fff;
+				-webkit-transition-duration: 180ms;
+				transition-duration: 180ms;
+			}
+			.menu-item:nth-child(4) {
+				background:#fff;
+				-webkit-transition-duration: 180ms;
+				transition-duration: 180ms;
+			}
+			.menu-item:nth-child(5) {
+				-webkit-transition-duration: 180ms;
+				transition-duration: 180ms;
+			}
+			.menu-item:nth-child(6) {
+				-webkit-transition-duration: 180ms;
+				transition-duration: 180ms;
+			}
+			.menu-open-button {
+				
+				margin: 1% 0 0 6%;
+				z-index: 2;
+				-webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+				transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+				-webkit-transition-duration: 400ms;
+				transition-duration: 400ms;
+				-webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+				transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+				cursor: pointer;
+			}
+			.menu-open-button:hover {
+				-webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+				transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+			}
+
+			.menu-open:checked + .menu-open-button {
+				-webkit-transition-timing-function: linear;
+				transition-timing-function: linear;
+				-webkit-transition-duration: 200ms;
+				transition-duration: 200ms;
+				-webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+				transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+			}
+			.menu-open:checked ~ .menu-item {
+				    text-align: center;
+				-webkit-transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+				transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+
+			}
+			.menu-open:checked ~ .menu-item:nth-child(3) {
+				color: #3E698B;
+				-webkit-transition-duration: 190ms;
+				transition-duration: 190ms;
+				-webkit-transform: translate3d(0, 100px, 0);
+				transform: translate3d(0, 50px, 0);
+			}
+			.menu-open:checked ~ .menu-item:nth-child(4) {
+				color: #3E698B;
+				-webkit-transition-duration: 290ms;
+				transition-duration: 290ms;
+				-webkit-transform: translate3d(0, 200px, 0);
+				transform: translate3d(0, 100px, 0);
+			}
+			.menu-open:checked ~ .menu-item:nth-child(5) {
+				-webkit-transition-duration: 390ms;
+				transition-duration: 390ms;
+				-webkit-transform: translate3d(0, 300px, 0);
+				transform: translate3d(0, 150px, 0);
+			}
+			.menu-open:checked ~ .menu-item:nth-child(6) {
+				-webkit-transition-duration: 490ms;
+				transition-duration: 490ms;
+				-webkit-transform: translate3d(0, 400px, 0);
+				transform: translate3d(0, 200px, 0);
+			}
+		}
 	}
 
 	@media screen and (max-width: 600px){
 		nav{
-			height: 110px;
+			height: 90px;
 			.logo{
 				display: block;
 				width: 100%;
-				text-align: center;
+				text-align: left;
 				margin: 0;
 				height: 60px;
+				padding: 4% 0 0 7%;
 				img{
 					width: 18%;
 				}
@@ -776,7 +937,6 @@ body{
 			font-family: rounded;
 			color: $blue-bitrubio;
 			position: absolute;
-
 		}
 		.tooltip{
 			position: relative;
@@ -804,12 +964,12 @@ body{
 				top: 0;
 				width: 90%;
 				margin-left: calc(10% - 5%);
-				font-size: .9em;
+				font-size:1.2em;
 			}
 			.tooltip{
 				.talkbubble{
 					width: 90%;
-					height: 50px;
+					height: 65px;
 				}
 				.talkbubble:before{
 					bottom: -8px;
@@ -1252,7 +1412,7 @@ body{
 			height: 240px;
 			position: absolute;
 			left: -25%;
-			top: 4%;
+			top: -20%;
 			z-index: -1;
 		}
 		@media only screen and (min-width: 769px) and (max-width: 1024px){
@@ -1343,56 +1503,56 @@ body{
 			background-size: 100%;
 			width: 80%;
 			height: 400px;
-			right: -32%;
+			left: -5%;
 			top: 38%;
 
 		}
 		@media only screen and (min-width: 375px) and (max-width: 600px){
-			background-size: 100%;
-			width: 80%;
-			height: 400px;
-			right: -32%;
-			top: 48%;
+			background-size: 49%;
+		    width: 80%;
+		    height: 400px;
+		    left: -5%;
+		    top: 68%;
 		}
 		@media only screen and (min-width: 601px) and (max-width: 768px){
 			background-size: 100%;
 			width: 60%;
 			height: 200px;
-			right: -2%;
+			left: -5%;
 			top: 7%;
 		}
 		@media only screen and (min-width: 600px) and (max-width: 768px){
 			background-size: 100%;
 			width: 60%;
 			height: 400px;
-			right: -2%;
+			left: -2%;
 			top: 10%;
 		}
 		@media only screen and (min-width: 769px) and (max-width: 1024px){
 			background-size: 60%;
 			width: 60%;
 			height: 340px;
-			right: -27%;
+			left: -2%;
 			top: 56%;
 		}
 		@media only screen and (min-width: 1025px) and (max-width: 1199px){
 			background-size: 50%;
 			width: 60%;
 			height: 340px;
-			right: -32%;
+			left: -3%;
 			top: 17%;
 		}
 		@media screen and (min-width: 1200px){
 			background-size: 50%;
 			width: 60%;
 			height: 370px;
-			right: -32%;
+			left: -3%;
 			top: 37%;
 		}
 		@media screen and (min-width: 1400px){
 			background-size:40%;
 			top: 60%;
-			right: -38%;
+			left: -3%;
 			z-index: -2;
 		}
 	}
@@ -1404,8 +1564,8 @@ body{
 			width: 20%;
 			height: 200px;
 			position: absolute;
-			right: -3%;
-			top: 0;
+			left: -3%;
+			top: -5%;
 		}
 		@media only screen and (min-width: 769px) and (max-width: 1024px){
 			transform: rotate(-80deg);
@@ -1414,7 +1574,7 @@ body{
 			width: 20%;
 			height: 200px;
 			position: absolute;
-			right: -3%;
+			left: -3%;
 			top: -14%;
 		}
 		@media only screen and (min-width: 1025px) and (max-width: 1199px){
@@ -1424,7 +1584,7 @@ body{
 			width: 20%;
 			height: 200px;
 			position: absolute;
-			right: -3%;
+			left: -3%;
 			top: -14%;
 		}
 		@media screen and (min-width: 1200px){
@@ -1434,7 +1594,7 @@ body{
 			width: 20%;
 			height: 200px;
 			position: absolute;
-			right: -3%;
+			left: -3%;
 			top: -20%;
 		}
 	}
@@ -1488,9 +1648,9 @@ body{
 		@media screen and (max-width: 375px){
 			background-size: 129%;
 			width: 60%;
-			height: 200px;
-			left: 0%;
-			top: 2%;
+			height: 250px;
+			left: -1%;
+			top: 15%;
 			z-index: 4;
 		}
 		@media only screen and (min-width: 376px) and (max-width: 599px){
@@ -1545,28 +1705,28 @@ body{
 			background-size: 29%;
 			width: 130%;
 			height: 340px;
-			right: -103%;
-			top: -83%;
+			left: -1%;
+			top: -60%;
 		}
 		@media only screen and (min-width: 376px) and (max-width: 600px){
 			background-size: 29%;
 			width: 130%;
 			height: 340px;
-			right: -103%;
+			left: -10%;
 			top: -23%;
 		}
 		@media only screen and (min-width: 601px) and (max-width: 768px){
 			background-size: 29%;
 			width: 60%;
 			height: 340px;
-			right: -47%;
+			left: -4%;
 			top: -23%;
 		}
 		@media only screen and (min-width: 769px) and (max-width: 1024px){
 			background-size: 50%;
 			width: 60%;
 			height: 340px;
-			right: -32%;
+			left: -10%;
 			top: -5%;
 			z-index: -2;
 		}
@@ -1576,7 +1736,7 @@ body{
 			width: 60%;
 			height: 340px;
 			position: absolute;
-			right: -32%;
+			left: -10%;
 			top: 17%;
 			z-index: -2;
 		}
@@ -1586,7 +1746,7 @@ body{
 			width: 60%;
 			height: 340px;
 			position: absolute;
-			right: -45%;
+			left: -5%;
 			top: -19%;
 			z-index: -2;
 		}
@@ -1595,12 +1755,12 @@ body{
 		background: url('../assets/home/estetos.jpg')no-repeat;
 		z-index: -4;
 		@media screen and (max-width: 600px){
-			background-size: 50%;
+			background-size: 80%;
 			width: 80%;
 			height: 340px;
 			position: absolute;
-			right: -50%;
-			top: 0%;
+			right: -27%;
+			top: 5%;
 
 		}
 		@media only screen and (min-width: 601px) and (max-width: 768px){
