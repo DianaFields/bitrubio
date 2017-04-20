@@ -337,54 +337,51 @@ body {
         body .envelope .bottom {
           margin-left: calc(65% - 32%);
           width: 35%; } }
-    body .envelope section {
-      margin-top: 4em; }
-      body .envelope section p {
-        font-family: rounded;
-        color: #3E698B;
+    body .envelope .tooltip {
+      float: left;
+      left: 5%;
+      margin-top: 15%;
+      position: relative; }
+      body .envelope .tooltip .talkbubble {
+        width: 300px;
+        height: 80px;
         position: absolute;
-        width: 230px;
-        text-align: center;
-        margin-top: -4em;
-        margin-left: 2em;
-        font-size: 1.2em; }
-      body .envelope section .tooltip {
-        float: left;
-        left: 5%;
+        margin-left: 14%;
         margin-top: 15%;
-        position: relative; }
-        body .envelope section .tooltip .talkbubble {
-          width: 100%;
-          height: 80px;
-          position: absolute;
-          margin-left: 14%;
-          margin-top: 15%;
-          background: rgba(255, 255, 255, 0.5);
-          border-bottom: 1px solid #3E698B;
-          position: relative;
-          margin: 0 auto; }
-        body .envelope section .tooltip .talkbubble:before {
-          position: absolute;
-          left: 47%;
-          content: "";
-          bottom: -10px;
-          width: 0;
-          height: 0;
-          border-left: 7px solid transparent;
-          border-top: 9px solid #3E698B;
-          border-right: 7px solid transparent;
-          margin-top: 30px; }
-        @media screen and (max-width: 767px) {
-          body .envelope section .tooltip {
-            margin-top: 130%;
-            left: calc(20% - 10%);
-            width: 80%; }
-            body .envelope section .tooltip p {
-              width: 100%;
-              margin-left: inherit; } }
-        @media only screen and (min-width: 1200px) and (max-width: 1299px) {
-          body .envelope section .tooltip {
-            margin-top: 35%; } }
+        background: rgba(255, 255, 255, 0.5);
+        border-bottom: 1px solid #3E698B;
+        position: relative;
+        margin: 0 auto; }
+      body .envelope .tooltip .talkbubble:before {
+        position: absolute;
+        left: 47%;
+        content: "";
+        bottom: -10px;
+        width: 0;
+        height: 0;
+        border-left: 7px solid transparent;
+        border-top: 9px solid #3E698B;
+        border-right: 7px solid transparent;
+        margin-top: 30px; }
+      @media screen and (max-width: 767px) {
+        body .envelope .tooltip {
+          margin-top: 135%;
+          width: 90%; }
+          body .envelope .tooltip p {
+            width: 100%;
+            margin-left: inherit; } }
+      @media only screen and (min-width: 1200px) and (max-width: 1299px) {
+        body .envelope .tooltip {
+          margin-top: 30%; } }
+    body .envelope section p {
+      font-family: rounded;
+      color: #3E698B;
+      position: absolute;
+      width: 230px;
+      text-align: center;
+      margin-top: -4em;
+      margin-left: 2em;
+      font-size: 1.2em; }
   body .mapa {
     position: relative;
     width: 100%;
@@ -1184,6 +1181,16 @@ body {
       height: 400px;
       position: absolute;
       left: -3%;
+      top: 15%;
+      z-index: -1; } }
+  @media screen and (min-width: 1399px) {
+    #screen-1 .post-it {
+      background: url("../assets/home/post-it.png") no-repeat;
+      background-size: 80%;
+      width: 30%;
+      height: 400px;
+      position: absolute;
+      left: -3%;
       top: 5%;
       z-index: -1; } }
   @media screen and (max-width: 599px) {
@@ -1298,7 +1305,7 @@ body {
       height: 360px;
       position: absolute;
       left: -3%;
-      top: 4%;
+      top: 54%;
       z-index: -1; } }
   @media screen and (min-width: 1400px) {
     #screen-3 .radio {
@@ -1403,7 +1410,7 @@ body {
         width: 60%;
         height: 370px;
         left: -3%;
-        top: 10%; } }
+        top: 5%; } }
     @media screen and (min-width: 1400px) {
       #screen-3 .pills {
         background-size: 40%;

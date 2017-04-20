@@ -409,26 +409,13 @@ display: block;
 				width: 35%;
 			}
 		}
-		section{
-			margin-top: 4em;
-			p{
-				font-family: rounded;
-				color: #3E698B;
-				position: absolute;
-				width: 230px;
-				text-align: center;
-				margin-top: -4em;
-				margin-left: 2em;
-				font-size: 1.2em;
-
-			}
-			.tooltip{
+		.tooltip{
 				float: left;
 				left: 5%;
 				margin-top: 15%;
 				position: relative;
 				.talkbubble {
-					width:100%;
+					width: 300px;
 					height: 80px;
 					position: absolute;
 					margin-left: 14%;
@@ -451,19 +438,29 @@ display: block;
 					margin-top: 30px;
 				}
 				@media screen and (max-width: 767px){
-					margin-top: 130%;
-    				left: calc(20% - 10%);
-    				width: 80%;
+					margin-top:135%;
+					width:90%;
 					p{
 						width: 100%;
 						margin-left: inherit;
 					}
 				}
 				@media only screen and (min-width: 1200px) and (max-width: 1299px){
-					margin-top:35%;
+					margin-top: 30%;
 				}
 			}
-		}
+			section{
+				p{
+					    font-family: rounded;
+    color: #3E698B;
+    position: absolute;
+    width: 230px;
+    text-align: center;
+    margin-top: -4em;
+    margin-left: 2em;
+    font-size: 1.2em;
+				}
+			}
 	}
 	/*envelope*/
 	.mapa{
@@ -1415,6 +1412,16 @@ display: block;
 			height: 400px;
 			position: absolute;
 			left: -3%;
+			top: 15%;
+			z-index: -1;
+		}
+		@media screen and (min-width: 1399px){
+			background: url('../assets/home/post-it.png')no-repeat;
+			background-size: 80%;
+			width: 30%;
+			height: 400px;
+			position: absolute;
+			left: -3%;
 			top: 5%;
 			z-index: -1;
 		}
@@ -1538,7 +1545,7 @@ display: block;
 			height: 360px;
 			position: absolute;
 			left: -3%;
-			top: 4%;
+			top: 54%;
 			z-index: -1;
 		}
 		@media screen and (min-width: 1400px){
@@ -1647,7 +1654,7 @@ display: block;
 			width: 60%;
 			height: 370px;
 			left: -3%;
-			top: 10%;
+			top: 5%;
 		}
 		@media screen and (min-width: 1400px){
 			background-size:40%;
