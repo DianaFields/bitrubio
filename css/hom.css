@@ -288,7 +288,7 @@ body {
     margin-top: 3em; }
     @media screen and (max-width: 599px) {
       body .envelope {
-        margin-top: 50em;
+        margin-top: 51em;
         height: 630px; } }
     @media only screen and (min-width: 600px) and (max-width: 768px) {
       body .envelope {
@@ -354,7 +354,7 @@ body {
         margin-top: 15%;
         position: relative; }
         body .envelope section .tooltip .talkbubble {
-          width: 300px;
+          width: 100%;
           height: 80px;
           position: absolute;
           margin-left: 14%;
@@ -841,6 +841,17 @@ body {
     @media screen and (min-width: 1300px) {
       .parallax #bloque-4 {
         top: 3300px; } }
+  .parallax #bloque-5 {
+    position: absolute;
+    top: 4000px;
+    height: 1px;
+    width: 100%; }
+    @media screen and (max-width: 600px) {
+      .parallax #bloque-5 {
+        top: 3700px; } }
+    @media screen and (min-width: 1300px) {
+      .parallax #bloque-5 {
+        top: 3500px; } }
   .parallax .static-iphone {
     position: relative;
     transition: opacity ease-in 0.3s;
@@ -1133,7 +1144,7 @@ body {
       height: 200px;
       position: absolute;
       left: -3%;
-      top: 12%;
+      top: 55%;
       z-index: -1; } }
   @media only screen and (min-width: 600px) and (max-width: 768px) {
     #screen-1 .post-it {
@@ -1175,9 +1186,6 @@ body {
       left: -3%;
       top: 5%;
       z-index: -1; } }
-  @media screen and (min-width: 1200px) {
-    #screen-1 .post-it {
-      top: 15%; } }
   @media screen and (max-width: 599px) {
     #screen-1 .agenda {
       background: url("../assets/home/agenda.png") no-repeat;
@@ -1186,7 +1194,7 @@ body {
       height: 200px;
       position: absolute;
       right: -22%;
-      top: 13%;
+      top: 75%;
       z-index: -1; } }
   @media only screen and (min-width: 600px) and (max-width: 768px) {
     #screen-1 .agenda {
@@ -1241,7 +1249,7 @@ body {
     margin-top: 2em; }
   @media screen and (max-width: 768px) {
     #screen-3 {
-      height: 510px; } }
+      height: 550px; } }
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
     #screen-3 {
       height: 800px; }
@@ -1261,8 +1269,8 @@ body {
       width: 60%;
       height: 240px;
       position: absolute;
-      left: -25%;
-      top: -20%;
+      left: -3%;
+      top: 60%;
       z-index: -1; } }
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
     #screen-3 .radio {
@@ -1294,18 +1302,20 @@ body {
       z-index: -1; } }
   @media screen and (min-width: 1400px) {
     #screen-3 .radio {
-      top: 0;
-      height: 450px; } }
+      background-size: 35%;
+      top: 50%;
+      height: 450px;
+      left: 5%; } }
   @media screen and (max-width: 768px) {
     #screen-3 .receta {
       transform: rotate(-80deg);
       background: url("../assets/home/prescription.png") no-repeat;
       background-size: 100%;
       width: 60%;
-      height: 200px;
+      height: 260px;
       position: absolute;
       right: -22%;
-      top: 3%;
+      top: -40%;
       z-index: -1; } }
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
     #screen-3 .receta {
@@ -1331,7 +1341,7 @@ body {
     #screen-3 .receta {
       transform: rotate(-80deg);
       background: url("../assets/home/prescription.png") no-repeat;
-      background-size: 60%;
+      background-size: 40%;
       width: 60%;
       height: 700px;
       position: absolute;
@@ -1339,7 +1349,7 @@ body {
       top: -40%; } }
   @media screen and (min-width: 1400px) {
     #screen-3 .receta {
-      right: -33%;
+      right: -40%;
       top: -35%; } }
   #screen-3 .pills {
     background: url("../assets/home/pills.jpg") no-repeat;
@@ -1351,7 +1361,7 @@ body {
         width: 80%;
         height: 400px;
         left: -5%;
-        top: 38%; } }
+        top: 25%; } }
     @media only screen and (min-width: 375px) and (max-width: 600px) {
       #screen-3 .pills {
         background-size: 49%;
@@ -1438,8 +1448,8 @@ body {
       width: 20%;
       height: 200px;
       position: absolute;
-      left: -3%;
-      top: -20%; } }
+      left: 2%;
+      top: -30%; } }
 
 #screen-2 {
   width: 100%;
@@ -1457,6 +1467,9 @@ body {
     @media screen and (max-width: 1024px) {
       #screen-2 video {
         display: none; } }
+  @media screen and (max-width: 1023px) {
+    #screen-2 {
+      height: 650px; } }
   @media screen and (max-width: 1024px) {
     #screen-2 {
       height: 570px; }
@@ -1587,8 +1600,8 @@ body {
         width: 80%;
         height: 340px;
         position: absolute;
-        right: -27%;
-        top: 5%; } }
+        right: 0;
+        top: 2%; } }
     @media only screen and (min-width: 601px) and (max-width: 768px) {
       #screen-2 .estetos {
         background-size: 39%;
@@ -1619,7 +1632,7 @@ body {
         width: 60%;
         height: 450px;
         position: absolute;
-        right: -37%;
+        right: -25%;
         top: 0%; } }
 
 #screen-4 {

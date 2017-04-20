@@ -356,7 +356,7 @@ display: block;
 		height: 1000px;
 		margin-top: 3em;
 		@media screen and (max-width: 599px){
-			margin-top: 50em;
+			margin-top: 51em;
 			height: 630px;
 		}
 		@media only screen and (min-width: 600px) and (max-width: 768px){
@@ -428,7 +428,7 @@ display: block;
 				margin-top: 15%;
 				position: relative;
 				.talkbubble {
-					width: 300px;
+					width:100%;
 					height: 80px;
 					position: absolute;
 					margin-left: 14%;
@@ -1000,6 +1000,18 @@ display: block;
 			top:3300px;
 		}
 	}
+	#bloque-5{
+		position: absolute;
+		top: 4000px;
+		height: 1px;
+		width: 100%;
+		@media screen and (max-width: 600px){
+			top:3700px;
+		}
+		@media screen and (min-width: 1300px){
+			top:3500px;
+		}
+	}
 	.static-iphone{
 		position: relative;
 		transition: opacity ease-in 0.3s;
@@ -1351,6 +1363,7 @@ display: block;
 	height: 3000px;
 	opacity: 0;
 	top:0;
+	
 	.acuerdo{
 		margin-top: 2em;
 	}
@@ -1362,7 +1375,7 @@ display: block;
 			height: 200px;
 			position: absolute;
 			left: -3%;
-			top: 12%;
+			top: 55%;
 			z-index: -1;
 		}
 		@media only screen and (min-width: 600px) and (max-width: 768px){
@@ -1405,10 +1418,6 @@ display: block;
 			top: 5%;
 			z-index: -1;
 		}
-		@media screen and (min-width: 1200px){
-
-			top: 15%;
-		}
 	}
 	.agenda{
 		@media screen and (max-width: 599px){
@@ -1418,7 +1427,7 @@ display: block;
 			height: 200px;
 			position: absolute;
 			right: -22%;
-			top: 13%;
+			top: 75%;
 			z-index: -1;
 		}
 		@media only screen and (min-width: 600px) and (max-width: 768px){
@@ -1477,7 +1486,7 @@ display: block;
 		
 	}
 	@media screen and (max-width: 768px){
-		height:510px;
+		height:550px;
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px){
 		height: 800px;
@@ -1500,8 +1509,8 @@ display: block;
 			width: 60%;
 			height: 240px;
 			position: absolute;
-			left: -25%;
-			top: -20%;
+			left: -3%;
+			top: 60%;
 			z-index: -1;
 		}
 		@media only screen and (min-width: 769px) and (max-width: 1024px){
@@ -1533,8 +1542,10 @@ display: block;
 			z-index: -1;
 		}
 		@media screen and (min-width: 1400px){
-top:0;
+			background-size: 35%;
+			top:50%;
 			height: 450px;
+			left:5%;
 		}
 	}
 	.receta{
@@ -1543,10 +1554,10 @@ top:0;
 			background: url('../assets/home/prescription.png')no-repeat;
 			background-size: 100%;
 			width: 60%;
-			height: 200px;
+			height: 260px;
 			position: absolute;
 			right: -22%;
-			top: 3%;
+			top: -40%;
 			z-index: -1;
 		}
 		@media only screen and (min-width: 769px) and (max-width: 1024px){
@@ -1572,7 +1583,7 @@ top:0;
 		@media screen and (min-width: 1200px){
 			transform: rotate(-80deg);
 			background: url('../assets/home/prescription.png')no-repeat;
-			background-size: 60%;
+			background-size: 40%;
 			width: 60%;
 			height: 700px;
 			position: absolute;
@@ -1580,7 +1591,7 @@ top:0;
 			top: -40%;
 		}
 		@media screen and (min-width: 1400px){
-			right: -33%;
+			right: -40%;
 			top: -35%;
 		}
 	}
@@ -1593,7 +1604,7 @@ top:0;
 			width: 80%;
 			height: 400px;
 			left: -5%;
-			top: 38%;
+			top: 25%;
 
 		}
 		@media only screen and (min-width: 375px) and (max-width: 600px){
@@ -1683,8 +1694,8 @@ top:0;
 			width: 20%;
 			height: 200px;
 			position: absolute;
-			left: -3%;
-			top: -20%;
+			left: 2%;
+			top: -30%;
 		}
 	}
 }
@@ -1712,7 +1723,9 @@ top:0;
 		}
 	}
 
-
+@media screen and (max-width: 1023px){
+height:650px;
+}
 	@media screen and (max-width: 1024px){
 		height:570px;
 		.video-mobile{
@@ -1849,8 +1862,8 @@ top:0;
 			width: 80%;
 			height: 340px;
 			position: absolute;
-			right: -27%;
-			top: 5%;
+			right: 0;
+			top: 2%;
 
 		}
 		@media only screen and (min-width: 601px) and (max-width: 768px){
@@ -1883,7 +1896,7 @@ top:0;
 			width: 60%;
 			height: 450px;
 			position: absolute;
-			right: -37%;
+			right: -25%;
 			top: 0%;
 		}
 	}

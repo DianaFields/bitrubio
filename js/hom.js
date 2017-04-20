@@ -14,6 +14,7 @@ function homeInit() {
         var changeAgain = true;
         var changeTwice = true;
         var changeLast = true;
+        var changeHide = true;
         function changeScreen(){
           $('#screen-0').addClass('initial');
           $('.conocer').css('margin-top', '2.5em');
@@ -37,12 +38,12 @@ function homeInit() {
             if (height  > 4100){
               $('.stop').css('position', 'inherit');
               $('.parallax').css('background-attachment', 'inherit');
-              $('.hide').css('opacity', '0');
+              // $('.hide').css('opacity', '0');
               $('#screen-3').css('margin-top', '-25%');
             }
             else if (height  < 4100){
               $('#screen-3').css('margin-top', 'inherit');
-              $('.hide').css('opacity', '1');
+              // $('.hide').css('opacity', '1');
             }
             // fixed
 
@@ -54,6 +55,7 @@ function homeInit() {
               var secondScreen = $("#bloque-2").offset().top;
               var thirdScreen = $("#bloque-3").offset().top;
               var fourScreen = $("#bloque-4").offset().top;
+              var fiveScreen = $("#bloque-5").offset().top;
               var tope = $("#tope").offset().top;
               if (scrollTop > 700) {
                 if (change) {
@@ -110,9 +112,15 @@ function homeInit() {
    changeTwice = true;
  }
 }
-if (scrollTop  > tope){
+if (scrollTop  > fourScreen){
+  $('.hide').css('opacity', '0');
+  window.clearInterval(showMessageInterval);
+   changeHide = true;
 }
-else if(scrollTop  < tope){
+else if(scrollTop  < fourScreen ){
+  $('.hide').css('opacity', '1');
+  window.clearInterval(showMessageInterval);
+   changeHide = true;
 }
 }
 });
