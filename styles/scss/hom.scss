@@ -495,11 +495,11 @@ display: block;
 					margin-left: 14%;
 					margin-top: 15%;
 					background:rgba(256,256,256,.5);
-					border-bottom: 1px solid $blue-bitrubio;
+					/*border-bottom: 1px solid $blue-bitrubio;*/
 					position: relative;
 					margin: 0 auto;
 				}
-				.talkbubble:before {
+			/*	.talkbubble:before {
 					position: absolute;
 					left: 47%;
 					content:"";
@@ -510,7 +510,7 @@ display: block;
 					border-top: 9px solid $blue-bitrubio;
 					border-right: 7px solid transparent;
 					margin-top: 30px;
-				}
+				}*/
 				@media screen and (max-width: 767px){
 					margin-top: 15%;
 					width:90%;
@@ -529,7 +529,7 @@ display: block;
 		}
 		@media screen and (max-width:768px){
 			background-size: 105%;
-			border-top: 5px solid #f2f2f2;
+			/*border-top: 5px solid #f2f2f2;*/
 			    margin-top: 15%;
 		}
 		@media screen and (min-width:1282px){
@@ -595,6 +595,7 @@ display: block;
 			    left: 30px;
 			    position: absolute;
 			    border: 2px solid #fff;
+			    z-index: 99;
 				    &:after{
 					    content: '\00a0';
 					    background-image: url(../assets/home/thumbs.png);
@@ -638,21 +639,23 @@ display: block;
 			    width: 30px;
 			    height: 30px;
 			    border-radius: 100%;
-			    background:#ef5169;
+			    background:#92d14b;
 			    top: -15px;
 			    left: 30px;
 			    position: absolute;
 			    border: 2px solid #fff;
 				    &:after{
-					    content: '\00a0';
-					    background-image: url(../assets/home/thumbs.png);
-					    background-size: 160%;
-					    background-repeat: no-repeat;
-					    width: 50px;
-					    height: 50px;
-					    position: absolute;
-					    top: 5px;
-					    left: 4px;
+					        content: '\00a0';
+    background-image: url(../assets/home/thumbs.png);
+    background-position: -27px -1px;
+    background-size: 370%;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    z-index: 99;
 				    }
 			}
 		}
@@ -961,7 +964,7 @@ display: block;
 		height: 1px;
 		width: 100%;
 		@media screen and (max-width: 600px){
-			top:800px;
+			top:1000px;
 		}
 		@media screen and (min-width: 1200px){
 			top: 1800px;
@@ -991,7 +994,7 @@ display: block;
 		height: 1px;
 		width: 100%;
 		@media screen and (max-width: 600px){
-			top:3300px;
+			top:3000px;
 		}
 		@media screen and (min-width: 1300px){
 			top:3300px;
@@ -1372,7 +1375,7 @@ display: block;
 			height: 200px;
 			position: absolute;
 			left: -3%;
-			top: 55%;
+			top:10%;
 			z-index: -1;
 		}
 		@media only screen and (min-width: 600px) and (max-width: 768px){
@@ -1434,7 +1437,7 @@ display: block;
 			height: 200px;
 			position: absolute;
 			right: -22%;
-			top: 75%;
+			top: 5%;
 			z-index: -1;
 		}
 		@media only screen and (min-width: 600px) and (max-width: 768px){
@@ -1572,7 +1575,7 @@ display: block;
 			background: url('../assets/home/prescription.png')no-repeat;
 			background-size: 60%;
 			width: 70%;
-			height: 200px;
+			height: 450px;
 			position: absolute;
 			right: -31%;
 			top: -5%;
@@ -1607,7 +1610,7 @@ display: block;
 		z-index: -2;
 		position: absolute;
 		@media screen and (max-width: 374px){
-			background-size: 100%;
+			background-size: 70%;
 			width: 80%;
 			height: 400px;
 			left: -5%;
@@ -1665,6 +1668,7 @@ display: block;
 	}
 	.pill{
 		@media screen and (max-width: 768px){
+			display: none;
 			transform: rotate(-80deg);
 			background: url('../assets/home/pill.png')no-repeat;
 			background-size: 100%;
@@ -1816,7 +1820,7 @@ height:650px;
 			width: 130%;
 			height: 340px;
 			left: -1%;
-			top: -60%;
+			top: -50%;
 		}
 		@media only screen and (min-width: 376px) and (max-width: 600px){
 			background-size: 29%;
