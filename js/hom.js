@@ -15,6 +15,7 @@ function homeInit() {
         var changeTwice = true;
         var changeLast = true;
         var changeHide = true;
+        var changePrx = true;
         function changeScreen(){
           $('#screen-0').addClass('initial');
           $('.conocer').css('margin-top', '2.5em');
@@ -38,12 +39,12 @@ function homeInit() {
             if (height  > 4100){
               $('.stop').css('position', 'inherit');
               $('.parallax').css('background-attachment', 'inherit');
-              // $('.hide').css('opacity', '0');
+              $('.hide').css('opacity', '0');
               $('#screen-3').css('margin-top', '-25%');
             }
             else if (height  < 4100){
               $('#screen-3').css('margin-top', 'inherit');
-              // $('.hide').css('opacity', '1');
+              $('.hide').css('opacity', '1');
             }
             // fixed
 
@@ -57,6 +58,7 @@ function homeInit() {
               var fourScreen = $("#bloque-4").offset().top;
               var fiveScreen = $("#bloque-5").offset().top;
               var tope = $("#tope").offset().top;
+              var prx = $("#parallax").offset().top;
               if (scrollTop > 700) {
                 if (change) {
                   $('#screen-0').css('opacity','0');
@@ -98,6 +100,7 @@ function homeInit() {
     if (changeTwice) {
      $('#screen-3').css('opacity','1');
      $('#screen-2').css('opacity','0');
+     $('#screen-1').css('opacity','0');
 
      window.clearInterval(showMessageInterval);
      changeTwice = false;
@@ -107,6 +110,7 @@ function homeInit() {
   if (changeTwice == false) {
    $('#screen-2').css('opacity','1');
    $('#screen-3').css('opacity','0');
+  $('#screen-1').css('opacity','0');
 
    window.clearInterval(showMessageInterval);
    changeTwice = true;
@@ -115,13 +119,23 @@ function homeInit() {
 if (scrollTop  > fourScreen){
   $('.hide').css('opacity', '0');
   window.clearInterval(showMessageInterval);
-   changeHide = true;
+  changeHide = true;
 }
 else if(scrollTop  < fourScreen ){
   $('.hide').css('opacity', '1');
   window.clearInterval(showMessageInterval);
-   changeHide = true;
+  changeHide = true;
 }
+// if (scrollTop  > prx){
+//   $('.stop').css('position', 'inherit');
+//   // $('.parallax').css('background-attachment', 'inherit');
+//   window.clearInterval(showMessageInterval);
+//   changePrx= true;
+// }
+// else if(scrollTop  < prx ){
+//   window.clearInterval(showMessageInterval);
+//   changePrx = true;
+// }
 }
 });
         }

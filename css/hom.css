@@ -288,21 +288,25 @@ body {
     margin-top: 3em; }
     @media screen and (max-width: 599px) {
       body .envelope {
-        margin-top: 51em;
+        margin-top: 30em;
         height: 630px; } }
     @media only screen and (min-width: 600px) and (max-width: 768px) {
       body .envelope {
         margin-top: -15em; } }
     @media only screen and (min-width: 769px) and (max-width: 1025px) {
       body .envelope {
-        height: 470px; } }
+        height: 470px;
+        margin-top: -4em; } }
     @media only screen and (min-width: 1200px) and (max-width: 1299px) {
       body .envelope {
         margin-top: 15em;
         height: 700px; } }
-    @media screen and (min-width: 1300px) {
+    @media screen and (min-width: 1300px) and (max-width: 1380px) {
       body .envelope {
-        margin-top: -20em; } }
+        margin-top: -9em; } }
+    @media screen and (min-width: 1381px) {
+      body .envelope {
+        margin-top: -18em; } }
     body .envelope div {
       background-repeat: no-repeat;
       position: absolute; }
@@ -415,7 +419,7 @@ body {
       		border-top: 9px solid $blue-bitrubio;
       		border-right: 7px solid transparent;
       		margin-top: 30px;
-      	}*/ }
+      		}*/ }
       body .mapa section .tooltip .talkbubble {
         width: 300px;
         height: 80px;
@@ -627,7 +631,7 @@ body {
   			text-decoration: none;
   		}
   	}
-  }*/
+  	}*/
   /*MENU*/ }
   .content nav .logo {
     display: inline-block;
@@ -701,6 +705,36 @@ body {
     display: block;
     background-color: rgba(255, 255, 255, 0.8);
     position: absolute; }
+.content .menu-section-desk {
+  width: 60%;
+  float: right;
+  margin: 0;
+  display: inline-block;
+  padding: 0;
+  text-align: right; }
+  .content .menu-section-desk li {
+    display: inline-block;
+    width: 25%;
+    text-align: center; }
+    .content .menu-section-desk li a {
+      text-decoration: none;
+      font-family: avenir;
+      font-size: 1.2em;
+      color: #3E698B; }
+    .content .menu-section-desk li .login-desk {
+      width: 60%;
+      display: block;
+      border-radius: 2px;
+      text-align: center;
+      line-height: 45px;
+      color: #fff;
+      background: #92d14b; }
+@media screen and (min-width: 768px) {
+  .content .menu-section {
+    display: none; } }
+@media screen and (max-width: 768px) {
+  .content .menu-section-desk {
+    display: none; } }
 @media screen and (max-width: 600px) {
   .content nav {
     height: 90px; }
@@ -853,6 +887,17 @@ body {
     @media screen and (min-width: 1300px) {
       .parallax #bloque-5 {
         top: 3500px; } }
+  .parallax #parallax {
+    position: absolute;
+    background: red;
+    height: 1px;
+    width: 100%; }
+    @media screen and (max-width: 600px) {
+      .parallax #parallax {
+        top: 3200px; } }
+    @media screen and (min-width: 1300px) {
+      .parallax #parallax {
+        top: 4300px; } }
   .parallax .static-iphone {
     position: relative;
     transition: opacity ease-in 0.3s;
@@ -1018,13 +1063,13 @@ body {
       height: 600px;
       position: absolute;
       left: -22%;
-      top: 10%;
+      top: 15%;
       transform: rotate(30deg);
       z-index: -1; } }
   @media screen and (min-width: 1400px) {
     #screen-0 .glasses {
       left: -20%;
-      top: 15%;
+      top: 20%;
       z-index: -1; } }
   @media screen and (max-width: 599px) {
     #screen-0 .certificate {
