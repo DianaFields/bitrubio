@@ -650,6 +650,9 @@ body {
     top: 20px;
     right: 25px;
     cursor: pointer; }
+    @media screen and (min-width: 600px) {
+      .content nav .menu-toggle {
+        display: none; } }
   .content nav .menu-toggle.on .one {
     -moz-transform: rotate(45deg) translate(7px, 7px);
     -ms-transform: rotate(45deg) translate(7px, 7px);
@@ -685,6 +688,30 @@ body {
       margin: 3% 0; }
   .content nav nav ul.hidden {
     display: none; }
+    @media screen and (min-width: 600px) {
+      .content nav nav ul.hidden {
+        display: block;
+        margin: 0;
+        float: right;
+        width: 70%;
+        text-align: right;
+        padding-right: 2em; }
+        .content nav nav ul.hidden li {
+          display: inline-block;
+          width: 20%;
+          text-align: center;
+          vertical-align: middle;
+          margin: 0; }
+          .content nav nav ul.hidden li a {
+            font-size: 1.2em;
+            line-height: 45px;
+            height: 45px; }
+        .content nav nav ul.hidden .login {
+          border-radius: 2px;
+          text-align: center;
+          background: #92d14b; }
+          .content nav nav ul.hidden .login a {
+            color: #fff; } }
   .content nav nav ul a {
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
@@ -705,33 +732,6 @@ body {
     display: block;
     background-color: rgba(255, 255, 255, 0.8);
     position: absolute; }
-.content .menu-section-desk {
-  width: 60%;
-  float: right;
-  margin: 0;
-  display: inline-block;
-  padding: 0;
-  text-align: right; }
-  .content .menu-section-desk li {
-    display: inline-block;
-    width: 25%;
-    text-align: center; }
-    .content .menu-section-desk li a {
-      text-decoration: none;
-      font-family: avenir;
-      font-size: 1.2em;
-      color: #3E698B; }
-    .content .menu-section-desk li .login-desk {
-      width: 60%;
-      display: block;
-      border-radius: 2px;
-      text-align: center;
-      line-height: 45px;
-      color: #fff;
-      background: #92d14b; }
-@media screen and (min-width: 768px) {
-  .content .menu-section {
-    display: none; } }
 @media screen and (max-width: 768px) {
   .content .menu-section-desk {
     display: none; } }
@@ -889,7 +889,6 @@ body {
         top: 3500px; } }
   .parallax #parallax {
     position: absolute;
-    background: red;
     height: 1px;
     width: 100%; }
     @media screen and (max-width: 600px) {
