@@ -126,16 +126,7 @@ else if(scrollTop  < fourScreen ){
   window.clearInterval(showMessageInterval);
   changeHide = true;
 }
-// if (scrollTop  > prx){
-//   $('.stop').css('position', 'inherit');
-//   // $('.parallax').css('background-attachment', 'inherit');
-//   window.clearInterval(showMessageInterval);
-//   changePrx= true;
-// }
-// else if(scrollTop  < prx ){
-//   window.clearInterval(showMessageInterval);
-//   changePrx = true;
-// }
+
 }
 });
         }
