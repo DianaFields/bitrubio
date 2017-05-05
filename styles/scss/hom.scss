@@ -37,54 +37,7 @@ body{
 	}
 	/**/
 	margin: 0;
-	.footer{
-		width: 100%;
-		background: #f2f2f2;
-		margin-bottom: 0;
-		text-align: center;
-		font-family: rounded;
-		color: $blue-bitrubio;
-		p{
-			padding:2% 0 0 0;
-			font-size: 1.5em;
-		}
-		ul{
-			width: 40%;
-			margin: 0 auto;
-			padding: 0;
-			margin-bottom: 2em;
-			li{
-				display: inline-block;
-				list-style: none;
-				width: 35%;
-				margin: 0 20px;
-				img{
-					width: 70%;
-				}
-			}
-			
-		}
-		@media screen and (max-width: 600px){
-			p{padding: 8% 0 0 0;}
-			ul{
-				width:90%;
-				li{
-					width: 45%;
-					margin: 10px 0px;
-				}
-			}
-		}
-		@media only screen and (min-width: 601px) and (max-width: 768px){
-			p{padding: 8% 0 0 0;}
-			ul{
-				width:60%;
-				li{
-					width: 45%;
-					margin: 10px 0px;
-				}
-			}
-		}
-		.map{
+	.map{
 			width: 100%;
 			height: 200px;
 			display: block;
@@ -96,6 +49,7 @@ body{
 				div{
 					display: inline-block;
 					width: 33%;
+					text-align: center;
 				}
 				.contact{
 					a{
@@ -224,11 +178,69 @@ body{
 				}	
 			}
 		}
+	.footer{
+		width: 100%;
+		background: #f2f2f2;
+		margin-bottom: 0;
+		text-align: center;
+		font-family: rounded;
+		color: $blue-bitrubio;
+		p{
+			padding:2% 0 0 0;
+			font-size: 1.5em;
+		}
+		ul{
+			width: 50%;
+			margin: 0 auto;
+			padding: 0;
+			padding-bottom: 2em;
+			li{
+				display: inline-block;
+				list-style: none;
+				width: 40%;
+				margin: 0 20px;
+				img{
+					width: 50%;
+				}
+			}
+			
+		}
+		@media screen and (max-width: 600px){
+			p{padding: 8% 0 0 0;}
+			ul{
+				width:90%;
+				li{
+					width: 45%;
+					margin: 10px 0px;
+				}
+			}
+		}
+		@media only screen and (min-width: 601px) and (max-width: 768px){
+			p{padding: 8% 0 0 0;}
+			ul{
+				width:60%;
+				li{
+					width: 45%;
+					margin: 10px 0px;
+				}
+			}
+		}
+		
 		.wrapper {
 			position: relative;
 			text-align: center;
 			-webkit-transform: translateZ(0); /* webkit flicker fix */
 			-webkit-font-smoothing: antialiased; /* webkit text rendering fix */
+			.desk-app{
+				
+			@media screen and (max-width: 768px){
+				
+					display: none;
+				
+			}
+			}
+			
+			
 		}
 		.tooltip-dr{
 			background: #3E698B!important;
@@ -273,8 +285,29 @@ body{
 				&:hover{
 					color:#f97713;
 				}
+				@media screen and (min-width: 769px){
+					display:none;
+				}
 			}
+			
+			input{
+				width: 100%;
+				background: rgba(256,256,256,.8);
+				border: 0;
+				border-bottom: 1px solid #fff;
+				line-height: 30px;
+				outline: none;
+				margin: 1em 0;
+				text-align: center;
+				-webkit-appearance:none;
+				-mox-appearance:none;
+				-ms-appearance:none;
 
+				@media screen and (max-width: 768px){
+					display: none;
+				}
+
+			}
 		}
 		.wrapper .tooltip:before {
 			bottom: -20px;
@@ -322,6 +355,7 @@ body{
 			display: block;
 		}
 	}
+
 	@-webkit-keyframes fade {
 		0% { opacity: 0; }
 		30% { opacity: .3; }

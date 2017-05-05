@@ -31,6 +31,113 @@ body {
     -moz-transition: all 500ms ease-in-out;
     -o-transition: all 500ms ease-in-out;
     transition: all 500ms ease-in-out; }
+  body .map {
+    width: 100%;
+    height: 200px;
+    display: block;
+    background: #3E698B; }
+    body .map .top {
+      width: 100%;
+      line-height: 40px; }
+      body .map .top div {
+        display: inline-block;
+        width: 33%;
+        text-align: center; }
+      body .map .top .contact a {
+        color: #fff;
+        text-decoration: none; }
+      body .map .top .payment {
+        width: 33%;
+        height: 40px; }
+        @media screen and (max-width: 730px) {
+          body .map .top .payment {
+            width: 60%; } }
+        body .map .top .payment .microsoft, body .map .top .payment .visa {
+          display: inline-block;
+          width: 20%;
+          box-sizing: border-box;
+          height: 40px;
+          background: url("../assets/home/payment.png");
+          background-repeat: no-repeat;
+          background-size: 155%;
+          vertical-align: top; }
+          @media screen and (max-width: 730px) {
+            body .map .top .payment .microsoft, body .map .top .payment .visa {
+              width: 48%;
+              background-size: 150%; } }
+          @media screen and (min-width: 731px) and (max-width: 768px) {
+            body .map .top .payment .microsoft, body .map .top .payment .visa {
+              width: 35%; } }
+          @media screen and (min-width: 769px) and (max-width: 1200px) {
+            body .map .top .payment .microsoft, body .map .top .payment .visa {
+              width: 30%; } }
+        @media screen and (max-width: 730px) {
+          body .map .top .payment .visa {
+            background-position: 54px 11px !important;
+            background-size: 110%; } }
+        @media only screen and (min-width: 731px) and (max-width: 1024px) {
+          body .map .top .payment .visa {
+            background-position: 30px 12px; } }
+        @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+          body .map .top .payment .visa {
+            background-position: 54px 12px;
+            background-size: 115%; } }
+        @media only screen and (min-width: 1201px) and (max-width: 1399px) {
+          body .map .top .payment .visa {
+            background-position: 39px 13px;
+            background-size: 115%; } }
+        @media screen and (min-width: 1400px) {
+          body .map .top .payment .visa {
+            background-size: 130%;
+            background-position: 45px 11px; } }
+        @media screen and (max-width: 730px) {
+          body .map .top .payment .microsoft {
+            background-position: -69px 9px !important; } }
+        @media only screen and (min-width: 731px) and (max-width: 1024px) {
+          body .map .top .payment .microsoft {
+            background-size: 195%;
+            background-position: -81px 9px; } }
+        @media only screen and (min-width: 1024px) and (max-width: 1200px) {
+          body .map .top .payment .microsoft {
+            background-size: 155%;
+            background-position: -81px 9px; } }
+        @media only screen and (min-width: 1201px) and (max-width: 1399px) {
+          body .map .top .payment .microsoft {
+            background-size: 195%;
+            background-position: -81px 9px; } }
+        @media screen and (min-width: 1400px) {
+          body .map .top .payment .microsoft {
+            background-size: 155%;
+            background-position: -74px 48%; } }
+    body .map span {
+      display: inline-block;
+      width: 35px;
+      height: 35px;
+      background: url("../assets/home/redes.png");
+      margin: 0 3%;
+      vertical-align: middle; }
+    body .map .facebook {
+      background-position: -8px 3px;
+      background-size: 170px; }
+    body .map .twitter {
+      background-position: -65px 3px;
+      background-size: 170px; }
+    body .map .youtube {
+      background-position: -296px 2px;
+      background-size: 170px; }
+    body .map .sitemap {
+      width: 100%;
+      border-top: 1px solid #fff; }
+    @media screen and (max-width: 600px) {
+      body .map .top .contact {
+        width: 100%; }
+      body .map .top .redes {
+        width: 100%; } }
+    @media only screen and (min-width: 601px) and (max-width: 768px) {
+      body .map .top .contact {
+        width: 100%; }
+      body .map .top .redes {
+        width: 50%; } }
   body .footer {
     width: 100%;
     background: #f2f2f2;
@@ -44,17 +151,17 @@ body {
       padding: 2% 0 0 0;
       font-size: 1.5em; }
     body .footer ul {
-      width: 40%;
+      width: 50%;
       margin: 0 auto;
       padding: 0;
-      margin-bottom: 2em; }
+      padding-bottom: 2em; }
       body .footer ul li {
         display: inline-block;
         list-style: none;
-        width: 35%;
+        width: 40%;
         margin: 0 20px; }
         body .footer ul li img {
-          width: 70%; }
+          width: 50%; }
     @media screen and (max-width: 600px) {
       body .footer p {
         padding: 8% 0 0 0; }
@@ -71,112 +178,6 @@ body {
         body .footer ul li {
           width: 45%;
           margin: 10px 0px; } }
-    body .footer .map {
-      width: 100%;
-      height: 200px;
-      display: block;
-      background: #3E698B; }
-      body .footer .map .top {
-        width: 100%;
-        line-height: 40px; }
-        body .footer .map .top div {
-          display: inline-block;
-          width: 33%; }
-        body .footer .map .top .contact a {
-          color: #fff;
-          text-decoration: none; }
-        body .footer .map .top .payment {
-          width: 33%;
-          height: 40px; }
-          @media screen and (max-width: 730px) {
-            body .footer .map .top .payment {
-              width: 60%; } }
-          body .footer .map .top .payment .microsoft, body .footer .map .top .payment .visa {
-            display: inline-block;
-            width: 20%;
-            box-sizing: border-box;
-            height: 40px;
-            background: url("../assets/home/payment.png");
-            background-repeat: no-repeat;
-            background-size: 155%;
-            vertical-align: top; }
-            @media screen and (max-width: 730px) {
-              body .footer .map .top .payment .microsoft, body .footer .map .top .payment .visa {
-                width: 48%;
-                background-size: 150%; } }
-            @media screen and (min-width: 731px) and (max-width: 768px) {
-              body .footer .map .top .payment .microsoft, body .footer .map .top .payment .visa {
-                width: 35%; } }
-            @media screen and (min-width: 769px) and (max-width: 1200px) {
-              body .footer .map .top .payment .microsoft, body .footer .map .top .payment .visa {
-                width: 30%; } }
-          @media screen and (max-width: 730px) {
-            body .footer .map .top .payment .visa {
-              background-position: 54px 11px !important;
-              background-size: 110%; } }
-          @media only screen and (min-width: 731px) and (max-width: 1024px) {
-            body .footer .map .top .payment .visa {
-              background-position: 30px 12px; } }
-          @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-            body .footer .map .top .payment .visa {
-              background-position: 54px 12px;
-              background-size: 115%; } }
-          @media only screen and (min-width: 1201px) and (max-width: 1399px) {
-            body .footer .map .top .payment .visa {
-              background-position: 39px 13px;
-              background-size: 115%; } }
-          @media screen and (min-width: 1400px) {
-            body .footer .map .top .payment .visa {
-              background-size: 130%;
-              background-position: 45px 11px; } }
-          @media screen and (max-width: 730px) {
-            body .footer .map .top .payment .microsoft {
-              background-position: -69px 9px !important; } }
-          @media only screen and (min-width: 731px) and (max-width: 1024px) {
-            body .footer .map .top .payment .microsoft {
-              background-size: 195%;
-              background-position: -81px 9px; } }
-          @media only screen and (min-width: 1024px) and (max-width: 1200px) {
-            body .footer .map .top .payment .microsoft {
-              background-size: 155%;
-              background-position: -81px 9px; } }
-          @media only screen and (min-width: 1201px) and (max-width: 1399px) {
-            body .footer .map .top .payment .microsoft {
-              background-size: 195%;
-              background-position: -81px 9px; } }
-          @media screen and (min-width: 1400px) {
-            body .footer .map .top .payment .microsoft {
-              background-size: 155%;
-              background-position: -74px 48%; } }
-      body .footer .map span {
-        display: inline-block;
-        width: 35px;
-        height: 35px;
-        background: url("../assets/home/redes.png");
-        margin: 0 3%;
-        vertical-align: middle; }
-      body .footer .map .facebook {
-        background-position: -8px 3px;
-        background-size: 170px; }
-      body .footer .map .twitter {
-        background-position: -65px 3px;
-        background-size: 170px; }
-      body .footer .map .youtube {
-        background-position: -296px 2px;
-        background-size: 170px; }
-      body .footer .map .sitemap {
-        width: 100%;
-        border-top: 1px solid #fff; }
-      @media screen and (max-width: 600px) {
-        body .footer .map .top .contact {
-          width: 100%; }
-        body .footer .map .top .redes {
-          width: 100%; } }
-      @media only screen and (min-width: 601px) and (max-width: 768px) {
-        body .footer .map .top .contact {
-          width: 100%; }
-        body .footer .map .top .redes {
-          width: 50%; } }
     body .footer .wrapper {
       position: relative;
       text-align: center;
@@ -184,6 +185,9 @@ body {
       /* webkit flicker fix */
       -webkit-font-smoothing: antialiased;
       /* webkit text rendering fix */ }
+      @media screen and (max-width: 768px) {
+        body .footer .wrapper .desk-app {
+          display: none; } }
     body .footer .tooltip-dr {
       background: #3E698B !important; }
     body .footer .wrapper .tooltip {
@@ -223,6 +227,24 @@ body {
         display: block; }
         body .footer .wrapper .tooltip a:hover {
           color: #f97713; }
+        @media screen and (min-width: 769px) {
+          body .footer .wrapper .tooltip a {
+            display: none; } }
+      body .footer .wrapper .tooltip input {
+        width: 100%;
+        background: rgba(255, 255, 255, 0.8);
+        border: 0;
+        border-bottom: 1px solid #fff;
+        line-height: 30px;
+        outline: none;
+        margin: 1em 0;
+        text-align: center;
+        -webkit-appearance: none;
+        -mox-appearance: none;
+        -ms-appearance: none; }
+        @media screen and (max-width: 768px) {
+          body .footer .wrapper .tooltip input {
+            display: none; } }
     body .footer .wrapper .tooltip:before {
       bottom: -20px;
       content: " ";
