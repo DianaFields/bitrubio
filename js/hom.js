@@ -34,15 +34,14 @@ function homeInit() {
               $('.tools').css('background-attachment', 'fixed');
               $('.conocer').css('margin-top', '2em');
               $('#screen-0').removeClass('initial');
-              
             }
-            if (height  > 4100){
+            if (height  > 4300){
               $('.stop').css('position', 'inherit');
               $('.parallax').css('background-attachment', 'inherit');
               $('.hide').css('opacity', '0');
               $('#screen-3').css('margin-top', '-25%');
             }
-            else if (height  < 4100){
+            else if (height  < 4300){
               $('#screen-3').css('margin-top', 'inherit');
               $('.hide').css('opacity', '1');
             }
@@ -129,6 +128,11 @@ else if(scrollTop  < fourScreen ){
 
 }
 });
+// detect landscape
+
+
         }
+
+
 
 

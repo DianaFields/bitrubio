@@ -45,13 +45,14 @@ body {
         text-align: center; }
       body .map .top .contact a {
         color: #fff;
-        text-decoration: none; }
+        text-decoration: none;
+        font-family: avenir; }
       body .map .top .payment {
         width: 33%;
         height: 40px; }
         @media screen and (max-width: 730px) {
           body .map .top .payment {
-            width: 60%; } }
+            width: 100%; } }
         body .map .top .payment .microsoft, body .map .top .payment .visa {
           display: inline-block;
           width: 20%;
@@ -63,8 +64,8 @@ body {
           vertical-align: top; }
           @media screen and (max-width: 730px) {
             body .map .top .payment .microsoft, body .map .top .payment .visa {
-              width: 48%;
-              background-size: 150%; } }
+              width: 35%;
+              background-size: 120%; } }
           @media screen and (min-width: 731px) and (max-width: 768px) {
             body .map .top .payment .microsoft, body .map .top .payment .visa {
               width: 35%; } }
@@ -73,7 +74,7 @@ body {
               width: 30%; } }
         @media screen and (max-width: 730px) {
           body .map .top .payment .visa {
-            background-position: 54px 11px !important;
+            background-position: 65px 11px !important;
             background-size: 110%; } }
         @media only screen and (min-width: 731px) and (max-width: 1024px) {
           body .map .top .payment .visa {
@@ -672,7 +673,7 @@ body {
     top: 20px;
     right: 25px;
     cursor: pointer; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 768px) {
       .content nav .menu-toggle {
         display: none; } }
   .content nav .menu-toggle.on .one {
@@ -710,7 +711,7 @@ body {
       margin: 3% 0; }
   .content nav nav ul.hidden {
     display: none; }
-    @media screen and (min-width: 600px) {
+    @media screen and (min-width: 768px) {
       .content nav nav ul.hidden {
         display: block;
         margin: 0;
@@ -734,6 +735,31 @@ body {
           background: #92d14b; }
           .content nav nav ul.hidden .login a {
             color: #fff; } }
+    @media screen and (min-width: 768px) {
+      .content nav nav ul.hidden {
+        display: block;
+        margin: 0;
+        float: right;
+        width: 70%;
+        text-align: right;
+        padding-right: 2em; }
+        .content nav nav ul.hidden li {
+          display: inline-block;
+          width: 30%;
+          text-align: center;
+          vertical-align: middle;
+          margin: 0; }
+          .content nav nav ul.hidden li a {
+            font-size: 1.2em;
+            line-height: 45px;
+            height: 45px; }
+        .content nav nav ul.hidden .login {
+          border-radius: 2px;
+          text-align: center;
+          background: #92d14b;
+          width: 20%; }
+          .content nav nav ul.hidden .login a {
+            color: #fff; } }
   .content nav nav ul a {
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s;
@@ -754,7 +780,7 @@ body {
     display: block;
     background-color: rgba(255, 255, 255, 0.8);
     position: absolute; }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
   .content .menu-section-desk {
     display: none; } }
 @media screen and (max-width: 600px) {
@@ -832,7 +858,7 @@ body {
   background-size: 280px; }
   @media screen and (max-width: 768px) {
     .parallax {
-      height: 3300px; } }
+      height: 3800px; } }
   @media only screen and (min-width: 767px) and (max-width: 1024px) {
     .parallax {
       height: 4300px; } }
