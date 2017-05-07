@@ -186,9 +186,15 @@ body {
       /* webkit flicker fix */
       -webkit-font-smoothing: antialiased;
       /* webkit text rendering fix */ }
+      body .footer .wrapper .name {
+        display: none; }
       @media screen and (max-width: 768px) {
         body .footer .wrapper .desk-app {
-          display: none; } }
+          display: none; }
+        body .footer .wrapper .store-logo {
+          display: none; }
+        body .footer .wrapper .name {
+          display: block; } }
     body .footer .tooltip-dr {
       background: #3E698B !important; }
     body .footer .wrapper .tooltip {
@@ -225,7 +231,11 @@ body {
         cursor: pointer;
         font-size: 18px;
         position: relative;
-        display: block; }
+        display: inline-block;
+        width: 29%;
+        margin: 0 9%; }
+        body .footer .wrapper .tooltip a img {
+          width: 100%; }
         body .footer .wrapper .tooltip a:hover {
           color: #f97713; }
         @media screen and (min-width: 769px) {
