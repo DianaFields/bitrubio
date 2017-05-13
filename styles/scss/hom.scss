@@ -73,8 +73,11 @@ body{
 				.payment{
 					width: 33%;
 					height: 40px;
-					@media screen and (max-width: 730px){
+					@media screen and (max-width: 600px){
 						width: 100%;
+					}
+					@media only screen and (min-width: 601px) and(max-width: 768px){
+						width: 40%;
 					}
 					.microsoft, .visa{
 						display: inline-block;
@@ -85,10 +88,12 @@ body{
 						background-repeat: no-repeat;
 						background-size: 155%;
 						vertical-align: top;
-						@media screen and (max-width: 730px){
-							width: 35%;
+						@media screen and (max-width: 600px){
+							width:27%;
+						}
+						@media only screen and (min-width: 601px) and(max-width: 730px){
+							width: 45%;
 							background-size: 120%;
-
 						}
 						@media screen and (min-width: 731px) and (max-width: 768px){
 							width: 35%;
@@ -439,6 +444,7 @@ body{
 		}
 		@media only screen and (min-width: 600px) and (max-width: 768px){
 			margin-top: -15em;
+			width:60%;
 		}
 		@media only screen and (min-width: 769px) and (max-width: 1025px){
 			height: 470px;
@@ -543,6 +549,9 @@ body{
 				font-size: 1.2em;
 			}
 		}
+	}
+	.envelope-land{
+		width: 50%!important;
 	}
 	/*envelope*/
 	.mapa{
@@ -988,7 +997,7 @@ body{
 				display: none;
 			}
 		}
-		@media screen and (max-width: 600px){
+		@media screen and (max-width: 400px){
 			nav{
 				height: 90px;
 				.logo{
@@ -1000,7 +1009,44 @@ body{
 					padding: 4% 0 0 7%;
 					img{
 						width: 18%;
-					
+					}
+				}
+				ul{
+					width: 100%;
+					margin: 0;
+					li{
+						width: 100%;
+						text-align: center;
+						font-size: 12px;
+						padding: 0;
+						font-family: rounded;
+						margin-top: 6%!important;
+					}
+					.login{
+						background: #92d14b;
+						width: 60%;
+						margin: 0 auto;
+						a{
+							color: #fff;
+						}
+
+
+					}
+				}
+			}
+		}
+		@media screen and (max-width: 401px){
+			nav{
+				height: 90px;
+				.logo{
+					display: block;
+					width: 100%;
+					text-align: left;
+					margin: 0;
+					height: 60px;
+					padding: 4% 0 0 7%;
+					img{
+						width: 15%;
 					}
 				}
 				ul{
@@ -1338,6 +1384,9 @@ body{
 	}
 	#screen-0{
 		top:0;
+		@media screen and (max-width: 800px){
+			min-height:370px;
+		}
 		@media only screen and (min-width: 769px) and (max-width: 1024px){
 			height: 650px;
 		}
@@ -1412,7 +1461,7 @@ body{
 				background: url('../assets/home/certificate.png')no-repeat;
 				background-size: 100%;
 				width: 60%;
-				height: 200px;
+				height: 260px;
 				position: absolute;
 				right: -25%;
 				top: 45%;
@@ -1596,7 +1645,7 @@ body{
 				background: url('../assets/home/agenda.png')no-repeat;
 				background-size: 100%;
 				width: 60%;
-				height: 200px;
+				height: 250px;
 				position: absolute;
 				right: -22%;
 				top: 5%;
@@ -1675,7 +1724,7 @@ body{
 			height: 850px;
 		}
 		.radio{
-			@media screen and (max-width: 768px){
+			@media screen and (max-width: 600px){
 				background: url('../assets/home/radio.png')no-repeat;
 				background-size: 100%;
 				width: 60%;
@@ -1683,6 +1732,16 @@ body{
 				position: absolute;
 				left: -3%;
 				top: 60%;
+				z-index: -1;
+			}
+			@media only screen and (min-width: 601px) and (max-width: 768px){
+				background: url('../assets/home/radio.png')no-repeat;
+				background-size: 100%;
+				width: 40%;
+				height: 400px;
+				position: absolute;
+				left: -3%;
+				top: 40%;
 				z-index: -1;
 			}
 			@media only screen and (min-width: 769px) and (max-width: 1024px){
@@ -1721,15 +1780,26 @@ body{
 			}
 		}
 		.receta{
-			@media screen and (max-width: 768px){
+			@media screen and (max-width: 600px){
 				transform: rotate(-80deg);
 				background: url('../assets/home/prescription.png')no-repeat;
 				background-size: 100%;
 				width: 60%;
-				height: 260px;
+				height: 350px;
 				position: absolute;
 				right: -22%;
 				top: -40%;
+				z-index: -1;
+			}
+			@media only screen and (min-width: 601px) and (max-width: 768px){
+				transform: rotate(-80deg);
+				background: url('../assets/home/prescription.png')no-repeat;
+				background-size: 80%;
+				width: 60%;
+				height: 450px;
+				position: absolute;
+				right: -22%;
+				top: -20%;
 				z-index: -1;
 			}
 			@media only screen and (min-width: 769px) and (max-width: 1024px){
@@ -1786,16 +1856,9 @@ body{
 				left: -5%;
 				top: 68%;
 			}
-			@media only screen and (min-width: 601px) and (max-width: 768px){
-				background-size: 100%;
-				width: 60%;
-				height: 200px;
-				left: -5%;
-				top: 7%;
-			}
 			@media only screen and (min-width: 600px) and (max-width: 768px){
 				background-size: 100%;
-				width: 60%;
+				width: 40%;
 				height: 400px;
 				left: -2%;
 				top: 10%;
@@ -1819,7 +1882,7 @@ body{
 				width: 60%;
 				height: 370px;
 				left: -3%;
-				top: 3%;
+				top: -2%;
 			}
 			@media screen and (min-width: 1400px){
 				background-size:40%;
@@ -1929,7 +1992,7 @@ body{
 			}
 			@media only screen and (min-width: 376px) and (max-width: 599px){
 				background-size: 80%;
-				width: 120%;
+				width: 100%;
 				height: 380px;
 				position: absolute;
 				left: -9%;
@@ -2034,7 +2097,7 @@ body{
 				height: 340px;
 				position: absolute;
 				right: 0;
-				top: 2%;
+				top: 15%;
 
 			}
 			@media only screen and (min-width: 601px) and (max-width: 768px){

@@ -62,6 +62,8 @@ function homeInit() {
                 if (change) {
                   $('#screen-0').css('opacity','0');
                   $('#screen-1').css('opacity','1');
+                  $('#screen-2').css('opacity','0');
+                  $('#screen-3').css('opacity','0');
                   $('.talkbubble-1').css('opacity','1');
                   window.clearInterval(showMessageInterval);
                   change = false;
@@ -69,8 +71,10 @@ function homeInit() {
               }
               if (scrollTop < firstScreen) {
                 if (change == false) {
-                 $('#screen-1').css('opacity','0')
-                 $('#screen-0').css('opacity','1')
+                 $('#screen-1').css('opacity','0');
+                 $('#screen-0').css('opacity','1');
+                 $('#screen-2').css('opacity','0');
+                 $('#screen-3').css('opacity','0');
                  window.clearInterval(showMessageInterval);
                  change = true;
                }
@@ -157,10 +161,23 @@ $(window).resize( function(){
         if( video.hasClass('lands') ) {
             video.removeClass('lands').addClass('port');
         }
+    } 
+});
+// envelope resize
+$(window).resize( function(){
+    var height = $(window).height();
+    var width = $(window).width(); 
+    var envelope = $('.envelope');
+    if( width > height ) {
+        if( envelope.hasClass('envelope')) {
+            envelope.addClass('envelope-land');
+        }
+    }else{
+        if( envelope.hasClass('envelope-land') ) {
+            envelope.removeClass('envelope-land');
+        }
     }
 });
-
-
         }
 
 
