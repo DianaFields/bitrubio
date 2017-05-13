@@ -8,6 +8,18 @@
 }
 $blue-bitrubio: #3E698B;
 body{
+	.portrait{
+		width: 200px;
+	}
+	.landscape{
+		width: 100px!important;
+	}
+	.port{
+		width: 220px;
+	}
+	.lands{
+		width: 130px!important;
+	}
 	/**/
 	.initial{
 		@media screen and (max-width: 600px){

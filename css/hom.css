@@ -10,6 +10,14 @@ body {
   margin: 0;
   /*envelope*/
   /*envelope*/ }
+  body .portrait {
+    width: 200px; }
+  body .landscape {
+    width: 100px !important; }
+  body .port {
+    width: 220px; }
+  body .lands {
+    width: 130px !important; }
   @media screen and (max-width: 600px) {
     body .initial {
       padding-top: 60%; } }

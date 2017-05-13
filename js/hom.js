@@ -128,7 +128,37 @@ else if(scrollTop  < fourScreen ){
 
 }
 });
-// detect landscape
+
+// iphone resize
+$(window).resize( function(){
+    var height = $(window).height();
+    var width = $(window).width(); 
+    var ob = $('.iphone');
+    if( width > height ) {
+        if( ob.hasClass('portrait') ) {
+            ob.removeClass('portrait').addClass('landscape');
+        }
+    }else{
+        if( ob.hasClass('landscape') ) {
+            ob.removeClass('landscape').addClass('portrait');
+        }
+    }
+});
+// video resize
+$(window).resize( function(){
+    var height = $(window).height();
+    var width = $(window).width(); 
+    var video = $('.video-mobile');
+    if( width > height ) {
+        if( video.hasClass('port') ) {
+            video.removeClass('port').addClass('lands');
+        }
+    }else{
+        if( video.hasClass('lands') ) {
+            video.removeClass('lands').addClass('port');
+        }
+    }
+});
 
 
         }
