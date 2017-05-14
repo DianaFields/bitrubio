@@ -178,7 +178,16 @@ $(window).resize( function(){
         }
     }
 });
-        }
+  }
+
+  // on tap change screen
+ function tappingChange(){
+  $(".button-fake").click(function(){
+    $('html, body').animate({
+      scrollTop: $(this).offset().top
+    }, 8000);
+  });
+ }
 
 
 
