@@ -7,6 +7,13 @@
 	src:url(../fonts/Rounded_Elegance.ttf);
 }
 $blue-bitrubio: #3E698B;
+#stop-ok{
+	top:2000px; 
+	width: 100%;
+	height: 2px;
+	background: red;
+	position: absolute;
+}
 body{
 	.portrait{
 		width: 200px;

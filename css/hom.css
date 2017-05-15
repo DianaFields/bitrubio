@@ -4,6 +4,13 @@
 @font-face {
   font-family: rounded;
   src: url(../fonts/Rounded_Elegance.ttf); }
+#stop-ok {
+  top: 2000px;
+  width: 100%;
+  height: 2px;
+  background: red;
+  position: absolute; }
+
 body {
   /**/
   /**/
