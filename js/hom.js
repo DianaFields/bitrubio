@@ -37,9 +37,9 @@ function changeScreen() {
             $('#screen-0').removeClass('initial');
         } else if (height > stopOk) {
             $('#screen-3').css('position', 'relative');
-            $('#screen-3').css('top', '10%');
+            // $('#screen-3').css('top', '10%');
             $('.envelope').css('margin-top', '0');
-            $('.parallax').css('height', '2500px');
+            // $('.parallax').css('height', '2500px');
             // $('.parallax').css('background-attachment', 'inherit');
         } else if (height < stopOk) {
             $('#screen-3').css('position', 'fixed');
@@ -178,4 +178,12 @@ function changeScreen() {
             }
         }
     });
+    $('#tap-wrap').on("tap",function(){
+            alert();
+            $('.tooltip').show();
+        }); 
+
 }
+ function tool(){
+        
+    }
