@@ -87,6 +87,8 @@ function changeScreen() {
                 if (changeAgain) {
                     $('#screen-1').css('opacity', '0');
                     $('#screen-2').css('opacity', '1');
+                    $('#screen-3').css('opacity', '0');
+                    $('#screen-4').css('opacity', '0');
                     $('video')[0].play();
                     window.clearInterval(showMessageInterval);
                     changeAgain = false;
@@ -96,6 +98,8 @@ function changeScreen() {
                 if (changeAgain == false) {
                     $('#screen-2').css('opacity', '0');
                     $('#screen-1').css('opacity', '1');
+                    $('#screen-3').css('opacity', '0');
+                    $('#screen-4').css('opacity', '0');
 
                     window.clearInterval(showMessageInterval);
                     changeAgain = true;
@@ -149,6 +153,9 @@ function changeScreen() {
             if (ob.hasClass('landscape')) {
                 ob.removeClass('landscape').addClass('portrait');
             }
+        }
+        if(width == 1024){
+            $('.iphone').removeClass('landscape')
         }
     });
     // video resize
