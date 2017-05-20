@@ -12,7 +12,7 @@ $blue-bitrubio: #3E698B;
 	height: 2px;
 	position: absolute;
 	@media screen and (max-width: 768px){
-		top:2200px; 
+		top:2500px; 
 	}
 	@media only screen and (min-width: 769px) and (max-width: 1024px){
 		top:2000px; 
@@ -121,8 +121,8 @@ body{
 					}
 					.visa{
 						@media screen and (max-width: 730px){
-							background-position: 65px 11px!important;
-							background-size: 110%; 
+							background-position: 44px 11px !important;
+							background-size: 120%; 
 						}
 
 						@media only screen and (min-width: 731px) and (max-width:1024px){
@@ -262,7 +262,6 @@ body{
 		}
 		
 		.wrapper {
-			line-height: 40px;
 			position: relative;
 			text-align: center;
 			-webkit-transform: translateZ(0); /* webkit flicker fix */
@@ -290,6 +289,9 @@ body{
 		}
 		.tooltip-dr{
 			background: #3E698B!important;
+		}
+		.tooltip-show{
+			opacity: 1;
 		}
 		.wrapper .tooltip {
 			background: #92d14b;
@@ -871,7 +873,7 @@ body{
 				width: 40px;
 				height: 30px;
 				position: absolute;
-				top: 20px;
+				top: 28px;
 				right: 25px;
 				cursor: pointer;
 				@media screen and (min-width: 768px){
@@ -1061,10 +1063,10 @@ body{
 					width: 100%;
 					text-align: left;
 					margin: 0;
-					height: 60px;
+					height: 100%;
 					padding: 4% 0 0 7%;
 					img{
-						width: 15%;
+						width: 18%;
 					}
 				}
 				ul{
@@ -1103,7 +1105,7 @@ body{
 		padding-top: 17em;
 		position: absolute;
 		@media screen and (max-width: 767px){
-			background-position: 23% 5%;
+			background-position: 23% 0;
 			background-size: 140%;
 			padding-top: 8em;
 

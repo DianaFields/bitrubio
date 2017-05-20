@@ -10,7 +10,7 @@
   position: absolute; }
   @media screen and (max-width: 768px) {
     #stop-ok {
-      top: 2200px; } }
+      top: 2500px; } }
   @media only screen and (min-width: 769px) and (max-width: 1024px) {
     #stop-ok {
       top: 2000px; } }
@@ -105,8 +105,8 @@ body {
               width: 30%; } }
         @media screen and (max-width: 730px) {
           body .map .top .payment .visa {
-            background-position: 65px 11px !important;
-            background-size: 110%; } }
+            background-position: 44px 11px !important;
+            background-size: 120%; } }
         @media only screen and (min-width: 731px) and (max-width: 1024px) {
           body .map .top .payment .visa {
             background-position: 30px 12px; } }
@@ -211,7 +211,6 @@ body {
           width: 45%;
           margin: 10px 0px; } }
     body .footer .wrapper {
-      line-height: 40px;
       position: relative;
       text-align: center;
       -webkit-transform: translateZ(0);
@@ -231,6 +230,8 @@ body {
           display: block; } }
     body .footer .tooltip-dr {
       background: #3E698B !important; }
+    body .footer .tooltip-show {
+      opacity: 1; }
     body .footer .wrapper .tooltip {
       background: #92d14b;
       bottom: 100%;
@@ -732,7 +733,7 @@ body {
     width: 40px;
     height: 30px;
     position: absolute;
-    top: 20px;
+    top: 28px;
     right: 25px;
     cursor: pointer; }
     @media screen and (min-width: 768px) {
@@ -881,10 +882,10 @@ body {
       width: 100%;
       text-align: left;
       margin: 0;
-      height: 60px;
+      height: 100%;
       padding: 4% 0 0 7%; }
       .content nav .logo img {
-        width: 15%; }
+        width: 18%; }
     .content nav ul {
       width: 100%;
       margin: 0; }
@@ -913,7 +914,7 @@ body {
   position: absolute; }
   @media screen and (max-width: 767px) {
     .hero {
-      background-position: 23% 5%;
+      background-position: 23% 0;
       background-size: 140%;
       padding-top: 8em; } }
   @media only screen and (min-width: 768px) and (max-width: 1024px) {

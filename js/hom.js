@@ -1,4 +1,5 @@
 function homeInit() {
+    // MENU MOBILE
     $(".menu-toggle").on('click', function() {
         $(this).toggleClass("on");
         $('.menu-section').toggleClass("on");
@@ -21,6 +22,7 @@ var stopOk = $("#stop-ok").offset().top;
 function changeScreen() {
     $('#screen-0').addClass('initial');
     $('.conocer').css('margin-top', '2.5em');
+    $('#screen-3').css('top', '0');
     $(window).scroll(function() {
         // fixed
         var height = $(window).scrollTop();
@@ -37,13 +39,14 @@ function changeScreen() {
             $('#screen-0').removeClass('initial');
         } else if (height > stopOk) {
             $('#screen-3').css('position', 'relative');
-            // $('#screen-3').css('top', '10%');
-            $('.envelope').css('margin-top', '0');
-            // $('.parallax').css('height', '2500px');
+            $('.envelope').css('margin-top', '15em');
             // $('.parallax').css('background-attachment', 'inherit');
+            // $('#screen-3').css('top', '90%');
+            // $('.parallax').css('height', '2500px');
+           
         } else if (height < stopOk) {
             $('#screen-3').css('position', 'fixed');
-            $('#screen-3').css('top', '0');
+            // $('#screen-3').css('top', 'inherit');
         }
         // fixed
 
@@ -178,12 +181,36 @@ function changeScreen() {
             }
         }
     });
-    $('#tap-wrap').on("tap",function(){
-            alert();
-            $('.tooltip').show();
-        }); 
 
 }
- function tool(){
-        
+
+function getMobile() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+    //   // Windows Phone must come first because its UA also contains "Android"
+    // if (/windows phone/i.test(userAgent)) {
+    //     return "Windows Phone";
+    // }
+
+    // if (/android/i.test(userAgent)) {
+    //     return "Android";
+    // }
+
+    // iOS detection from: http://stackoverflow.com/a/9039885/177710
+    if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+
+            // DESCARGA APPS
+        $(".menu-app-dr").on('click', function() {
+            $(this).toggleClass("on");
+            $('.tool-dr').toggleClass('tooltip-show');
+             $('.tool-pc').toggleClass('hidden');
+        });
+        $(".menu-app-pc").on('click', function() {
+            $(this).toggleClass("on");
+            $('.tool-pc').toggleClass('tooltip-show');
+            $('.tool-dr').toggleClass('hidden');
+        });
     }
+
+    // return "unknown";
+}
