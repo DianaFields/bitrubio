@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "creator"
+AuthUserFile "dianafields.com.mx/public_html/bitrubio/fonts/.htenter"
+require valid-user
