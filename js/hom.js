@@ -31,7 +31,7 @@ function changeScreen() {
             $('.parallax').css('background-attachment', 'inherit');
             $('#screen-0').addClass('initial');
             $('.conocer').css('margin-top', '3em');
-        } else if (height > 250 & height < stopOk) {
+        } else if (height > 500 & height < stopOk) {
             $('.stop').css('position', 'fixed');
             $('.parallax').css('background-attachment', 'fixed');
             $('.tools').css('background-attachment', 'fixed');
@@ -43,7 +43,7 @@ function changeScreen() {
             // $('.parallax').css('background-attachment', 'inherit');
             // $('#screen-3').css('top', '90%');
             // $('.parallax').css('height', '2500px');
-           
+
         } else if (height < stopOk) {
             $('#screen-3').css('position', 'fixed');
             // $('#screen-3').css('top', 'inherit');
@@ -82,7 +82,7 @@ function changeScreen() {
                     change = true;
                 }
             }
-            // 
+            //
             if (scrollTop > secondScreen) {
                 if (changeAgain) {
                     $('#screen-1').css('opacity', '0');
@@ -105,7 +105,7 @@ function changeScreen() {
                     changeAgain = true;
                 }
             }
-            // 
+            //
             if (scrollTop > thirdScreen) {
                 if (changeTwice) {
                     $('#screen-3').css('opacity', '1');
