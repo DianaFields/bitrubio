@@ -50,7 +50,6 @@ function changeScreen() {
         }
         // fixed
 
-
         var showMessageInterval = window.setInterval(showMessageIfNeeded, 500);
 
         function showMessageIfNeeded() {
@@ -135,8 +134,6 @@ function changeScreen() {
                 window.clearInterval(showMessageInterval);
                 changeHide = true;
             }
-
-
         }
     });
 
